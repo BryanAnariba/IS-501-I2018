@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musica para todos - Spotify</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="Librerias-Frameworks/font-awesome.min.css">
+    <link rel="stylesheet" href="Librerias-Frameworks/bootstrap.min.css">
+    <script src="Librerias-Frameworks/all.js"></script>
+    
+    <style>
+        #modificar{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding-left:15px;
+            margin-left:15px;
+            font-size:15px;
+        }
+        #modificar:hover{
+            color:#32C236;
+        }
+        #modificar3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding-left:15px;
+            margin-left:13px;
+            font-size:15px;
+        }
+        #modificar3:hover{
+            color:#32C236;
+        }
+        #modificar2{
+            padding-top:2px;
+            font-size: 18px;
+            margin-left:16px;
+            margin-right: -2px;
+            font-weight: -20;
+            color:white;
+        }
+        .nav-item{
+            position: relative;
+            right:75px;
+        }
+        header .wrap{
+            position:absolute;
+            top:-2px;
+            right:10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        header .btn-menu{
+            margin-top:25px;
+            cursor: pointer;
+            visibility: hidden;
+        }
+        /*Menu pantalla completa*/
+        .full-menu{
+            position:fixed;
+            top:0;
+            right:0%;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            -webkit-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s;
+        }
+        .full-menu .wrap{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .full-menu .wrap .parte-oscura {
+            flex-basis: 0;
+            flex-grow: 1;
+            background: black;
+            
+        }
+        .full-menu .wrap .navegacion {
+            flex-basis: 0;
+            flex-grow: 1;
+            background: black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Quitar los puntos de los enlaces de lista*/
+        .full-menu .navegacion ul {
+            list-style: none;
+        }
+        /*Dar formato a los elementos de la lista en la parte de responsive*/
+        .full-menu .navegacion ul li a{
+            font-family : Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 35px;
+            color:white;
+            font-weight: 600;
+        }
+        #quitar-grosor {
+            font-weight: 500;
+            font-size: 25px;
+            color:#CECECE;
+        }
+        #quitar-grosor:hover{
+            color:#32C236;
+        }
+        .full-menu .navegacion ul li a:hover{
+            color:#32C236;
+        }
+        #iconos:hover{
+            background:#32C236;
+            color:#222326;
+            
+        }
+        #iconos{
+            display: inline-block;
+            border-radius: 120px;
+            box-shadow: 0px 0px 2px #888;
+
+        }
+        @media only screen and (max-width: 1000px) {
+            #modificar {
+                display: none;
+            }
+            #modificar3{
+                display: none;
+            }
+            #modificar2 {
+                display:none;
+            }
+            nav #navbar{
+                background: black;
+                height:60px;
+            }
+            header .btn-menu{ 
+                visibility: visible;
+            }
+        }
+        @media only screen and (min-width: 1500px) {
+            #modificar {
+                display: none;
+            }
+            #modificar3{
+                display: none;
+            }
+            #modificar2 {
+                display:none;
+            }
+            nav #navbar{
+                background: black;
+                height:60px;
+            }
+            header .btn-menu{ 
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+<body style="background-image: url('img/fondo.jpg')">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:80px; opacity: 0.9; position:fixed; width:100%;">
+        <div class="container-fluid" id="nabvar">
+            <a class="navbar-brand" href="#" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
+                <span class="navbar-logo" style="margin-left:72px;"><img src="img/Spotify_Logo_RGB_White.png" style="width:130px; height:40px"></span>
+            </a>
+            <header>
+                    <div class="wrap">
+                        <div class="btn-menu" id="btn-menu">
+                            <span class="fas fa-bars" style="font-size:30px; color:white;"></span>
+                         </div>
+                    </div>
+            </header>
+            <div id="modificacion" class="navbar-collapse" id="navbarCollapse"><!--Para cuando se adapte a movil al dar click al boton de arriba se despliegle un menu-->
+                <ul class="navbar-nav ml-auto" id="posicions" >
+                    <li class="nav-item">
+                        <a href="#home-section" class="nav-link" id="modificar">Premium</a>
+                    </li><!--Se estiliza aplicando todo lo que esta en class-->
+                    <li class="nav-item">
+                        <a href="#info-section" class="nav-link" id="modificar">Ayuda</a>
+                    </li><!--Se estiliza aplicando todo lo que esta en class-->
+                    <li class="nav-item">
+                        <a href="#create-section" class="nav-link" id="modificar">Descargar</a>
+                    </li><!--Se estiliza aplicando todo lo que esta en class-->
+                    <li class="nav-item">
+                        <a  class="nav-link" id="modificar2">|</a>
+                    </li><!--Se estiliza aplicando todo lo que esta en class-->
+                    <li class="nav-item">
+                        <a href="#share-section" class="nav-link" id="modificar3">Registrarse</a>
+                    </li><!--Se estiliza aplicando todo lo que esta en class-->
+                    <li class="nav-item">
+                        <a href="#share-section" class="nav-link" id="modificar3">Iniciar Sesión</a>
+                    </li><!--Se estiliza aplicando todo lo que esta en class-->
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--menu oculto-->
+    <div class="full-menu">
+            <div class="wrap">
+                <section class="parte-oscura">
+
+                </section>
+                <nav class="navegacion">
+                        <ul class="menu-principal" style="margin-top:10px;">
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                            <li><a href="#">Descargar</a></li>
+                            <li><span style="font-size: 20px; color:white;" >―</span></li>
+                            <li><a href="#" id="quitar-grosor">Registrarse</a></li>
+                            <li><a href="#" id="quitar-grosor">Iniciar Sesión</a></li>
+                        </ul>
+                        <div class="spotify">
+                                <span class="navbar-logo" style="margin-left:42px;"><a href="index.html"><img src="img/Spotify_Logo_RGB_White.png" style="width:120px; height:38px"></a></span>
+                        </div>
+
+                </nav>
+
+            </div>
+    </div>
+    <div class="container">
+        <div class="row" >
+
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="social-items">
+                    <a href="#"><i id="iconos" class="fab fa-instagram" ></i></a>
+                    <a href="#"><i id="iconos" class="fab fa-facebook"></i></a>
+                    <a href="#"><i id="iconos" class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Librerias-Frameworks/jquery.min.js"></script>
+    <script src="Librerias-Frameworks/index.js"></script>
+    <script src="Librerias-Frameworks/bootstrap.min.js"></script>
+</body>
+</html>
