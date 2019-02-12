@@ -144,6 +144,11 @@
         #estilizar{
                 background-color: black; height:80px; opacity: 0.7; position:fixed; width:100%;
         }
+        @media only screen and (min-width: 1000px){
+            .full-menu {
+                display: none;
+            }
+        }
         @media only screen and (max-width: 1000px) {
             #modificar {
                 display: none;
@@ -160,6 +165,7 @@
             }
             header .btn-menu{ 
                 visibility: visible;
+                z-index: 1;
                 
             }
             .fas .fa-times-circle{
@@ -178,7 +184,7 @@
                 height:60px;
             }
             header .btn-menu{
-            margin-top:10px;
+                margin-top:10px;
             }
             #logo{
                 position:relative;
@@ -186,6 +192,16 @@
             }
             #footer {
                 display:none;
+            }
+            .expandir{
+                height:900px;
+            }
+            #logo-spot{
+                position:fixed;
+                top:90%;
+            }
+            #expandir2 {
+                margin-left: 0px;
             }
         }
         #enlaces {
@@ -243,14 +259,30 @@
                 visibility: visible;
             }
         }*/
-
+        #img-vector{
+            position:relative;
+            top:-510px;
+            right:90px;
+            width:1586px;
+            height: 1866px;
+            margin-bottom: -600x;   
+            background-image: linear-gradient(#F37679, #F7B250);
+        }
+        #grad {
+            height:10px;
+        }
+        #foot{
+            position: relative;
+            margin-top:-1000px;
+            z-index:1;}
     </style>
 </head>
-<body style="background-image: url('img/fondo.jpg'); background-repeat: no-repeat;">
-    <div class="container-fluid" style="height:1000px;">
+<body  id="grad" style="background-image: url('');">
+    <img src="img/hero-burst.svg" alt="" id="img-vector" >
+    <div class="container-fluid" >
         <div class="row">
-            <div class="col-lg-12" id="estilizar" >
-                <nav class="navbar navbar-expand-lg navbar-dark " style="">
+            <div class="col-lg-12" id="estilizar" style="position:fixed; top:-2px;">
+                <nav class="navbar navbar-expand-lg navbar-dark " >
                     <div class="container-fluid" id="nabvar-modificar" >
                         <a class="navbar-brand" href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
                             <span id="logo" class="navbar-logo" style="margin-left:65px;"><img src="img/Spotify_Logo_RGB_White.png"  style="width:130px; height:40px; margin-top:5px;"></span>
@@ -291,14 +323,14 @@
         </div>
     </div>
     <!--menu oculto-->
-    <div class="full-menu">
+    <div class="full-menu" style="z-index:2;">
             <div class="wrap">
                 <section class="parte-oscura">
 
                 </section>
                 <nav class="navegacion">
 
-                        <ul class="menu-principal" style="margin-top:10px;">
+                        <ul class="menu-principal" style="margin-top:10px; ">
                                 <li><a href="#">Premium</a></li>
                                 <li><a href="#">Ayuda</a></li>
                                 <li><a href="#">Descargar</a></li>
@@ -307,7 +339,7 @@
                                 <li><a href="#" id="quitar-grosor">Iniciar Sesión</a></li>
                         </ul>
                         <div class="spotify">
-                            <span class="navbar-logo" style="margin-left:42px; "><a href="index.html"><img src="img/Spotify_Logo_RGB_White.png" style="width:120px; height:38px"></a></span>
+                            <span id="logo-spot" class="navbar-logo" style="margin-left:42px; "><a href="index.html"><img src="img/Spotify_Logo_RGB_White.png" style="width:120px; height:38px"></a></span>
                         </div>
 
                         <header>
@@ -323,24 +355,23 @@
             </div>
     </div>
     <!-- Footer -->
-    <footer class="page-footer font-small unique-color-dark" style="background:black; ">
+    <footer id="foot" class="page-footer font-small unique-color-dark" style="background:black;">
+        <div style="background-color: black; z-index: 1;">
+            <div class="container">
 
-        <div style="background-color: black">
-        <div class="container">
-
-            <!-- Grid row-->
-            <div class="row py-4 d-flex align-items-center">
-            <div class="col-md-6 col-lg-7 text-center text-md-right">
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
 
 
+
+                        </div>
+                        <!-- Grid column -->
+
+                        </div>
+                    <!-- Grid row-->
 
             </div>
-            <!-- Grid column -->
-
-            </div>
-            <!-- Grid row-->
-
-        </div>
         </div>
 
         <!-- Footer Links -->
@@ -350,31 +381,30 @@
         <div class="row mt-3" style="color:white;">
 
             <!-- Grid column -->
-            <div class="col-lg-2 col-sm-6">
+            <div class="col-lg-2 col-sm-3">
                 <a href="index.html"><img src="img/Spotify_Logo_RGB_White.png" style="width: 130px; height: 40px;"></a>
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-lg-2 col-sm-6">
-
-            <!-- Links -->
-            <h6 class="text-uppercase" id="enlaces" >COMPAÑIA</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a id="enlaces-cosas" href="#!">Acerca de</a>
-                </p>
-                <p>
-                    <a id="enlaces-cosas" href="#!">Empleo</a>
-                </p>
-                <p>
-                    <a id="enlaces-cosas" href="#!">For the Record</a>
-                </p>
+            <div class="col-lg-2 col-sm-3">
+                <!-- Links -->
+                <h6 class="text-uppercase" id="enlaces" >COMPAÑIA</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a id="enlaces-cosas" href="#!">Acerca de</a>
+                    </p>
+                    <p>
+                        <a id="enlaces-cosas" href="#!">Empleo</a>
+                    </p>
+                    <p>
+                        <a id="enlaces-cosas" href="#!">For the Record</a>
+                    </p>
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-lg-2 col-sm-6">
+            <div class="col-lg-2 col-sm-3">
 
             <!-- Links -->
             <h6 class="text-uppercase" id="enlaces">Useful links</h6>
@@ -398,18 +428,17 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-lg-2 col-sm-6">
-
-            <!-- Links -->
-            <h6 class="text-uppercase" id="enlaces">ENLACES ÚTILES</h6>
-            <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>
-                <a id="enlaces-cosas" href="#!">Ayuda</a></p>
-            <p>
-                <a id="enlaces-cosas" href="#!">Reproductor web</a></p>
+            <div class="col-lg-2 col-sm-3">
+                <!-- Links -->
+                <h6 class="text-uppercase" id="enlaces">ENLACES ÚTILES</h6>
+                <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a id="enlaces-cosas" href="#!">Ayuda</a></p>
+                <p>
+                    <a id="enlaces-cosas" href="#!">Reproductor web</a></p>
             </div>
             <!-- Grid column -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-sm-3">
                 <div class="container">
                     <div class="row">
                         <a href="#"><div class="ejemplo" style="margin-left:15px;"><i class="fab fa-instagram" ></i></div></a>
@@ -425,31 +454,30 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="container-fluid" style="height: 200px;">
-            <div class="row">
-                <div style="top:130px;" class="col-lg-1 " >
+        <div class="container-fluid expandir" style="height: 200px;">
+            <div class="row" id="expandir2">
+                <div style="top:130px;" class="col-lg-1 col-sm-3" >
                     <p><a href="#" style="color:#7A7C7E; margin-left:80px;font-size:12px; text-decoration: none;">Legal</a></p>
                 </div>
-                <div style="top:130px;" class="col-lg-2 ">
+                <div style="top:130px;" class="col-lg-2  col-sm-3">
                     <p><a href="#!"  style="color:#7A7C7E; margin-left:20px; font-size:12px; text-decoration: none;">Centro de privacidad</a></p>
                 </div>
-                <div style="top:130px;" class="col-lg-2 ">
+                <div style="top:130px;" class="col-lg-2  col-sm-3">
                     <p><a href="#!"  style="color:#7A7C7E; margin-left:-70px; font-size:12px; text-decoration: none;">Politica de Privacidad</a></p>
                 </div>
-                <div style="top:130px;" class="col-lg-1 ">
+                <div style="top:130px;" class="col-lg-1  col-sm-1">
                     <p><a href="#!"  style="color:#7A7C7E; margin-left:-160px; font-size:12px; text-decoration: none;">Cookies</a></p>
                 </div>
-                <div style="top:130px;" class="col-lg-2 ">
+                <div style="top:130px;" class="col-lg-2  col-sm-2">
                     <p><a href="#!"  style="color:#7A7C7E; margin-left:-200px; font-size:12px; text-decoration: none;">Sobre los Anuncios</a></p>
                 </div>
-                <div style="top:130px;" class="col-lg-2 "></div>
+                <div style="top:130px;" class="col-lg-2  col-sm-2"></div>
                 <div class="col-lg-2 " style="top:130px; color:#919496; font-weight: 700; font-size: 12px;">
                     © 2019 Spotify AB
                 </div>
             </div>
         </div>
         <!-- Copyright -->
-
     </footer>
     <!-- Footer -->
     <script src="Librerias-Frameworks/jquery.min.js"></script>
