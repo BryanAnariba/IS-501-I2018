@@ -149,6 +149,30 @@
                 display: none;
             }
         }
+        @media only screen and (max-width: 1200px) {
+            #mod2 {
+                padding-top: 300px;
+                margin-left: -190px;
+            }
+            #mod3 {
+                margin-left: -200px;
+            }
+            #mod4 {
+                margin-left: -190px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            #mod2 {
+                padding-top: 400px;
+                margin-left: -170px;
+            }
+            #mod3 {
+                margin-left: -265px;
+            }
+            #mod4 {
+                margin-left: -230px;
+            }
+        }
         @media only screen and (max-width: 1000px) {
             #modificar {
                 display: none;
@@ -200,8 +224,20 @@
                 position:fixed;
                 top:90%;
             }
-            #expandir2 {
-                margin-left: 0px;
+            #mod {
+                top: 200px;
+                margin-left: auto;
+                margin-top:auto;
+            }
+            #mod2 {
+                padding-top: 450px;
+                margin-left: -170px;
+            }
+            #mod3 {
+                margin-left: -265px;
+            }
+            #mod4 {
+                margin-left: -280px;
             }
         }
         #enlaces {
@@ -259,29 +295,26 @@
                 visibility: visible;
             }
         }*/
-        #img-vector{
-            position:relative;
-            top:-510px;
-            right:90px;
-            width:1586px;
-            height: 1866px;
-            margin-bottom: -600x;   
-            background-image: linear-gradient(#F37679, #F7B250);
-        }
-        #grad {
-            height:10px;
-        }
-        #foot{
+        #foto {
             position: relative;
-            margin-top:-1000px;
-            z-index:1;}
+            top:-400px;
+            right: 100px;
+            height: 600px;
+            z-index: 0;
+            height: 700px;
+        }
+        #mod {
+            position: relative;
+            margin-top: 520px;
+            margin-left: auto;
+            margin-top:auto; 
+        }
     </style>
 </head>
-<body  id="grad" style="background-image: url('');">
-    <img src="img/hero-burst.svg" alt="" id="img-vector" >
+<body>
     <div class="container-fluid" >
         <div class="row">
-            <div class="col-lg-12" id="estilizar" style="position:fixed; top:-2px;">
+            <div class="col-lg-12" id="estilizar" style="position:fixed; top:-2px; z-index: 1;">
                 <nav class="navbar navbar-expand-lg navbar-dark " >
                     <div class="container-fluid" id="nabvar-modificar" >
                         <a class="navbar-brand" href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
@@ -322,8 +355,25 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="background: linear-gradient(#F4767A, #F8C245); z-index: -2;">
+        <div class="row" id="foto">
+            <div class="col-lg-12 col-sm-12" >
+                <img src="img/hero-burst.svg" id="mod">
+                <section id="mod" style="top:-630px; padding-left: 450px;">
+                    <h1 id="mod2" class="display-3" style="color:white; font-weight: 700;">Música para todos.</h1>
+                    <p id="mod3" style="color:white; font-size: 17px; font-weight: 600; padding-left: 100px;">Millones de canciones. No necesitas tarjeta de crédito.</p>
+                    <p id="mod4"><a  class="btn btn-primary btn-lg" style="font-weight: 600;  margin-left: 150px; background: #1DB954; border: 1px solid #1DB954; border-radius: 25px; width: 320px; " href="#" role="button">OBTEN SPOTYFY GRATIS</a></p>
+                </section>
+            </div>
+            <!--div class="col-lg-12 col-sm-12" id="modificaciones">
+                <h1 style="color:white; font-size: 70px; font-weight: 700; position: relative; bottom: 600px; padding-left: 500px;">Música para todos.</h1>
+            </div-->
+        </div>
+    </div>
+
+ 
     <!--menu oculto-->
-    <div class="full-menu" style="z-index:2;">
+    <div class="full-menu" style="z-index:3;">
             <div class="wrap">
                 <section class="parte-oscura">
 
@@ -355,131 +405,138 @@
             </div>
     </div>
     <!-- Footer -->
-    <footer id="foot" class="page-footer font-small unique-color-dark" style="background:black;">
-        <div style="background-color: black; z-index: 1;">
-            <div class="container">
+    <div class="container-fluid">
+        <div class="row" style="z-index: 1;">
+                <footer id="foot" class="page-footer font-small unique-color-dark" style="background:black; width: 100%;  z-index: 2;">
 
-                <!-- Grid row-->
-                <div class="row py-4 d-flex align-items-center">
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
-
-
-
+                        <div class="container-fluid" style="z-index: 1; background:black;" >
+                            <!-- Grid row-->
+                            <div class="row py-4 d-flex align-items-center">
+                                <div class="col-md-6 col-lg-7 text-center text-md-right" style="background: black; z-index: 2;">
+                                </div>
+                                    <!-- Grid column -->
+                            </div>
+                                <!-- Grid row-->
+            
+                        </div>
+                    <!--/div-->
+            
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left mt-5">
+            
+                    <!-- Grid row -->
+                    <div class="row mt-3" style="color:white;">
+            
+                        <!-- Grid column -->
+                        <div class="col-lg-2 col-sm-3">
+                            <a href="index.html"><img src="img/Spotify_Logo_RGB_White.png" style="width: 130px; height: 40px; z-index: 1;"></a>
                         </div>
                         <!-- Grid column -->
-
+            
+                        <!-- Grid column -->
+                        <div class="col-lg-2 col-sm-3">
+                            <!-- Links -->
+                            <h6 class="text-uppercase" id="enlaces" >COMPAÑIA</h6>
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>
+                                    <a id="enlaces-cosas" href="#!">Acerca de</a>
+                                </p>
+                                <p>
+                                    <a id="enlaces-cosas" href="#!">Empleo</a>
+                                </p>
+                                <p>
+                                    <a id="enlaces-cosas" href="#!">For the Record</a>
+                                </p>
                         </div>
-                    <!-- Grid row-->
-
-            </div>
-        </div>
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-5">
-
-        <!-- Grid row -->
-        <div class="row mt-3" style="color:white;">
-
-            <!-- Grid column -->
-            <div class="col-lg-2 col-sm-3">
-                <a href="index.html"><img src="img/Spotify_Logo_RGB_White.png" style="width: 130px; height: 40px;"></a>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-2 col-sm-3">
-                <!-- Links -->
-                <h6 class="text-uppercase" id="enlaces" >COMPAÑIA</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a id="enlaces-cosas" href="#!">Acerca de</a>
-                    </p>
-                    <p>
-                        <a id="enlaces-cosas" href="#!">Empleo</a>
-                    </p>
-                    <p>
-                        <a id="enlaces-cosas" href="#!">For the Record</a>
-                    </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-2 col-sm-3">
-
-            <!-- Links -->
-            <h6 class="text-uppercase" id="enlaces">Useful links</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>
-                <a id="enlaces-cosas" href="#!">Para artistas</a>
-            </p>
-            <p>
-                <a id="enlaces-cosas" href="#!">Desarrolladores</a>
-            </p>
-            <p>
-                <a id="enlaces-cosas" href="#!">Marcas</a>
-            </p>
-            <p>
-                <a id="enlaces-cosas" href="#!">Inversionistas</a>
-            </p>
-            <p>
-                <a id="enlaces-cosas" href="#!">Proveedores</a>
-            </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-2 col-sm-3">
-                <!-- Links -->
-                <h6 class="text-uppercase" id="enlaces">ENLACES ÚTILES</h6>
-                <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a id="enlaces-cosas" href="#!">Ayuda</a></p>
-                <p>
-                    <a id="enlaces-cosas" href="#!">Reproductor web</a></p>
-            </div>
-            <!-- Grid column -->
-            <div class="col-lg-4 col-sm-3">
-                <div class="container">
-                    <div class="row">
-                        <a href="#"><div class="ejemplo" style="margin-left:15px;"><i class="fab fa-instagram" ></i></div></a>
-                        <a href="#"><div class="ejemplo" style="margin-left:15px;"><i class="fab fa-twitter"></i></div></a>
-                        <a href="#"><div class="ejemplo" style="margin-left:15px;"><i class="fab fa-facebook-f"></i></div></a>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-lg-2 col-sm-3">
+            
+                        <!-- Links -->
+                        <h6 class="text-uppercase" id="enlaces">Useful links</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a id="enlaces-cosas" href="#!">Para artistas</a>
+                        </p>
+                        <p>
+                            <a id="enlaces-cosas" href="#!">Desarrolladores</a>
+                        </p>
+                        <p>
+                            <a id="enlaces-cosas" href="#!">Marcas</a>
+                        </p>
+                        <p>
+                            <a id="enlaces-cosas" href="#!">Inversionistas</a>
+                        </p>
+                        <p>
+                            <a id="enlaces-cosas" href="#!">Proveedores</a>
+                        </p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-lg-2 col-sm-3">
+                            <!-- Links -->
+                            <h6 class="text-uppercase" id="enlaces">ENLACES ÚTILES</h6>
+                            <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <a id="enlaces-cosas" href="#!">Ayuda</a></p>
+                            <p>
+                                <a id="enlaces-cosas" href="#!">Reproductor web</a></p>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-sm-3">
+                            <div class="container">
+                                <div class="row">
+                                    <a href="#"><div class="ejemplo" style="margin-left:15px;"><i class="fab fa-instagram" ></i></div></a>
+                                    <a href="#"><div class="ejemplo" style="margin-left:15px;"><i class="fab fa-twitter"></i></div></a>
+                                    <a href="#"><div class="ejemplo" style="margin-left:15px;"><i class="fab fa-facebook-f"></i></div></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <!-- Grid row -->
+            
+                    </div>
+                    <!-- Footer Links -->
+            
+                    <!-- Copyright -->
+                    <div class="container-fluid expandir" style="height: 200px;">
+                        <div class="row" id="expandir2">
+                            <div style="top:130px;" class="col-lg-12 col-sm-12" >
+                                <section style=" padding-left: 70px;">
+                                    <a href="#!"  style="color:#7A7C7E; padding-left: 15px; font-size:12px; text-decoration: none;">Legal</a>
+                                    <a href="#!"  style="color:#7A7C7E; padding-left: 15px; font-size:12px; text-decoration: none;">Centro de privacidad</a>
+                                    <a href="#!"  style="color:#7A7C7E; padding-left: 15px; font-size:12px; text-decoration: none;">Politica de Privacidad</a>
+                                    <a href="#!"  style="color:#7A7C7E; padding-left: 15px; font-size:12px; text-decoration: none;">Cookies</a>
+                                    <a href="#!"  style="color:#7A7C7E; padding-left: 15px; font-size:12px; text-decoration: none;">Sobre los Anuncios</a>
+                                    <a href="#!"  style="color:#7A7C7E; padding-left: 550px; font-size:12px; text-decoration: none;">© 2019 Spotify AB</a>
+                                </section>
+                            </div>
+            
+                            <!--div style="top:130px;" class="col-lg-2  col-sm-12">
+                                <p><a id="enl" href="#!"  style="color:#7A7C7E; margin-left:20px; font-size:12px; text-decoration: none;">Centro de privacidad</a></p>
+                            </div>
+                            <div style="top:130px;" class="col-lg-2  col-sm-12">
+                                <p><a id="enl" href="#!"  style="color:#7A7C7E; margin-left:-70px; font-size:12px; text-decoration: none;">Politica de Privacidad</a></p>
+                            </div>
+                            <div style="top:130px;" class="col-lg-1  col-sm-12">
+                                <p><a id="enl" href="#!"  style="color:#7A7C7E; margin-left:-160px; font-size:12px; text-decoration: none;">Cookies</a></p>
+                            </div>
+                            <div style="top:130px;" class="col-lg-2  col-sm-12">
+                                <p><a id="enl" href="#!"  style="color:#7A7C7E; margin-left:-200px; font-size:12px; text-decoration: none;">Sobre los Anuncios</a></p>
+                            </div>
+                            <div style="top:130px;" class="col-lg-2  col-sm-12"></div>
+                            <div class="col-lg-2 " style="top:130px; color:#919496; font-weight: 700; font-size: 12px;">
+                                © 2019 Spotify AB
+                            </div>-->
+                        </div>
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
         </div>
-        <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-
-        <!-- Copyright -->
-        <div class="container-fluid expandir" style="height: 200px;">
-            <div class="row" id="expandir2">
-                <div style="top:130px;" class="col-lg-1 col-sm-3" >
-                    <p><a href="#" style="color:#7A7C7E; margin-left:80px;font-size:12px; text-decoration: none;">Legal</a></p>
-                </div>
-                <div style="top:130px;" class="col-lg-2  col-sm-3">
-                    <p><a href="#!"  style="color:#7A7C7E; margin-left:20px; font-size:12px; text-decoration: none;">Centro de privacidad</a></p>
-                </div>
-                <div style="top:130px;" class="col-lg-2  col-sm-3">
-                    <p><a href="#!"  style="color:#7A7C7E; margin-left:-70px; font-size:12px; text-decoration: none;">Politica de Privacidad</a></p>
-                </div>
-                <div style="top:130px;" class="col-lg-1  col-sm-1">
-                    <p><a href="#!"  style="color:#7A7C7E; margin-left:-160px; font-size:12px; text-decoration: none;">Cookies</a></p>
-                </div>
-                <div style="top:130px;" class="col-lg-2  col-sm-2">
-                    <p><a href="#!"  style="color:#7A7C7E; margin-left:-200px; font-size:12px; text-decoration: none;">Sobre los Anuncios</a></p>
-                </div>
-                <div style="top:130px;" class="col-lg-2  col-sm-2"></div>
-                <div class="col-lg-2 " style="top:130px; color:#919496; font-weight: 700; font-size: 12px;">
-                    © 2019 Spotify AB
-                </div>
-            </div>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+    </div>
     <script src="Librerias-Frameworks/jquery.min.js"></script>
     <script src="Librerias-Frameworks/main.js"></script>
     <script src="Librerias-Frameworks/bootstrap.min.js"></script>
