@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spotify</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="Librerias-Frameworks/font-awesome.min.css">
+    <link rel="stylesheet" href="Librerias-Frameworks/bootstrap.min.css">
+    <script src="Librerias-Frameworks/all.js"></script>
+    <style>
+        #modificar{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding-left:15px;
+            margin-left:15px;
+            font-size:15px;
+            margin-top:10px;
+        }
+        #modificar:hover{
+            color:#2D46B9;
+        }
+        #modificar3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding-left:15px;
+            margin-left:15px;
+            font-size:15px;
+            margin-top:10px;
+            color:white;
+        }
+        #modificar3:hover{
+            color:#2D46B9;
+        }
+        #modificar2{
+            padding-top:2px;
+            font-size: 18px;
+            margin-left:16px;
+            margin-right: -2px;
+            margin-top: 8px;
+            font-weight: -20;
+            color:white;
+        }
+        .nav-item{
+            position: relative;
+            right:75px;
+        }
+        header .wrap{
+            position:absolute;
+            top:-2px;
+            right:10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        header .btn-menu{
+            margin-top:20px;
+            cursor: pointer;
+            visibility: hidden;
+            z-index: 2;
+            font-size: 30px;
+        }
+        header #btn-menu2{
+            position: fixed;
+            top: 10px;
+            margin-top:-12px;
+            cursor: pointer;
+            z-index: 2;
+            font-size: 30px;
+        }
+        /*Menu pantalla completa*/
+        .full-menu {
+            z-index: 1;
+            position:fixed;
+            top:0;
+            right:-100%;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            -webkit-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s;
+        }
+        .full-menu .wrap{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .full-menu .wrap .parte-oscura {
+            flex-basis: 0;
+            flex-grow: 1;
+            background: black;
+            
+        }
+        .full-menu .wrap .navegacion {
+            z-index:1;
+            flex-basis: 0;
+            flex-grow: 1.3;
+            background: black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Quitar los puntos de los enlaces de lista*/
+        .full-menu .navegacion ul {
+            list-style: none;
+        }
+        /*Dar formato a los elementos de la lista en la parte de responsive*/
+        .full-menu .navegacion ul li a{
+            font-family : Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 35px;
+            color:white;
+            font-weight: 600;
+        }
+        #quitar-grosor {
+            font-weight: 500;
+            font-size: 25px;
+            color:#CECECE;
+        }
+        #quitar-grosor:hover{
+            color:#32C236;
+        }
+        .full-menu .navegacion ul li a:hover{
+            color:#32C236;
+        }
+        #iconos:hover{
+            background:#32C236;
+            color:#222326;
+            
+        }
+        #iconos{
+            display: inline-block;
+            border-radius: 120px;
+            box-shadow: 0px 0px 2px #888;
+
+        }
+        .container-fluid #nabvar-modificar{
+            opacity: 1;
+        }
+        #estilizar{
+            background-color: rgba(0,0,0,0.2); 
+            height:83px; 
+            position:fixed; 
+            width:100%;
+        }
+
+        @media only screen and (min-width: 1000px){
+            .full-menu {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 1000px) {
+            #modificar {
+                display: none;
+            }
+            #modificar3{
+                display: none;
+            }
+            #modificar2 {
+                display:none;
+            }
+            #navbar-modificar{
+                background: black;
+                height:60px;
+            }
+            header .btn-menu{ 
+                visibility: visible;
+                z-index: 1;
+                
+            }
+            .fas .fa-times-circle{
+                font-size: 50px;
+                color:white;
+
+            }
+            .nabvar-modificar{
+                display: none;
+            }
+            #estilizar {
+                background-color:black; height:60px; opacity: 1; position:fixed; width:100%;
+            }
+            #estilizar2{
+                background: black;
+                height:60px;
+            }
+            header .btn-menu{
+                margin-top:10px;
+            }
+            #logo{
+                position:relative;
+                bottom:8px;
+            }
+            #footer {
+                display:none;
+            }
+            .expandir{
+                height:900px;
+            }
+            #logo-spot{
+                position:fixed;
+                top:90%;
+            }
+        }
+        #enlaces {
+            font-family:Circular, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            color:#919496;
+        }
+        #enlaces-cosas{
+            text-decoration: none;
+            font-family:Circular, Helvetica, Arial, sans-serif;
+            font-size:15px;
+            font-weight: 550;
+            color:white;
+        }
+        #enlaces-cosas:hover{
+            color:#32C236;
+        }
+        div.ejemplo {
+            position: relative;
+            width: 60px;
+            height:60px;
+            text-align: center;
+            background-color: #222326;
+            border: 18px solid #222326;
+            border-radius: 50%;
+            
+        }
+        div.ejemplo{
+            size: 10px;
+            color: white;
+        }
+        div.ejemplo:hover {
+            background-color: #222326;
+            border: 18px solid #222326;
+        }
+        div.ejemplo:hover {
+            color: #32C236;
+        }
+        #enlaces-finales:hover{
+            color:#32C236;
+            font-size: 20px;
+        }
+        /*@media only screen and (min-width: 1500px) {
+            #modificar {
+                display: none;
+            }
+            #modificar3{
+                display: none;
+            }
+            #modificar2 {
+                display:none;
+            }
+            header .btn-menu{ 
+                visibility: visible;
+            }
+        }*/
+        #foto-mujer {
+            float: right;
+            z-index: 0;
+            padding-top: 37px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-lg-12" id="estilizar" style="position:fixed; top:0px; z-index: 1;">
+                <nav class="navbar navbar-expand-lg" >
+                    <div class="container-fluid" id="nabvar-modificar">
+                        <a class="navbar-brand" href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
+                            <span id="logo" class="navbar-logo" style="margin-left:65px;"><img src="img/Spotify_Logo_RGB_White.png"  style="width:130px; height:40px; margin-top:5px;"></span>
+                        </a>
+                        <header>
+                            <div class="wrap">
+                                <div class="btn-menu" id="btn-menu">
+                                    <span class="fa fa-bars" style="color:white; width: 50px;"></span>
+                                </div>
+                            </div>
+                        </header>
+                        <div id="modificacion" class="navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ml-auto" id="posicions">
+                                <li class="nav-item">
+                                    <a href="#home-section" class="nav-link" id="modificar" style="opacity: 1;">Premium</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#info-section" class="nav-link" id="modificar">Ayuda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#create-section" class="nav-link" id="modificar">Descargar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="nav-link" id="modificar2">|</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="register.html" class="nav-link" id="modificar3">Registrarse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#share-section" class="nav-link" id="modificar3">Iniciar Sesión</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #509BF5; z-index: -2; width: 100%;">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <img id="foto-mujer" src="img/premium_dancer_prod.png" >
+            </div>
+        </div>
+    </div>
+    <!--menu oculto-->
+    <div class="full-menu" style="z-index:3;">
+            <div class="wrap">
+                <section class="parte-oscura">
+
+                </section>
+                <nav class="navegacion">
+
+                        <ul class="menu-principal" style="margin-top:10px; ">
+                                <li><a href="#">Premium</a></li>
+                                <li><a href="#">Ayuda</a></li>
+                                <li><a href="#">Descargar</a></li>
+                                <li><span style="font-size: 20px; color:white;" >―</span></li>
+                                <li><a href="#" id="quitar-grosor">Registrarse</a></li>
+                                <li><a href="#" id="quitar-grosor">Iniciar Sesión</a></li>
+                        </ul>
+                        <div class="spotify">
+                            <span id="logo-spot" class="navbar-logo" style="margin-left:42px; "><a href="index.html"><img src="img/Spotify_Logo_RGB_White.png" style="width:120px; height:38px"></a></span>
+                        </div>
+
+                        <header>
+                            <div class="wrap">
+                                <div class="btn-menu" id="btn-menu2">
+                                    <span class="fas fa-times" style="color:white; width: 50px; margin-top:10px;"></span>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+
+                </nav>
+            </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <h1 class="display-5"style="padding:42px; font-weight: 700; color:black; text-align:center;">¿Por qué ser Premium?</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="benefit     col-xs-12 col-sm-6 col-md-3">
+                <div class="benefit-image ">
+                    <div class="">                                                              
+                        <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g>
+                        <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                        <path d="M193.856395,73 L65.7502091,184.056671 L72.1720246,140.390275 L17,183.114996 C38.1812298,217.747825 77.5177994,242.549091 121.447281,241.99076 C147.290902,241.662295 173.494371,232.041242 190.241868,220.52597 L204,164.89535 L164.324412,188.522035 L193.856395,73 Z" fill="#fff" transform="translate(110.500000, 157.500000) rotate(-360.000000) translate(-110.500000, -157.500000)"></path>
+                        <path d="M156,81 L106.215575,89.1666099 L105.703578,102.865439 L104.263588,141.379252C102.321261,139.470688 99.6972784,138.253271 96.7726186,138.141933 C90.5115279,137.904655 85.2442421,142.827254 85.0081681,149.136405 C84.772698,155.446166 89.657194,160.753884 95.9188884,160.99177 C102.180583,161.229048 107.447869,156.306449 107.683339,149.997297 C107.696018,149.654157 107.691188,149.315276 107.674282,148.979437 L109.358799,103.914328 L151.735575,96.9627015 L150.381924,133.181613 C148.435371,131.247496 145.793275,130.011827 142.846276,129.899881 C136.584581,129.662603 131.317295,134.584593 131.081825,140.894353 C130.845751,147.204114 135.730851,152.511832 141.992546,152.74911 C148.236731,152.986387 153.490734,148.091167 153.753373,141.80696 C153.756996,141.75342 155.512758,94.7651455 155.512758,94.7651455 L156,81 Z" fill="#000"></path>
+                        <path d="M73,120.621221 C60.8498889,120.621221 51,110.906262 51,98.9225908 C51,86.9389196 60.8498889,77.2239606 73,77.2239606 C85.1501111,77.2239606 95,86.9389196 95,98.9225908 C95,110.906262 85.1501111,120.621221 73,120.621221 Z" fill="#000"></path>
+                        <g transform="translate(65.000000, 89.000000)" stroke="#fff" stroke-width="4.84" stroke-linecap="round">
+                        <path d="M8,0.881434619 L8,16.5526675"></path>
+                        <polyline points="0.666666667 12.3334894 8 19.5663661 15.3333333 12.3334894"></polyline>
+                        </g>
+                        </g>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="benefit-title" style="font-size: 24px; color:black; font-weight: 700; text-align: center;">
+                    Descarga tu música.
+                </h2>
+                <p class="benefit-body" style="color:gray; text-align: center;">
+                    Escúchala desde cualquier lugar.
+                </p>
+            </div>
+            <div class="benefit     col-xs-12 col-sm-6 col-md-3">
+                <div class="benefit-image ">
+                    <div class="">                                        
+                        <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g>
+                        <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                        <g transform="translate(51.000000, 50.000000)">
+                        <path d="M13.2758621,6.05678233e-05 C5.80215517,6.05678233e-05 0,5.82365678 0,13.3249817 L0,168.984288 C3.05646552,171.173209 6.39594828,173.74613 9.65517241,175.646748 C32.1058621,181.005789 48.1117241,184.000868 70.1780172,184.000868 C92.2425,184.000868 106.06931,183.384288 130.948276,175.848439 C134.208707,173.947215 136.942328,172.385777 140,170.195644 L140,13.9306599 C140,6.42933502 134.197241,6.05678233e-05 126.724138,6.05678233e-05 L13.2758621,6.05678233e-05 Z" fill="#509bf5"></path>
+                        <path d="M130.948276,36.3407546 L10.2586207,36.3407546 L10.2586207,175.848439 C28.0543103,186.225524 48.5401724,192.000061 70.6034483,192.000061 C92.667931,192.000061 113.151983,186.226736 130.948276,175.848439 L130.948276,36.3407546 Z" fill="#fff"></path>
+                        <path d="M81.4655172,21.1987987 L59.7413793,21.1987987 C58.7414655,21.1987987 57.9310345,20.3853729 57.9310345,19.381764 C57.9310345,18.3781552 58.7414655,17.5647293 59.7413793,17.5647293 L81.4655172,17.5647293 C82.465431,17.5647293 83.2758621,18.3781552 83.2758621,19.381764 C83.2758621,20.3853729 82.465431,21.1987987 81.4655172,21.1987987" fill="#fff"></path>
+                        </g>
+                        <g transform="translate(74.000000, 125.000000)">
+                        <path d="M84.9615385,77 L9.03846154,77 C3.71360256,77 0,72.6910078 0,67.375 L0,9.625 C0,4.30899219 3.71360256,0 9.03846154,0 L84.9615385,0 C90.2863974,0 94,4.30899219 94,9.625 L94,67.375 C94,72.6910078 90.2863974,77 84.9615385,77" fill="#000"></path>
+                        <polygon fill="#fff" points="51.2179487 46.921875 44.5897436 46.921875 42.1794872 15.640625 53.6282051 15.640625"></polygon>
+                        <path d="M53.025641,56.8476562 C53.025641,54.0239219 50.7322821,51.734375 47.9038462,51.734375 C45.0754103,51.734375 42.7820513,54.0239219 42.7820513,56.8476562 C42.7820513,59.6713906 45.0754103,61.9609375 47.9038462,61.9609375 C50.7322821,61.9609375 53.025641,59.6713906 53.025641,56.8476562" fill="#fff"></path>
+                        </g>
+                        <g transform="translate(165.000000, 64.000000)">
+                        <path d="M44,22 C44,34.1501111 34.1501111,44 22,44 C9.84988889,44 0,34.1501111 0,22 C0,9.84988889 9.84988889,0 22,0 C34.1501111,0 44,9.84988889 44,22" fill="#000"></path>
+                        <path d="M14.0555556,14.0555556 L29.5075,29.5075" stroke="#fff" stroke-width="4.84" stroke-linecap="round"></path>
+                        <path d="M14.0555556,29.5074389 L29.5075,14.0554944" stroke="#fff" stroke-width="4.84" stroke-linecap="round"></path>
+                        </g>
+                        </g>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="benefit-title" style="font-size: 24px; color:black; font-weight: 700; text-align: center;">
+                    Sin anuncios que interrumpan tu música.
+                </h2>
+                <p class="benefit-body" style="color:gray; text-align: center;">
+                    Disfruta de tu música sin interrupciones.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="Librerias-Frameworks/jquery.min.js"></script>
+    <script src="Librerias-Frameworks/main.js"></script>
+    <script src="Librerias-Frameworks/bootstrap.min.js"></script>
+</body>
+</html>
