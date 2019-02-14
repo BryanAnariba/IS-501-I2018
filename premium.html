@@ -142,7 +142,7 @@
             opacity: 1;
         }
         #estilizar{
-            background-color: rgba(0,0,0,0.2); 
+            background-color: rgba(0,0,0,0); /*PROPIEDAD A MODIFICAR DE ACORDE BAJE CON EL CURSOR :D*/
             height:83px; 
             position:fixed; 
             width:100%;
@@ -265,7 +265,74 @@
             z-index: 0;
             padding-top: 37px;
         }
-
+        .row2 {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        div {
+            display: block;
+        }
+        .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after, .btn-group-vertical > .btn-group-inverse:before, .btn-group-vertical > .btn-group-inverse:after, .nav-inverse:before, .nav-inverse:after {
+            content: " ";
+            display: table;
+        }
+        *:before, *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-header:after, .modal-footer:after, .btn-group-vertical > .btn-group-inverse:after, .nav-inverse:after {
+            clear: both;
+        }
+        .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after, .btn-group-vertical > .btn-group-inverse:before, .btn-group-vertical > .btn-group-inverse:after, .nav-inverse:before, .nav-inverse:after {
+            content: " ";
+            display: table;
+        }
+        *:before, *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .footer.footer-simple {
+            padding: 30px 0 20px;
+        }
+        .footer-default {
+            background: #000;
+        }
+        .footer {
+            padding: 50px 0 20px;
+        }
+        article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+            display: block;
+        }
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        article, aside, footer, header, hgroup, main, nav, section {
+            display: block;
+        }
+        *:before, *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        *:before, *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        #foot-mod {
+            text-decoration: none; 
+            color:gray; 
+            font-size:12px;
+        }
+        #foot-mod:hover{
+            color:#222315; 
+        }
+        #foot-mod2 {
+            float:right;
+            color:gray;
+        }
+        #foot-mod2:hover {
+            color:#222315;
+        }
     </style>
 </head>
 <body>
@@ -419,8 +486,145 @@
                     Disfruta de tu música sin interrupciones.
                 </p>
             </div>
+            <div class="benefit     col-xs-12 col-sm-6 col-md-3">
+                    <div class="benefit-image ">
+                        <div class="">                                        
+                        <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g>
+                        <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                        <path d="M97.546678,144.176199 C97.7625034,156.095966 89.5561398,166.879969 77.5139688,169.443343 C63.8609432,172.349706 50.4473446,163.587605 47.5541213,149.872133 C44.660898,136.157101 53.3838221,122.682583 67.0368478,119.77622 C69.2064577,119.314368 71.3700216,119.147186 73.4862828,119.247721 C71.48627,115.150233 69.9527967,110.740732 68.9680372,106.072906 C62.542827,75.6140256 81.9137043,45.6905976 112.234877,39.2362065 C142.555176,32.7818154 172.343754,52.2406678 178.769402,82.6991089 C185.194612,113.157111 165.823298,143.081417 135.502999,149.535808 C122.087426,152.391547 108.776199,150.174394 97.546678,144.176199 Z" fill="#fff"></path>
+                        <g transform="translate(44.000000, 98.000000)">
+                        <path d="M16.0542782,6.7704982 C16.9829647,11.1315788 14.1824562,15.4160041 9.79823305,16.3402239 C5.41400989,17.2640082 1.10684887,14.4778469 0.177724576,10.1172018 C-0.750961864,5.75612121 2.04998446,1.47169594 6.43376977,0.547476117 C10.8179929,-0.376743708 15.125154,2.40941757 16.0542782,6.7704982" fill="#509bf5"></path>
+                        <path d="M84.587572,105.080571 C65.853589,109.029194 47.4488715,97.1236569 43.4788573,78.4889985 C39.5088432,59.85434 51.4775579,41.546338 70.2111031,37.5972799 C88.9450862,33.6482219 107.350242,45.5537586 111.319818,64.1888526 C115.289832,82.823511 103.321117,101.131078 84.587572,105.080571 Z" fill="#509bf5"></path>
+                        <path d="M154.236691,26.5149173 C156.661521,37.8964972 149.351564,49.0781633 137.909586,51.4901941 C126.467609,53.9017894 115.226606,46.6308536 112.802213,35.2492738 C110.377383,23.8676939 117.68734,12.6855922 129.129318,10.2739969 C140.571295,7.8619661 151.812298,15.1333374 154.236691,26.5149173" fill="#000"></path>
+                        </g>
+                        <path d="M140.885603,102.831431 L141.876777,76.5730126 L110.839898,81.612584 L109.607161,114.259084 C109.620666,114.511051 109.622812,114.765835 109.613113,115.022912 C109.440531,119.597086 105.582713,123.166176 100.996653,122.994025 C96.4105918,122.821439 92.8330024,118.97369 93.0060201,114.399081 C93.1781663,109.824473 97.0364193,106.255817 101.622044,106.427968 C103.763856,106.50857 105.685707,107.390871 107.108313,108.774408 L108.162291,80.8518045 L108.162576,80.8518153 L108.5377,70.9205168 L145,65 L144.623083,74.9787561 L144.642808,74.9794987 L143.355416,109.084962 C143.162848,113.641419 139.314086,117.189975 134.74022,117.018298 C130.154595,116.845713 126.577005,112.997963 126.750023,108.423355 C126.922169,103.84918 130.779986,100.28009 135.366047,100.452241 C137.524711,100.533477 139.459841,101.429077 140.885603,102.831431 Z" fill="#509bf5"></path>
+                        <path d="M131.093422,179.458265 L115.375524,150 L113,151.236816 L125.915331,175.442184 C124.082148,174.996331 122.082783,175.186665 120.281159,176.12444 C116.377233,178.157174 114.880205,182.930469 116.938394,186.786112 C118.996135,190.642198 123.829205,192.120268 127.73358,190.087977 C131.626712,188.060863 133.126237,183.308324 131.093337,179.458309 Z" fill="#fff"></path>
+                        <path d="M186.493018,130.377701 L173.520834,137.86263 C172.844859,138.252783 172,137.765423 172,136.985559 L172,122.014818 C172,121.234954 172.844859,120.747152 173.520834,121.137305 L186.493018,128.622676 C187.168994,129.012387 187.168994,129.987548 186.493018,130.377701" fill="#fff"></path>
+                        </g>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="benefit-title" style="font-size: 24px; color:black; font-weight: 700; text-align: center;">
+                    Reproduce la canción que quieras.
+                </h2>
+                <p class="benefit-body" style="color:gray; text-align: center;">
+                    Incluso en dispositivos móviles.
+                </p>
+            </div>
+            <div class="benefit     col-xs-12 col-sm-6 col-md-3">
+                    <div class="benefit-image ">
+                        <div class="">
+                                
+                        <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g>
+                        <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                        <g transform="translate(51.000000, 50.000000)">
+                        <path d="M126.724138,6.05678233e-05 L13.2758621,6.05678233e-05 C5.80215517,6.05678233e-05 0,5.82365678 0,13.3249817 L0,168.984288 C3.05646552,171.173209 6.39594828,173.74613 9.65517241,175.646748 C32.1058621,181.005789 48.1117241,184.000868 70.1780172,184.000868 C92.2425,184.000868 106.06931,183.384288 130.948276,175.848439 C134.208707,173.947215 136.942328,172.385777 140,170.195644 L140,13.9306599 C140,6.42933502 134.197241,6.05678233e-05 126.724138,6.05678233e-05" fill="#509bf5"></path>
+                        <path d="M130.948276,36.3407546 L10.2586207,36.3407546 L10.2586207,175.848439 C28.0543103,186.225524 48.5401724,192.000061 70.6034483,192.000061 C92.667931,192.000061 113.151983,186.226736 130.948276,175.848439 L130.948276,36.3407546 Z" fill="#fff"></path>
+                        <path d="M81.4655172,21.1987987 L59.7413793,21.1987987 C58.7414655,21.1987987 57.9310345,20.3853729 57.9310345,19.381764 C57.9310345,18.3781552 58.7414655,17.5647293 59.7413793,17.5647293 L81.4655172,17.5647293 C82.465431,17.5647293 83.2758621,18.3781552 83.2758621,19.381764 C83.2758621,20.3853729 82.465431,21.1987987 81.4655172,21.1987987" fill="#fff"></path>
+                        </g>
+                        <g transform="translate(82.000000, 125.000000)">
+                        <path d="M77.0000602,38.5 C77.0000602,59.7628281 59.7628883,77 38.5000602,77 C17.237232,77 6.01562499e-05,59.7628281 6.01562499e-05,38.5 C6.01562499e-05,17.2371719 17.237232,0 38.5000602,0 C59.7628883,0 77.0000602,17.2371719 77.0000602,38.5" fill="#000"></path>
+                        <path d="M23.1466812,52.5867891 C22.2268922,53.1179688 21.0773062,52.4544453 21.0773062,51.3920859 L21.0773062,26.8242734 C21.0773062,25.7619141 22.2268922,25.0983906 23.1466812,25.6289688 L44.4233453,37.9134766 C45.3431344,38.4446563 45.3431344,39.7717031 44.4233453,40.3028828 L23.1466812,52.5867891 Z" fill="#fff"></path>
+                        <path d="M53.5390625,54.2664719 L53.5390625,54.2664719 C52.2102109,54.2664719 51.1328125,53.1890734 51.1328125,51.8602219 L51.1328125,25.9930344 C51.1328125,24.6641828 52.2102109,23.5867844 53.5390625,23.5867844 L53.5390625,23.5867844 C54.8679141,23.5867844 55.9453125,24.6641828 55.9453125,25.9930344 L55.9453125,51.8602219 C55.9453125,53.1890734 54.8679141,54.2664719 53.5390625,54.2664719" fill="#fff"></path>
+                        </g>
+                        </g>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="benefit-title" style="font-size: 24px; color:black; font-weight: 700; text-align: center;">
+                    Saltos de canciones ilimitados.
+                </h2>
+                <p class="benefit-body" style="color:gray; text-align: center;">
+                    Solo haz clic en Siguiente.
+                </p>
+            </div>
         </div>
     </div>
+    <div class="container-fluid" style="background: #F8F8F8;">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h2 class="display-5"style="padding:42px; font-weight: 700; color:black; text-align:center;">Escucha música gratis o suscríbete a Spotify Premium.</h2>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row row2">
+            <div class="col-xs-12 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
+                <article class="comparison free">
+                    <h3>Spotify Free</h3>
+                    <h4>0&nbsp;USD<span class="month"> / mes</span></h4>
+                    <ul class="list-features free">
+                        <li>Reproducción aleatoria</li>
+                        <li>Escucha sin conexión</li>
+                        <li>Sin interrupciones por anuncios</li>
+                        <li>Saltos de canciones ilimitados</li>
+                        <li>Audio de alta calidad</li>
+                    </ul>
+                    <a href="/hn/download/" class="btn btn-stroked-green btn-block js-goto-signup js-button-module-get-free" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-comparison&quot;}">
+                        Escucha gratis
+                    </a>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-5 col-lg-4">
+                <article class="comparison premium">
+                    <div class="pricing">
+                        <h3>Spotify Premium</h3>
+                        <h4>5.99&nbsp;USD <span class="month">al mes</span></h4><p class="small">Empieza ya tu prueba gratis de 30&nbsp;días*</p>
+                    </div>
+                    <ul class="list-features">
+                        <li>Reproduce cualquier canción</li>
+                        <li>Escucha sin conexión</li>
+                        <li>Sin interrupciones por anuncios</li>
+                        <li>Saltos de canciones ilimitados</li>
+                        <li>Audio de alta calidad</li>
+                    </ul>
+                    <a href="/purchase/offer/30day-intro-offer" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;comparison&quot;,1,&quot;prodCatId&quot;]" class="btn btn-green btn-block js-button-module-get-premium">
+                            Obtener Premium
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-default footer-simple footer-highlight-bubblegum" role="contentinfo"  style="height: 112px;">
+            <div class="container" >
+              <nav class="row row-small">
+                <div class="col-lg-7 col-xs-7">
+                  <ul class="nav nav-small" >
+                    <li style="margin-top: 20px;">
+                      <a id="foot-mod" href="/hn/legal/" style="padding-left:20px; ">Legal</a>
+                    </li>
+                    <li style="margin-top: 20px;">
+                      <a id="foot-mod" href="/hn/legal/cookies-policy/" style="padding-left:20px;">Cookies</a>
+                    </li>
+                    <li style="margin-top: 20px;">
+                      <a id="foot-mod" href="/hn/legal/privacy-policy/#s13" style="padding-left:20px;">Sobre los anuncios</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-5 col-xs-5 text-right">
+                          <a class="market" id="foot-mod" href="/hn/select-your-country/" title="Click para cambiar de idioma">
+                    <div class="media">
+                        <div class="media-body media-middle" id="foot-mod2" style="margin-top: -7px;">
+                            <a style="font-size: 12px;">Honduras</a>
+                      </div>
+                      <div class="media-right media-middle" style="margin-top: -7px;">
+                        <span class="media-object flag-icon flag-icon-hn"><img src="img/hn.svg" style="width: 15px;"></span>
+                      </div>
+                    </div>
+                  </a>
+                    <small class="copyright">© 2019 Spotify AB</small>
+                </div>
+              </nav>
+            </div>
+    </footer>
     <script src="Librerias-Frameworks/jquery.min.js"></script>
     <script src="Librerias-Frameworks/main.js"></script>
     <script src="Librerias-Frameworks/bootstrap.min.js"></script>
