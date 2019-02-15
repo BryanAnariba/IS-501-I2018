@@ -152,7 +152,42 @@
             .full-menu {
                 display: none;
             }
-
+        }
+        @media only screen and (min-width: 1380px){
+            #sonrie {
+                font-size: 100px;
+                padding-top: 150px;
+            }
+            #texto-1{
+                font-size: 40px;
+                padding-top:150px;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            #sonrie {
+                font-size: 60px;
+                padding-top: 150px;
+            }
+            #texto-1{
+                font-size: 28px;
+                padding-top:150px;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            #boton-3 {
+                margin-top:500px; 
+                margin-left: 100px;
+            }
+        }
+        @media only screen and (max-width: 1100px) {
+            #sonrie {
+                font-size: 60px;
+                padding-top: 150px;
+            }
+            #texto-1{
+                font-size: 30px;
+                padding-top:150px;
+            }
         }
         @media only screen and (max-width: 1000px) {
             #modificar {
@@ -194,7 +229,7 @@
             #logo{
                 position:relative;
                 bottom:8px;
-                right: 250px;
+                right: 150px;
             }
             #footer {
                 display:none;
@@ -205,6 +240,7 @@
             #logo-spot{
                 position:fixed;
                 top:90%;
+                padding-left: 50px;
             }
             #foto-mujer {
                 visibility: hidden;
@@ -223,7 +259,15 @@
             }
 
             #sonrie {
-                font-size: 60px;
+                font-size: 50px;
+                padding-top: 150px;
+            }
+            #texto-1{
+                font-size: 28px;
+                padding-top:150px;
+            }
+            #boton-3{
+                margin-top: 320px;
             }
         }
         #enlaces {
@@ -359,6 +403,25 @@
             scrollbar-3dlight-color:rgba(0.0.0.0.7);
             scrollbar-darkshadow-color:#000000;
         }
+        #boton-3 {
+            position:absolute;  
+            padding: 13px; 
+            margin-top:390px; 
+            color:white; 
+            font-weight:700; 
+            display: inline-block; 
+            font-size: 15px; 
+            text-decoration: none; 
+            background: #1DB954; 
+            margin-left: 80px; 
+            text-align:center; 
+            border-radius: 30px; 
+            width: 350px;
+            font-family: sans-serif;
+        }
+        #boton-3:hover {
+            background: #1ED760;
+        }
     </style>
 </head>
 <body>
@@ -408,19 +471,15 @@
         <div class="row">
             <div class="col-lg-12 col-sm-12">
                 <img id="foto-mujer" src="img/premium_dancer_prod.png" >
-                <h1 id="sonrie"class="display-1"  style="  position:absolute; padding-left: 60px; padding-top:180px; color:white; font-weight:700; display: inline-block">
+                <h1 id="sonrie" class="display-1"  style="  position:absolute; padding-left: 80px; padding-top:180px; color:white; font-weight:700; display: inline-block">
                     Hazte Premium. Sonríe.
                 </h1>
-                <p class="subhead bellow-headline" data-prop="subhead">
+                <p id="texto-1" class="subhead bellow-headline " data-prop="subhead"  style="position:absolute; padding-left: 80px; padding-top:300px; color:white; font-weight:700; display: inline-block; font-size: 33px;">
                     Prueba Premium gratis por 30 días. Después, solo 5.99&nbsp;USD al mes.*
                 </p>
-                <div class="content">
-                    <p >
-                        </p>
-                            <a href="register.html" class="btn btn-cta" data-prop="cta_button" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;hero&quot;,0,&quot;prodCatId&quot;]">
-                        Iniciar prueba gratis
-                        </a>
-                </div>
+                <a id="boton-3"href="register.html" class="btn btn-cta" data-prop="cta_button" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;hero&quot;,0,&quot;prodCatId&quot;]" >
+                    INICIAR PRUEBA GRATÍS
+                </a>
             </div>
         </div>
     </div>
