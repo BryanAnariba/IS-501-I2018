@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	console.log("PROGRAMAR AQUI");
+	console.log("programar");
 
 });
 //Para la Ventana oculta
