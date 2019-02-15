@@ -173,21 +173,21 @@
                 padding-top:150px;
             }
         }
-        @media only screen and (min-width: 370px) {
-            #boton-3 { 
-                padding: 13px; 
-                margin-top:450px; 
-                color:white; 
-                font-weight:700; 
-                display: inline-block; 
-                font-size: 15px; 
-                text-decoration: none; 
-                background: #1DB954; 
-                margin-left: 80px; 
-                text-align:center; 
-                border-radius: 30px; 
-                width: 200px;
-                font-family: sans-serif;
+        @media only screen and (max-width: 450px) {
+            #boton-complicado3 {
+                position:relative;
+                margin-top: -50px;
+                margin-left: -20px;
+            }
+            #boton-complicado {
+                position:relative;
+                margin-top: 150px;
+                margin-left: -90px;
+            }
+            #boton-complicado2 {
+                position: relative;
+                padding-top: 90px;
+                margin-left: -50px;
             }
         }
         @media only screen and (max-width: 1100px) {
@@ -196,8 +196,10 @@
                 padding-top: 150px;
             }
             #texto-1{
+                position: relative;
                 font-size: 30px;
                 padding-top:150px;
+                margin-left: -90;
             }
         }
         @media only screen and (max-width: 1000px) {
@@ -271,7 +273,6 @@
             #estilizar {
                 background:#000000;
             }
-
             #sonrie {
                 font-size: 50px;
                 padding-top: 150px;
@@ -279,6 +280,15 @@
             #texto-1{
                 font-size: 28px;
                 padding-top:150px;
+            }
+            #boton-3 { 
+                position: absolute;
+                padding: 13px; 
+                margin-top:-150px; 
+            }
+            #boton-complicado {
+                position:absolute;
+                margin-top: 100px;
             }
         }
         #enlaces {
@@ -415,7 +425,7 @@
             scrollbar-darkshadow-color:#000000;
         }
         #boton-3 {
-            position:absolute;  
+ 
             padding: 13px; 
             margin-top:390px; 
             color:white; 
@@ -482,15 +492,21 @@
         <div class="row">
             <div class="col-lg-12 col-sm-12">
                 <img id="foto-mujer" src="img/premium_dancer_prod.png" >
-                <h1 id="sonrie" class="display-1"  style="  position:absolute; padding-left: 80px; padding-top:180px; color:white; font-weight:700; display: inline-block">
-                    Hazte Premium. Sonríe.
-                </h1>
-                <p id="texto-1" class="subhead bellow-headline " data-prop="subhead"  style="position:absolute; padding-left: 80px; padding-top:300px; color:white; font-weight:700; display: inline-block; font-size: 33px;">
-                    Prueba Premium gratis por 30 días. Después, solo 5.99&nbsp;USD al mes.*
-                </p>
-                <a id="boton-3" href="register.html" class="btn btn-cta" data-prop="cta_button" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;hero&quot;,0,&quot;prodCatId&quot;]" >
-                    INICIAR PRUEBA GRATÍS
-                </a>
+                <div id="boton-complicado3">
+                    <h1 id="sonrie" class="display-1"  style="  position:absolute; padding-left: 80px; padding-top:180px; color:white; font-weight:700; display: inline-block">
+                        Hazte Premium. Sonríe.
+                    </h1>
+                </div>
+                <div id="boton-complicado2">
+                    <p id="texto-1" class="subhead bellow-headline " data-prop="subhead"  style="position:absolute; padding-left: 80px; padding-top:300px; color:white; font-weight:700; display: inline-block; font-size: 33px;">
+                        Prueba Premium gratis por 30 días. Después, solo 5.99&nbsp;USD al mes.*
+                    </p>
+                </div>
+                <div id="boton-complicado">
+                    <a id="boton-3" href="register.html" class="btn btn-cta" data-prop="cta_button" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;hero&quot;,0,&quot;prodCatId&quot;]" >
+                        INICIAR PRUEBA GRATÍS
+                    </a>
+                </div>
             </div>
         </div>
     </div>
