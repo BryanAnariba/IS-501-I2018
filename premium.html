@@ -152,6 +152,7 @@
             .full-menu {
                 display: none;
             }
+
         }
         @media only screen and (max-width: 1000px) {
             #modificar {
@@ -181,7 +182,7 @@
                 display: none;
             }
             #estilizar {
-                background-color:black; height:60px; opacity: 1; position:fixed; width:100%;
+                background-color:black; height:60px;  position:fixed; width:100%;
             }
             #estilizar2{
                 background: black;
@@ -193,6 +194,7 @@
             #logo{
                 position:relative;
                 bottom:8px;
+                right: 250px;
             }
             #footer {
                 display:none;
@@ -203,6 +205,25 @@
             #logo-spot{
                 position:fixed;
                 top:90%;
+            }
+            #foto-mujer {
+                visibility: hidden;
+            }
+            #estilizar{
+                background-color: rgb(0,0,0); /*PROPIEDAD A MODIFICAR DE ACORDE BAJE CON EL CURSOR :D*/
+                height:63px; 
+                position:fixed; 
+                width:100%;
+            }
+            #row2 {
+                background: black;
+            }
+            #estilizar {
+                background:#000000;
+            }
+
+            #sonrie {
+                font-size: 60px;
             }
         }
         #enlaces {
@@ -264,6 +285,7 @@
             float: right;
             z-index: 0;
             padding-top: 37px;
+            position: relative;
         }
         .row2 {
             margin-left: -15px;
@@ -333,12 +355,16 @@
         #foot-mod2:hover {
             color:#222315;
         }
+        #estilizar {
+            scrollbar-3dlight-color:rgba(0.0.0.0.7);
+            scrollbar-darkshadow-color:#000000;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid" >
-        <div class="row">
-            <div class="col-lg-12" id="estilizar" style="position:fixed; top:0px; z-index: 1;">
+        <div class="row" id="row">
+            <div class="col-lg-12 estilizar2" id="estilizar" style="position:fixed; top:0px; z-index: 1;">
                 <nav class="navbar navbar-expand-lg" >
                     <div class="container-fluid" id="nabvar-modificar">
                         <a class="navbar-brand" href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
@@ -382,6 +408,19 @@
         <div class="row">
             <div class="col-lg-12 col-sm-12">
                 <img id="foto-mujer" src="img/premium_dancer_prod.png" >
+                <h1 id="sonrie"class="display-1"  style="  position:absolute; padding-left: 60px; padding-top:180px; color:white; font-weight:700; display: inline-block">
+                    Hazte Premium. Sonríe.
+                </h1>
+                <p class="subhead bellow-headline" data-prop="subhead">
+                    Prueba Premium gratis por 30 días. Después, solo 5.99&nbsp;USD al mes.*
+                </p>
+                <div class="content">
+                    <p >
+                        </p>
+                            <a href="register.html" class="btn btn-cta" data-prop="cta_button" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;hero&quot;,0,&quot;prodCatId&quot;]">
+                        Iniciar prueba gratis
+                        </a>
+                </div>
             </div>
         </div>
     </div>
@@ -628,5 +667,23 @@
     <script src="Librerias-Frameworks/jquery.min.js"></script>
     <script src="Librerias-Frameworks/main.js"></script>
     <script src="Librerias-Frameworks/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var scroll = $(window).scrollTop();
+                $(window).scroll(function(event) {
+                    var scroll = $(window).scrollTop();
+                    /*Cambia el color del div cuando es distinto a 0*/
+                    if(scroll== 0){//al dezplazar 
+                        $('.estilizar2').css({
+                            background: 'rgba(0,0,0,0)'
+                        });
+                    }else{
+                        $('.estilizar2').css({
+                            background: 'rgba(0,0,0,0.7)'
+                    });
+                }
+        });
+});
+    </script>  
 </body>
 </html>
