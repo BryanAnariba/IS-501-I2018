@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Música para todos - Spotify</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="Librerias-Frameworks/font-awesome.min.css">
+    <link rel="stylesheet" href="Librerias-Frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="Librerias-Frameworks/custom.css">
+    <script src="Librerias-Frameworks/all.js"></script>
+    <style>
+        #modificar{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding-left:15px;
+            margin-left:15px;
+            font-size:15px;
+            margin-top:8px;
+        }
+        #modificar:hover{
+            color:#32C236;
+        }
+        #modificar3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding-left:15px;
+            margin-left:15px;
+            font-size:15px;
+            margin-top:8px;
+        }
+        #modificar3:hover{
+            color:#32C236;
+        }
+        #modificar2{
+            padding-top:2px;
+            font-size: 18px;
+            margin-left:16px;
+            margin-right: -2px;
+            margin-top: 8px;
+            font-weight: -20;
+            color:white;
+        }
+        .nav-item{
+            position: relative;
+            right:75px;
+        }
+        header .wrap{
+            position:absolute;
+            top:-2px;
+            right:10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        header .btn-menu{
+            margin-top:20px;
+            cursor: pointer;
+            visibility: hidden;
+            z-index: 5;
+            font-size: 30px;
+        }
+        header #btn-menu2{
+            position: fixed;
+            top: 10px;
+            margin-left:-5px;
+            margin-top:-12px;
+            cursor: pointer;
+            z-index: 2;
+            font-size: 30px;
+        }
+        /*Menu pantalla completa*/
+        .full-menu {
+            z-index: 5;
+            position:fixed;
+            top:0;
+            right:-100%;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            -webkit-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s;
+        }
+        .full-menu .wrap{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .full-menu .wrap .parte-oscura {
+            flex-basis: 0;
+            flex-grow: 1;
+            background: black;
+            
+        }
+        .full-menu .wrap .navegacion {
+            z-index:5;
+            flex-basis: 0;
+            flex-grow: 1.3;
+            background: black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Quitar los puntos de los enlaces de lista*/
+        .full-menu .navegacion ul {
+            list-style: none;
+        }
+        /*Dar formato a los elementos de la lista en la parte de responsive*/
+        .full-menu .navegacion ul li a{
+            font-family : Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 35px;
+            color:white;
+            font-weight: 600;
+        }
+        #quitar-grosor {
+            font-weight: 500;
+            font-size: 25px;
+            color:#CECECE;
+        }
+        #quitar-grosor:hover{
+            color:#32C236;
+        }
+        .full-menu .navegacion ul li a:hover{
+            color:#32C236;
+        }
+        #iconos:hover{
+            background:#32C236;
+            color:#222326;
+            
+        }
+        #iconos{
+            display: inline-block;
+            border-radius: 120px;
+            box-shadow: 0px 0px 2px #888;
+
+        }
+        .container-fluid #nabvar-modificar{
+            opacity: 1;
+        }
+        #estilizar{
+                background-color: black; height:80px; opacity: 2; position:fixed; width:100%;
+        }
+        @media only screen and (max-width: 1000px) {
+            #modificar {
+                display: none;
+            }
+            #modificar3{
+                display: none;
+            }
+            #modificar2 {
+                display:none;
+            }
+            #navbar-modificar{
+                background: black;
+                height:60px;
+            }
+            header .btn-menu{ 
+                visibility: visible;
+                
+            }
+            .fas .fa-times-circle{
+                font-size: 50px;
+                color:white;
+
+            }
+            .nabvar-modificar{
+                display: none;
+            }
+            #estilizar {
+                background-color:black; height:60px; opacity: 1; position:fixed; width:100%;
+            }
+            #estilizar2{
+                background: black;
+                height:60px;
+            }
+            header .btn-menu{
+            margin-top:10px;
+            }
+            #logo{
+                position:relative;
+                bottom:8px;
+            }
+            #footer {
+                display:none;
+            }
+        }
+        #enlaces {
+            font-family:Circular, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            color:#919496;
+        }
+        #enlaces-cosas{
+            text-decoration: none;
+            font-family:Circular, Helvetica, Arial, sans-serif;
+            font-size:15px;
+            font-weight: 550;
+            color:white;
+        }
+        #enlaces-cosas:hover{
+            color:#32C236;
+        }
+        div.ejemplo {
+            position: relative;
+            width: 60px;
+            height:60px;
+            text-align: center;
+            background-color: #222326;
+            border: 18px solid #222326;
+            border-radius: 50%;
+            
+        }
+        div.ejemplo{
+            size: 10px;
+            color: white;
+        }
+        div.ejemplo:hover {
+            background-color: #222326;
+            border: 18px solid #222326;
+        }
+        div.ejemplo:hover {
+            color: #32C236;
+        }
+        #enlaces-finales:hover{
+            color:#32C236;
+            font-size: 20px;
+        }
+        /*@media only screen and (min-width: 1500px) {
+            #modificar {
+                display: none;
+            }
+            #modificar3{
+                display: none;
+            }
+            #modificar2 {
+                display:none;
+            }
+            header .btn-menu{ 
+                visibility: visible;
+            }
+        }*/
+
+    </style>
+</head>
+<body >
+    <div class="container-fluid" style="height:490px;"> 
+        <div class="row">
+            <div class="col-lg-12" id="estilizar" >
+                <!--BARRA DE NAVEGACION-->
+                <nav class="navbar navbar-expand-lg navbar-dark " style="">
+                    
+                    <div class="container-fluid" id="nabvar-modificar" >
+                        <a class="navbar-brand" href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
+                            <span id="logo" class="navbar-logo" style="margin-left:65px;"><img src="img/Spotify_Logo_RGB_White.png"  style="width:130px; height:40px; margin-top:5px;"></span>
+                        </a>
+                        <header>
+                            <div class="wrap">
+                                <div class="btn-menu" id="btn-menu">
+                                    <span class="fa fa-bars" style="color:white; width: 50px;"></span>
+                                </div>
+                            </div>
+                        </header>
+                        <div id="modificacion" class="navbar-collapse" id="navbarCollapse"><!--Para cuando se adapte a movil al dar click al boton de arriba se despliegle un menu-->
+                            <ul class="navbar-nav ml-auto" id="posicions" >
+                                <li class="nav-item">
+                                    <a href="premium.html" class="nav-link" id="modificar">Premium</a>
+                                </li><!--Se estiliza aplicando todo lo que esta en class-->
+                                <li class="nav-item">
+                                    <a href="ayuda.html" class="nav-link" id="modificar">Ayuda</a>
+                                </li><!--Se estiliza aplicando todo lo que esta en class-->
+                                <li class="nav-item">
+                                    <a href="#create-section" class="nav-link" id="modificar">Descargar</a>
+                                </li><!--Se estiliza aplicando todo lo que esta en class-->
+                                <li class="nav-item">
+                                    <a  class="nav-link" id="modificar2">|</a>
+                                </li><!--Se estiliza aplicando todo lo que esta en class-->
+                                <li class="nav-item">
+                                    <a href="register.html" class="nav-link" id="modificar3">Registrarse</a>
+                                </li><!--Se estiliza aplicando todo lo que esta en class-->
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link" id="modificar3">Iniciar Sesión</a>
+                                </li><!--Se estiliza aplicando todo lo que esta en class-->
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row" style="background-image: url('img/verde.png'); background-repeat: no-repeat; height: 519px;width: 1349px; ">
+        </div>
+        <div class="row" style="background-image: url('img/centro.png'); background-repeat: no-repeat; height: 312px;width: 1349px; ">
+        </div>
+        <div class="row" style="background-image: url('img/gris-final.png'); background-repeat: no-repeat; height: 402px;width: 1349px; ">
+        </div>
+        <div class="row" style="background-image: url('img/ultimo.png'); background-repeat: no-repeat; height: 112px;width: 1349px; ">
+        </div>
+</div>
+
+</body>
