@@ -8,442 +8,8 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="Librerias-Frameworks/font-awesome.min.css">
     <link rel="stylesheet" href="Librerias-Frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="Librerias-Frameworks/premiun.css">
     <script src="Librerias-Frameworks/all.js"></script>
-    <style>
-        #modificar{
-            color:white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            padding-left:15px;
-            margin-left:15px;
-            font-size:15px;
-            margin-top:10px;
-        }
-        #modificar:hover{
-            color:#2D46B9;
-        }
-        #modificar3{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            padding-left:15px;
-            margin-left:15px;
-            font-size:15px;
-            margin-top:10px;
-            color:white;
-        }
-        #modificar3:hover{
-            color:#2D46B9;
-        }
-        #modificar2{
-            padding-top:2px;
-            font-size: 18px;
-            margin-left:16px;
-            margin-right: -2px;
-            margin-top: 8px;
-            font-weight: -20;
-            color:white;
-        }
-        .nav-item{
-            position: relative;
-            right:75px;
-        }
-        header .wrap{
-            position:absolute;
-            top:-2px;
-            right:10px;
-            display: flex;
-            justify-content: space-between;
-        }
-        header .btn-menu{
-            margin-top:20px;
-            cursor: pointer;
-            visibility: hidden;
-            z-index: 2;
-            font-size: 30px;
-        }
-        header #btn-menu2{
-            position: fixed;
-            top: 10px;
-            margin-top:-12px;
-            cursor: pointer;
-            z-index: 2;
-            font-size: 30px;
-        }
-        /*Menu pantalla completa*/
-        .full-menu {
-            z-index: 1;
-            position:fixed;
-            top:0;
-            right:-100%;
-            width: 100%;
-            height: 100vh;
-            background: rgba(0,0,0,0.9);
-            -webkit-transition: .2s;
-            -o-transition: .2s;
-            transition: .2s;
-        }
-        .full-menu .wrap{
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .full-menu .wrap .parte-oscura {
-            flex-basis: 0;
-            flex-grow: 1;
-            background: black;
-            
-        }
-        .full-menu .wrap .navegacion {
-            z-index:1;
-            flex-basis: 0;
-            flex-grow: 1.3;
-            background: black;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        /*Quitar los puntos de los enlaces de lista*/
-        .full-menu .navegacion ul {
-            list-style: none;
-        }
-        /*Dar formato a los elementos de la lista en la parte de responsive*/
-        .full-menu .navegacion ul li a{
-            font-family : Arial, Helvetica, sans-serif;
-            text-decoration: none;
-            font-size: 35px;
-            color:white;
-            font-weight: 600;
-        }
-        #quitar-grosor {
-            font-weight: 500;
-            font-size: 25px;
-            color:#CECECE;
-        }
-        #quitar-grosor:hover{
-            color:#32C236;
-        }
-        .full-menu .navegacion ul li a:hover{
-            color:#32C236;
-        }
-        #iconos:hover{
-            background:#32C236;
-            color:#222326;
-            
-        }
-        #iconos{
-            display: inline-block;
-            border-radius: 120px;
-            box-shadow: 0px 0px 2px #888;
-
-        }
-        .container-fluid #nabvar-modificar{
-            opacity: 1;
-        }
-        #estilizar{
-            background-color: rgba(0,0,0,0); /*PROPIEDAD A MODIFICAR DE ACORDE BAJE CON EL CURSOR :D*/
-            height:83px; 
-            position:fixed; 
-            width:100%;
-        }
-
-        @media only screen and (min-width: 1000px){
-            .full-menu {
-                display: none;
-            }
-        }
-        @media only screen and (min-width: 1380px){
-            #sonrie {
-                font-size: 100px;
-                padding-top: 150px;
-            }
-            #texto-1{
-                font-size: 40px;
-                padding-top:150px;
-            }
-        }
-        @media only screen and (max-width: 1200px) {
-            #sonrie {
-                font-size: 60px;
-                padding-top: 150px;
-            }
-            #texto-1{
-                font-size: 28px;
-                padding-top:150px;
-            }
-        }
-        @media only screen and (max-width: 450px) {
-            #boton-complicado3 {
-                position:relative;
-                margin-top: -50px;
-                margin-left: -20px;
-            }
-            #boton-complicado {
-                position:relative;
-                margin-top: 150px;
-                margin-left: -90px;
-            }
-            #boton-complicado2 {
-                position: relative;
-                padding-top: 90px;
-                margin-left: -50px;
-            }
-        }
-        @media only screen and (max-width: 1100px) {
-            #sonrie {
-                font-size: 60px;
-                padding-top: 150px;
-            }
-            #texto-1{
-                position: relative;
-                font-size: 30px;
-                padding-top:150px;
-                margin-left: -90;
-            }
-        }
-        @media only screen and (max-width: 1000px) {
-            #modificar {
-                display: none;
-            }
-            #modificar3{
-                display: none;
-            }
-            #modificar2 {
-                display:none;
-            }
-            #navbar-modificar{
-                background: black;
-                height:60px;
-            }
-            header .btn-menu{ 
-                visibility: visible;
-                z-index: 1;
-                
-            }
-            .fas .fa-times-circle{
-                font-size: 50px;
-                color:white;
-
-            }
-            .nabvar-modificar{
-                display: none;
-            }
-            #estilizar {
-                background-color:black; 
-                height:60px;  
-                position:fixed; 
-                width:100%;
-            }
-            #estilizar2{
-                background: black;
-                height:60px;
-            }
-            header .btn-menu{
-                margin-top:10px;
-            }
-            #logo{
-                position:relative;
-                bottom:8px;
-                right: 150px;
-            }
-            #footer {
-                display:none;
-            }
-            .expandir{
-                height:900px;
-            }
-            #logo-spot{
-                position:fixed;
-                top:90%;
-                padding-left: 50px;
-            }
-            #foto-mujer {
-                visibility: hidden;
-            }
-            #estilizar{
-                background-color: rgb(0,0,0); /*PROPIEDAD A MODIFICAR DE ACORDE BAJE CON EL CURSOR :D*/
-                height:63px; 
-                position:fixed; 
-                width:100%;
-            }
-            #row2 {
-                background: black;
-            }
-            #estilizar {
-                background:#000000;
-            }
-            #sonrie {
-                font-size: 50px;
-                padding-top: 150px;
-            }
-            #texto-1{
-                font-size: 28px;
-                padding-top:150px;
-            }
-            #boton-3 { 
-                position: absolute;
-                padding: 13px; 
-                margin-top:-150px; 
-            }
-            #boton-complicado {
-                position:absolute;
-                margin-top: 100px;
-            }
-        }
-        #enlaces {
-            font-family:Circular, Helvetica, Arial, sans-serif;
-            font-size: 13px;
-            font-weight: 800;
-            color:#919496;
-        }
-        #enlaces-cosas{
-            text-decoration: none;
-            font-family:Circular, Helvetica, Arial, sans-serif;
-            font-size:15px;
-            font-weight: 550;
-            color:white;
-        }
-        #enlaces-cosas:hover{
-            color:#32C236;
-        }
-        div.ejemplo {
-            position: relative;
-            width: 60px;
-            height:60px;
-            text-align: center;
-            background-color: #222326;
-            border: 18px solid #222326;
-            border-radius: 50%;
-            
-        }
-        div.ejemplo{
-            size: 10px;
-            color: white;
-        }
-        div.ejemplo:hover {
-            background-color: #222326;
-            border: 18px solid #222326;
-        }
-        div.ejemplo:hover {
-            color: #32C236;
-        }
-        #enlaces-finales:hover{
-            color:#32C236;
-            font-size: 20px;
-        }
-        /*@media only screen and (min-width: 1500px) {
-            #modificar {
-                display: none;
-            }
-            #modificar3{
-                display: none;
-            }
-            #modificar2 {
-                display:none;
-            }
-            header .btn-menu{ 
-                visibility: visible;
-            }
-        }*/
-        #foto-mujer {
-            float: right;
-            z-index: 0;
-            padding-top: 37px;
-            position: relative;
-        }
-        .row2 {
-            margin-left: -15px;
-            margin-right: -15px;
-        }
-        div {
-            display: block;
-        }
-        .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after, .btn-group-vertical > .btn-group-inverse:before, .btn-group-vertical > .btn-group-inverse:after, .nav-inverse:before, .nav-inverse:after {
-            content: " ";
-            display: table;
-        }
-        *:before, *:after {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-header:after, .modal-footer:after, .btn-group-vertical > .btn-group-inverse:after, .nav-inverse:after {
-            clear: both;
-        }
-        .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after, .btn-group-vertical > .btn-group-inverse:before, .btn-group-vertical > .btn-group-inverse:after, .nav-inverse:before, .nav-inverse:after {
-            content: " ";
-            display: table;
-        }
-        *:before, *:after {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        .footer.footer-simple {
-            padding: 30px 0 20px;
-        }
-        .footer-default {
-            background: #000;
-        }
-        .footer {
-            padding: 50px 0 20px;
-        }
-        article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-            display: block;
-        }
-        * {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        article, aside, footer, header, hgroup, main, nav, section {
-            display: block;
-        }
-        *:before, *:after {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        *:before, *:after {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        #foot-mod {
-            text-decoration: none; 
-            color:gray; 
-            font-size:12px;
-        }
-        #foot-mod:hover{
-            color:#222315; 
-        }
-        #foot-mod2 {
-            float:right;
-            color:gray;
-        }
-        #foot-mod2:hover {
-            color:#222315;
-        }
-        #estilizar {
-            scrollbar-3dlight-color:rgba(0.0.0.0.7);
-            scrollbar-darkshadow-color:#000000;
-        }
-        #boton-3 {
- 
-            padding: 13px; 
-            margin-top:390px; 
-            color:white; 
-            font-weight:700; 
-            display: inline-block; 
-            font-size: 15px; 
-            text-decoration: none; 
-            background: #1DB954; 
-            margin-left: 80px; 
-            text-align:center; 
-            border-radius: 30px; 
-            width: 350px;
-            font-family: sans-serif;
-        }
-        #boton-3:hover {
-            background: #1ED760;
-        }
-    </style>
 </head>
 <body>
     <div class="container-fluid" >
@@ -680,44 +246,87 @@
                 </div>
             </div>
     </div>
-    <div class="container">
-        <div class="row row2">
-            <div class="col-xs-12 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-                <article class="comparison free">
-                    <h3>Spotify Free</h3>
-                    <h4>0&nbsp;USD<span class="month"> / mes</span></h4>
-                    <ul class="list-features free">
-                        <li>Reproducción aleatoria</li>
-                        <li>Escucha sin conexión</li>
-                        <li>Sin interrupciones por anuncios</li>
-                        <li>Saltos de canciones ilimitados</li>
-                        <li>Audio de alta calidad</li>
-                    </ul>
-                    <a href="/hn/download/" class="btn btn-stroked-green btn-block js-goto-signup js-button-module-get-free" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-comparison&quot;}">
-                        Escucha gratis
-                    </a>
-                </article>
-            </div>
-            <div class="col-xs-12 col-md-5 col-lg-4">
-                <article class="comparison premium">
-                    <div class="pricing">
-                        <h3>Spotify Premium</h3>
-                        <h4>5.99&nbsp;USD <span class="month">al mes</span></h4><p class="small">Empieza ya tu prueba gratis de 30&nbsp;días*</p>
+    <div id="wrap-contenedor" class="container-fluid wrap">
+        <div class="row row2 tarjeta-wrap" style="background: #F8F8F8;">
+            <div id="" class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="tarjeta texto-1"  style="float:right;">
+                    <div class="adelante" style="height: 400px; border-radius: 10px;">
+                        <article class="comparison premium">
+                            <div style="padding-left: 30px;">
+                                <h3 style="font-size: 28px; font-weight: 400; padding-top: 20px;">Spotify Free</h3>
+                                <h4 style="font-size: 30px; font-weight: 700;">0&nbsp;USD<span class="month" style="font-size: 15px;"> / mes</span></h4>
+                                <hr style="height: 3px; width: 300px;">
+                            </div>
+                            <div style="padding-left: 50px;">
+                                <i class="fas fa-check"></i> Reproducción aleatoria <br>
+                                <i class="fas fa-check" style="color:gray;" ></i> Escucha sin conexión<br>
+                                <i class="fas fa-check" style="color:gray;"></i> Sin interrupciones por anuncios <br>
+                                <i class="fas fa-check" style="color:gray;"></i> altos de canciones ilimitados <br>
+                                <i class="fas fa-check" style="color:gray;"></i> Audio de alta calidad <br><br><br>
+                            </div>
+                            <hr style="height: 3px; width: 300px;">
+                            <a id="btn-uno" href="/hn/download/" class="btn btn-stroked-green btn-block js-goto-signup js-button-module-get-free" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-comparison&quot;}">
+                                ESCUCHA GRATIS
+                            </a>
+                        </article>
                     </div>
-                    <ul class="list-features">
-                        <li>Reproduce cualquier canción</li>
-                        <li>Escucha sin conexión</li>
-                        <li>Sin interrupciones por anuncios</li>
-                        <li>Saltos de canciones ilimitados</li>
-                        <li>Audio de alta calidad</li>
-                    </ul>
-                    <a href="/purchase/offer/30day-intro-offer" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;comparison&quot;,1,&quot;prodCatId&quot;]" class="btn btn-green btn-block js-button-module-get-premium">
-                            Obtener Premium
-                    </a>
-                </article>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="tarjeta texto-2">
+                    <div class="adelante" style="height: 400px; border-radius: 10px;">
+                        <article class="comparison premium">
+                            <div class="pricing" style="padding-left: 40px;">
+                                <h3 style="font-size: 28px; font-weight: 400; padding-top: 20px; ">Spotify Premium</h3>
+                                <h4 style="font-size: 30px; font-weight: 700;">5.99&nbsp;USD <span style="font-size: 15px;" class="month">al mes</span></h4><p class="small">Empieza ya tu prueba gratis de 30&nbsp;días*</p>
+                                <hr style="height: 3px; width: 300px;">
+                            </div>
+                            <div style="padding-left: 50px;">
+                                <i class="fas fa-check" style="color:black;"> </i> Reproduce cualquier canción <br>
+                                <i class="fas fa-check" style="color:gray;"> </i> Escucha sin conexión <br>
+                                <i class="fas fa-check" style="color:gray;"> </i> Sin interrupciones por anuncios <br>
+                                <i class="fas fa-check" style="color:gray;"> </i> Saltos de canciones ilimitados <br>
+                                <i class="fas fa-check" style="color:gray;"> </i> Audio de alta calidad <br><br>
+                            </div>
+                            <hr style="height: 3px; width: 300px;">
+                            <a id="btn-2" href="/purchase/offer/30day-intro-offer" data-event-name="CampaignCallToActionClick" data-event-version="2" data-event-params="[&quot;HN&quot;,&quot;default&quot;,&quot;\/purchase\/offer\/30day-intro-offer&quot;,&quot;trial-30d&quot;,&quot;comparison&quot;,1,&quot;prodCatId&quot;]" class="btn btn-green btn-block js-button-module-get-premium">
+                                OBTENER PREMIUM
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background: #F8F8F8;">
+            <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" style="margin-left: auto; margin-right: auto;">
+                <style data-styled-components="hwmcME htJrad dkIgoA cfBTsT iEVvxG fprLfJ fdpicm">
+                /* sc-component-id: sc-keyframes-hwmcME */
+                @-webkit-keyframes hwmcME{0%{-webkit-animation-timing-function:cubic-bezier(1,0,0.7,1);animation-timing-function:cubic-bezier(1,0,0.7,1);opacity:0.5;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}40%{-webkit-animation-timing-function:cubic-bezier(0.3,0,0,1);animation-timing-function:cubic-bezier(0.3,0,0,1);opacity:0.75;-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}72.5%{-webkit-animation-timing-function:linear;animation-timing-function:linear;opacity:0.5;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}100%{opacity:0.5;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}} @keyframes hwmcME{0%{-webkit-animation-timing-function:cubic-bezier(1,0,0.7,1);animation-timing-function:cubic-bezier(1,0,0.7,1);opacity:0.5;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}40%{-webkit-animation-timing-function:cubic-bezier(0.3,0,0,1);animation-timing-function:cubic-bezier(0.3,0,0,1);opacity:0.75;-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}72.5%{-webkit-animation-timing-function:linear;animation-timing-function:linear;opacity:0.5;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}100%{opacity:0.5;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}
+                /* sc-component-id: additional-comparison-boxes__Arrow-sc-1uzyiwi-0 */
+                .dkIgoA{margin-left:75%;top:-50px;width:50px;height:50px;position:absolute;overflow:hidden;} @media (max-width:767px){.dkIgoA{margin-left:50%;}} .dkIgoA:after{content:"";position:absolute;width:15px;height:15px;background:white;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);top:45px;left:0px;box-shadow:-1px -1px 10px -2px rgba(0,0,0,0.2);}
+                        /* sc-component-id: additional-comparison-boxes__BoxesWrapper-sc-1uzyiwi-1 */
+                .htJrad{font-family:Circular,Helvetica,Arial,sans-serif;border-radius:8px;box-shadow:0 0 8px rgba(0,0,0,0.2);background-color:white;width:100%;position:relative;margin-top:24px;} .htJrad:hover{box-shadow:0px 14px 32px 0px rgba(0,0,0,0.2);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;-webkit-transition-duration:0.2s;transition-duration:0.2s;-webkit-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);}
+                /* sc-component-id: additional-comparison-boxes__Border-sc-1uzyiwi-2 */
+                .cfBTsT{border-bottom:1px solid #eeeeee;margin:0 32px;} .cfBTsT:last-child{border:0;}
+                /* sc-component-id: additional-comparison-boxes__Row-sc-1uzyiwi-3 */
+                .iEVvxG{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:20px 0px;} @media (max-width:767px){.iEVvxG{display:inherit;}}
+                /* sc-component-id: additional-comparison-boxes__OfferTitle-sc-1uzyiwi-4 */
+                .fprLfJ{margin:0;font-size:24px;font-weight:400;}
+                /* sc-component-id: additional-comparison-boxes__OfferCta-sc-1uzyiwi-5 */
+                .fdpicm{color:#1db954;margin:0;min-width:0;font-size:14px;font-weight:700;-webkit-letter-spacing:2px;-moz-letter-spacing:2px;-ms-letter-spacing:2px;letter-spacing:2px;line-height:36px;text-transform:uppercase;text-align:center;-webkit-text-decoration:none;text-decoration:none;} .fdpicm:hover,.fdpicm:active,.fdpicm:focus{color:#1ed760;}</style>
+                <div data-hypernova-key="AdditionalComparisonBoxes" data-hypernova-id="f997d55f-559a-44ab-b961-6e0cfb3bae55"><div class="additional-comparison-boxes__BoxesWrapper-sc-1uzyiwi-1 htJrad" data-reactroot=""><div class="additional-comparison-boxes__Arrow-sc-1uzyiwi-0 dkIgoA"></div><div class="additional-comparison-boxes__Border-sc-1uzyiwi-2 cfBTsT"><div class="additional-comparison-boxes__Row-sc-1uzyiwi-3 iEVvxG"><div class="additional-comparison-boxes__OfferTitle-sc-1uzyiwi-4 fprLfJ">Plan Familiar Premium</div><a class="additional-comparison-boxes__OfferCta-sc-1uzyiwi-5 fdpicm" href="/family">Más información</a></div></div><div class="additional-comparison-boxes__Border-sc-1uzyiwi-2 cfBTsT"><div class="additional-comparison-boxes__Row-sc-1uzyiwi-3 iEVvxG"><div class="additional-comparison-boxes__OfferTitle-sc-1uzyiwi-4 fprLfJ">PlayStation<sup>®</sup></div><a class="additional-comparison-boxes__OfferCta-sc-1uzyiwi-5 fdpicm" href="/playstation">Más información</a></div></div></div></div>
+                <script type="application/json" data-hypernova-key="AdditionalComparisonBoxes" data-hypernova-id="f997d55f-559a-44ab-b961-6e0cfb3bae55"><!--{"data":[{"headlineText":"Plan Familiar Premium","ctaText":"Más información","ctaUrl":"/family"},{"headlineText":"PlayStation<sup&gt;®</sup&gt;","ctaText":"Más información","ctaUrl":"/playstation"}]}--></script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-lg-12" style="color:gray; background: #F8F8F8; justify-content: center;" >
+                <p class="tertiary" style="font-size: 12px; text-align: center; justify-content: center;">* Aplican los <a style="color:gray; text-decoration: none;" href="/legal/new-30-days-free-trial-terms-and-conditions">Términos y condiciones</a> de la Oferta de prueba gratis de Spotify® por 30 días.<br> Los usuarios que se hayan suscrito al servicio Premium o Unlimited o que hayan disfrutado de una prueba no son elegibles para esta oferta. </p>
             </div>
         </div>
     </div>
+    
     <footer class="footer footer-default footer-simple footer-highlight-bubblegum" role="contentinfo"  style="height: 112px;">
             <div class="container" >
               <nav class="row row-small">
@@ -748,7 +357,7 @@
                     <small class="copyright">© 2019 Spotify AB</small>
                 </div>
               </nav>
-            </div>
+        </div>
     </footer>
     <script src="Librerias-Frameworks/jquery.min.js"></script>
     <script src="Librerias-Frameworks/main.js"></script>
@@ -756,20 +365,20 @@
     <script>
         $(document).ready(function() {
             var scroll = $(window).scrollTop();
-                $(window).scroll(function(event) {
-                    var scroll = $(window).scrollTop();
-                    /*Cambia el color del div cuando es distinto a 0*/
-                    if(scroll== 0){//al dezplazar 
-                        $('.estilizar2').css({
-                            background: 'rgba(0,0,0,0)'
-                        });
-                    }else{
-                        $('.estilizar2').css({
-                            background: 'rgba(0,0,0,0.7)'
+            $(window).scroll(function(event) {
+            var scroll = $(window).scrollTop();
+            /*Cambia el color del div cuando es distinto a 0*/
+                if(scroll== 0){//al dezplazar 
+                    $('.estilizar2').css({
+                        background: 'rgba(0,0,0,0)'
                     });
-                }
+                }else{
+                        $('.estilizar2').css({
+                        background: 'rgba(0,0,0,0.7)'
+                });
+            }
         });
-});
+    });
     </script>  
 </body>
 </html>

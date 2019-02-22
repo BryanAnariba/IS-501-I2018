@@ -244,17 +244,36 @@
                 visibility: visible;
             }
         }*/
+        #btn-buscar {
+            background-color:#D6DBF1; border: none; width: 755.43px; height: 43px; border-radius: 10px; color: black ; padding: 6px 12px; font-weight: bold; font-size: 18px;
+        }
+        #responsive-parte-roja {
+            padding-left: 200px;
+        }
+        @media only screen and (max-width: 900px){
+            #responsive-parte-roja {
+                padding-left: 10px;
+            }
+            #btn-buscar {
+                width: 390px;
+            }
+        }
+        @media only screen and (max-width: 1000px){
+            #responsive-parte-roja {
+                padding-left: 10px;
+            }
+        }
 
     </style>
 </head>
-<body style="background-image: url('img/azul.png'); background-repeat: no-repeat; height: 490px;width: 1349px; ">
-    <div class="container-fluid" style="height:490px;"> 
+<body>
+    <div class="container-fluid"> 
         <div class="row">
-            <div class="col-lg-12" id="estilizar" >
+            <div class="col-lg-12" id="estilizar" style="z-index: 1;">
                 <!--BARRA DE NAVEGACION-->
-                <nav class="navbar navbar-expand-lg navbar-dark " style="">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="z-index: 1;">
                     
-                    <div class="container-fluid" id="nabvar-modificar" >
+                    <div class="container-fluid" id="nabvar-modificar" style="z-index: 1;">
                         <a class="navbar-brand" href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
                             <span id="logo" class="navbar-logo" style="margin-left:65px;"><img src="img/Spotify_Logo_RGB_White.png"  style="width:130px; height:40px; margin-top:5px;"></span>
                         </a>
@@ -265,7 +284,7 @@
                                 </div>
                             </div>
                         </header>
-                        <div id="modificacion" class="navbar-collapse" id="navbarCollapse"><!--Para cuando se adapte a movil al dar click al boton de arriba se despliegle un menu-->
+                        <div id="modificacion" class="navbar-collapse" id="navbarCollapse" style="z-index: 1;"><!--Para cuando se adapte a movil ;al dar click al boton de arriba se despliegle un menu-->
                             <ul class="navbar-nav ml-auto" id="posicions" >
                                 <li class="nav-item">
                                     <a href="premium.html" class="nav-link" id="modificar">Premium</a>
@@ -285,192 +304,163 @@
                                 <li class="nav-item">
                                     <a href="login.html" class="nav-link" id="modificar3">Iniciar Sesión</a>
                                 </li><!--Se estiliza aplicando todo lo que esta en class-->
-
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-        
-        <div class="row" > 
-            <div class="col-2"></div>
-            <div class="col-9" style="margin-top:140px; margin-left: 60px;">
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="background: url('img/azul.png'); height: 490px;"> 
+            <div class="col-lg-12 col-sm-12" style="text-align: center; padding-top: 160px; z-index: 0;">
                 <p style="font-size:60px; color: white; font-weight: bold;">¿Como te podemos ayudar?</p>
+                <div>
+                    <input id ="btn-buscar" type="text" name="Buscar" id="" placeholder="Buscar">
+                </div>
             </div>
-        </div>
-        <div class="row">
-                <div class="col-2"></div>
-            <div class="col-9" style=" margin-left: 60px;">
-                <input type="text" name="Buscar" id="" placeholder="Buscar" style="background-color:#D6DBF1; border: none; width: 755.43px; height: 43px; border-radius: 10px; color: black ; padding: 6px 12px; font-weight: bold; font-size: 18px;">
-            </div>
-        </div>
-    <!--Color azul  con grid 3-->
-        <div class="row" style="margin-top:60px;">
-            <div class="col-1"></div>
-            <div class="col-2" style="color:white; margin-left: 50px;">
-                <p>AYUDA CON LA CUENTA</p>
-                <a href="" style="color:white; font-weight: bold; font-size: 18px;">Encontrar cuentas</a>
-            </div>
-            <div class="col-2" style="color:white; margin-left: 50px;">
-                <p>AYUDA CON LA CUENTA</p>
-                <a href="" style="color:white; font-weight: bold; font-size: 18px;">Problemas para iniciar sesion</a>
-            </div>
-            <div class="col-2" style="color:white;margin-left: 50px;">
-                <p>CONFIGURACION DE LA CUENTA</p>
-                <a href="" style="color:white;font-weight: bold; font-size: 18px;">Restablecer tu contraseña</a>
-            </div>
-            <div class="col-2" style="color:white; margin-left: 50px;">
-                <p>INFORMACION SOBRE SUBCRIPCIONES</p>
-                <a href="" style="color:white; font-weight: bold; font-size: 18px;">Plan Familiar Premium</a>
+            <div class="row" style="margin-top:60px;">
+                    <div class="col-lg-5" style="color:white; padding-left: 200px;">
+                        <p style="font-size: 13px">AYUDA CON LA CUENTA</p>
+                        <a href="" style="color:white; font-weight: bold; font-size: 15px;">Encontrar cuentas</a>
+                    </div>
+                    <div class="col-lg-2" style="color:white;">
+                        <p style="font-size: 13px">AYUDA CON LA CUENTA</p>
+                        <a href="" style="color:white; font-weight: bold; font-size: 15px;">Problemas para iniciar sesion</a>
+                    </div>
+                    <div class="col-lg-3" style="color:white;">
+                        <p style="font-size: 13px">CONFIGURACION DE LA CUENTA</p>
+                        <a href="" style="color:white;font-weight: bold; font-size: 15px;">Restablecer tu contraseña</a>
+                    </div>
+                    <div class="col-lg-2" style="color:white; ">
+                        <p style="font-size: 13px">INFORMACION SOBRE SUBCRIPCIONES</p>
+                        <a href="" style="color:white; font-weight: bold; font-size: 15px;">Plan Familiar Premium</a>
+                    </div>
             </div>
         </div>
     </div>
+    <!--Color azul  con grid 3-->
+
     <!--Color GRIS-->
-    <div class="container-fluid" style="height:388px; width: 1349px; background-color: #EFEFEF">
+    <div class="container-fluid" style="height:388px; background-color: #EFEFEF; width: 100%;">
         <div class="row">
-            <div class="col-3" style="margin-top:40px; margin-left:200px;">
+            <div class="col-4" style="margin-top:40px; padding-left:200px;">
                 <p id="titulo">Escucha  donde quieras</p>
                 <a id="gris" href="">Telefonos, tablets y computadoras</a><br>
                 <a id="gris" href="">Altavoces</a><br>
                 <a id="gris" href="">Autos</a><br>
                 <a id="gris" href="">Consolas de videojuegos</a><br>
                 <a id="gris" href="">Relojes Inteligentes</a><br>
-
                 <a id="mostrar" href="">MOSTRAR TODO</a>
-            
             </div>
-            
-            <div class="col-3" style="margin-top:40px;">
+            <div class="col-4" style="margin-top:40px;">
                 <p id="titulo" >Cuentas y pagos</p>
                 <a id="gris"href="">Configuracion de la cuenta</a>
                 <a id="gris"href="">Ayuda con la cuenta</a><br>
                 <a id="gris"href="">Informacion sobre suscripciones</a><br>
                 <a id="gris"href="">Ayuda con los pagos</a><br>
                 <a id="gris"href="">Plan Familiar Premium</a><br>
-
                 <a id="mostrar" href="">MOSTRAR TODO</a>
             
             </div>
-            
-            <div class="col-3" style="margin-top:40px;">
+            <div class="col-4" style="margin-top:40px;">
                 <p id="titulo" >Usar Spotify</p>
                 <a id="gris"href="">Video tutoriales</a><br>
                 <a id="gris"href="">Aspectos basicos </a><br>
                 <a id="gris"href="">Playlists</a><br>
                 <a id="gris"href="">Funciones</a><br>
                 <a id="gris"href="">Descubrir musica</a><br>
-
                 <a id="mostrar" style="margin-top:20px;" href="">MOSTRAR TODO</a>
-            
             </div>
         </div>
     </div>
     <!--Color BLANCO-->
-    <div class="container-fluid" style="height:480px; width: 1349px; background-color: #FFFFFF;">
+    <div class="container-fluid" style="height:480px; background-color: #FFFFFF;">
         <div class="row">
             <div class="col-12" id="blanco">
                 <p  style="font-family : Arial, Helvetica, sans-serif; text-align: center; font-size: 65px; font-weight: bold; margin-top: 80px; ">Ir a la comunidad</p>
                 <p  style="font-family : Arial, Helvetica, sans-serif; text-align: center; font-size: 16px; font-weight: bold; ">¿Tienes preguntas? ¡Nuestra Comunidad mundial de expertos te <br> puede ayudar!</p>
                 <p  style="margin-top: 50px; font-family : Arial, Helvetica, sans-serif; text-align: center; font-size: 17px; font-weight: bold; ">2111 miembros conectados en este momento.</p>
-                <button style="margin-top: 50px; font-family : Arial, Helvetica, sans-serif; background-color: #2D46B9; margin-left: auto; margin-right: auto; height: 48px;width: 276.19px; border-radius: 500px; border: none; font-size: 14px; font-weight:bold;" class="btn btn-lg btn-primary btn-block" type="submit">BUSCAR RESPUESTAS</button>
+                <button style="margin-top: 50px; font-family : Arial, Helvetica, sans-serif; background-color: #2D46B9; margin-left: auto; margin-right: auto; height: 48px;width: 276.19px; border-radius: 500px; border: none; font-size: 14px; font-weight:bold; z-index: -2;" class="btn btn-lg btn-primary btn-block" type="submit ">BUSCAR RESPUESTAS</button>
             </div>
         </div>
     </div>
     <!--Color ROJO-->
-    <div class="container-fluid" style="height:1280px; width: 1349px; background-color: #F8583D;">
-        <div class="row">
-            <p style=" font-family : Arial, Helvetica, sans-serif; margin-top:110px; margin-left: auto; margin-right: auto; font-size: 55px; color: white; font-weight: bold;">Como usar las funcionalidades</p>
+    <div class="container-fluid" style=" width:100%; height:1280px; background-image: linear-gradient(to right, #ED2B31, #F8583D);">
+        <div class="row" >
+            <div class="col-lg-12" style="text-align: center; z-index: 0;">
+                <p style=" font-family : Arial, Helvetica, sans-serif; margin-top:110px; font-size: 55px; color: white; font-weight: bold;">Como usar las funcionalidades</p>
+            </div>
         </div>
         <div class="row">
-            <div class="col-5" style="margin-left:200px;">
+            <div id="responsive-parte-roja"class="col-lg-6 col-sm-12" >
                 <div class="row">
                     <p style="color: white;">COMENZAR</p>
                 </div>
                 <div class="row">
-                    <div class="col-11" style="background-color: #CCCCCC; height: 0.5px; margin-bottom: 40px;">
+                    <div class="col-10" style="background-color: #CCCCCC; height: 0.5px; margin-bottom: 40px;">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-10">
                         <p id="titulo-rojo">Buscar</p>
                         <p id="parrafo-rojo">Buscar una canción, un álbum, un artista, un sello, un género, un estado de ánimo, una actividad o un amigo en Spotify</p>
-                        <a id="link-rojo" href="">LEER MAS</a>
-                    </div>
+                        <a id="link-rojo" href="">LEER MAS</a><br>
                 </div>
                 <div class="row">
-                    <div class="col-10">
                         <p id="titulo-rojo">Playlists</p>
                         <p id="parrafo-rojo">Las playlists son como compilados que puedes crear en Spotify. Puedes compartirlas, seguirlas y colaborar con tus amigos.</p>
-                        <a id="link-rojo" href="">LEER MAS</a>
-                    </div>
+                        <a id="link-rojo" href="">LEER MAS</a><br>
                 </div>
                 <div class="row">
-                    <div class="col-10">
                         <p id="titulo-rojo">Escucha Offline</p>
                         <p id="parrafo-rojo">Escucha música en cualquier parte, ¡incluso sin conexión a Internet! Solo para usuarios con suscripción a Premium.</p>
-                        <a id="link-rojo" href="">LEER MAS</a>
-                    </div>
+                        <a id="link-rojo" href="">LEER MAS</a><br>
                 </div>
-                
             </div>
-
-
-
-            <div  class="col-5">
+            <div  class="col-lg-4 col-sm-12">
                 <div class="row">
                     <p style="color: white;">ECHALE UN VISTAZO</p>
                     <div class="col-10" style="background-color: #CCCCCC; height: 0.5px; margin-bottom: 40px;">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-10">
                         <p id="titulo-rojo">Radio</p>
-                        <p id="parrafo-rojo">Sintoniza una de nuestras estaciones o crea la tuya desde tu artista, álbum o canción favoritos.</p>
+                        <p id="parrafo-rojo">Sintoniza una de nuestras estaciones o crea la tuya desde tu artista, álbum o canción favoritos.   
+                        </p>
                         <a id="link-rojo" href="">LEER MAS</a>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-10">
                         <p id="titulo-rojo">Descubrimiento Semanal</p>
                         <p id="parrafo-rojo">¿Quieres descubrir música nueva? Todas las semanas, Spotify crea una playlist con canciones que seguro te gustan pero que casi seguro nunca escuchaste antes.</p>
                         <a id="link-rojo" href="">LEER MAS</a>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-10">
                         <p id="titulo-rojo">Spotify en Chromecast</p>
                         <p id="parrafo-rojo">Reproduce Spotify en tu otro servicio favorito: Chromecast.</p>
                         <a id="link-rojo" href="">LEER MAS</a>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-10">
                         <p id="titulo-rojo">Compartir</p>
                         <p id="parrafo-rojo">Comparte música con amigos y descubre qué están escuchando.</p>
                         <a id="link-rojo" href="">LEER MAS</a>
-                    </div>
                 </div>
-                
             </div>
         </div>
-    
-    
-    
-    
     </div>
     <!--Color GRIS-->
-    <div class="container-fluid" style="height:522px; width: 1349px; background-color: #EFEFEF;">
+    <div class="container-fluid" style="height:522px; background-color: #EFEFEF;">
         <div class="row">
-            <p style=" font-family : Arial, Helvetica, sans-serif; margin-top:110px; margin-left: auto; margin-right: auto; font-size: 55px; color: black; font-weight: bold;">¿Todavia no tienes tu cuenta de Spotify?</p>
+            <div class="col-lg-12">
+                <p style=" font-family : Arial, Helvetica, sans-serif; margin-top:110px; text-align: center; font-size: 55px; color: black; font-weight: bold;">¿Todavia no tienes tu cuenta de Spotify?</p>
+            </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-lg-12">
                 <p  style="font-family : Arial, Helvetica, sans-serif; text-align: center; font-size: 18px; font-weight: bold; ">Más de 30 millones de canciones; miles de playlists propias; <br> Descubrimiento Semanal; Spotify Running; Radio; integración con <br> Chromecast, sistemas de sonido, automóvil, TV y PlayStation; crear <br> y compartir playlists con tus amigos... Todo eso y mucho más, a tu <br> disposición.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="row" style="z-index: 0;">
+            <div class="col-lg-12">
                 <button style="margin-top: 50px; font-family : Arial, Helvetica, sans-serif; background-color: #2D46B9; margin-left: auto; margin-right: auto; height: 48px;width: 276.19px; border-radius: 500px; border: none; font-size: 14px; font-weight:bold;" class="btn btn-lg btn-primary btn-block" type="submit">DESCARGA SPOTIFY</button>
             </div>
         </div>
