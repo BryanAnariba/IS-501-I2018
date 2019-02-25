@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F614920-FB2E-CBA7-568C-347304DD99F6" name="TBL_LUGARES">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:20:50 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_LUGAR" id="42859C17-59E8-5F04-7F3D-EC535A0E94E6">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_LUGAR_PADRE" id="F8BA46B1-8183-5751-E5A4-91BB570F58D9">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:19 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97973D2B-5EDA-E34F-9B76-5F2ACD926220" referredColumn="42859C17-59E8-5F04-7F3D-EC535A0E94E6"/>
+</associations>
+</Column>
+<Column name="NOMBRE_LUGAR" id="2FE26DF6-212E-9428-DF84-A8853CC09ED0">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUD_LUGAR" id="BD3E3ED8-7ECC-F51F-B766-807968BB61AE">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD_LUGAR" id="FEA9BC52-C6F1-B2A0-45E8-6C3E73CCF143">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ABREVIATURA_LUGAR" id="67CB735D-589B-C036-CACF-E5871CBF04DF">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_LUGAR" id="F5D4D435-592F-D009-251C-9F4282C14197">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FCF77E28-5935-5328-1201-430B0C7D0CAE" name="TBL_LUGARES_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42859C17-59E8-5F04-7F3D-EC535A0E94E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9B52372-8149-DE26-006B-1AC8686D5181" name="TBL_LUG_TBL_LUG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:25:19 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8BA46B1-8183-5751-E5A4-91BB570F58D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69E2BF85-3E3C-E4D7-C1DA-1D07DAA860AE" name="TBL_FORMAS_PAGO">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:44:33 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_FORMA_PAGO" id="0F426CF0-E169-482A-0A0D-F4003ED96A25">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:45:18 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORMA_PAGO" id="DB3C7E20-A61C-6C15-FA6D-7773956A0FBF">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:45:18 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_FORMA_PAGO" id="F957C033-26A3-5A74-B6D4-37971F410C0D">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:46:17 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="467F49F3-5043-DE98-EB70-E367FCCF3170" name="TBL_FORMAS_PAGO_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:45:18 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F426CF0-E169-482A-0A0D-F4003ED96A25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

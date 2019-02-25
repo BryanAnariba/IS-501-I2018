@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2238865-89A6-0132-283E-0D084CD84B39" name="TBL_DESCUENTO_X_CUENTA">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 00:54:04 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_DESCUENTO" id="D7D1C8C1-7E15-BC0F-913D-285E005AA2FC">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 00:54:32 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_TIPO_CUENTA" id="3689A492-009E-92AF-EF77-74FD0DDF1B30">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 00:56:16 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA70E71A-EE9B-C9CD-5336-A71F041749CA" referredColumn="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20"/>
+</associations>
+</Column>
+<Column name="DESCUENTO_TIPO_CUENTA" id="01313633-CDBF-CAFE-CAAB-705787979415">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 00:56:09 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION_DESCUENTO_X_CUENTA" id="3B30D001-8E6A-28DE-CCC2-4F43845F7237">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 00:57:15 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES_SOBRE_DESCUENTO" id="3D4B736E-6F7B-A0C7-FC62-815C30F8CBF1">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:16:05 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4365E17F-E529-4A60-6DF5-73A3C755E130" name="TBL_OFERTAS_X_CUENTA_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 00:54:32 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7D1C8C1-7E15-BC0F-913D-285E005AA2FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B1A5A88-794E-E3F4-2803-E23C511F74D5" name="TBL_DES_X_CUE_TBL_TIP_CUE_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 00:56:16 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3689A492-009E-92AF-EF77-74FD0DDF1B30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="312C3983-9E69-B316-49A1-78CBD26C22CB" name="TBL_PAGOS">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:47:00 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PAGO" id="B4F98CC4-F714-6B4F-A858-092AFA97C2F4">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:47:55 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_USUARIO" id="23A33D45-FCAF-9D30-878B-FAA6A6A27D0D">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:48:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5659501F-C846-BD31-C421-0FB7F373A9FE" referredColumn="CBE6AB3F-0695-F183-197B-4E9FD1EC783C"/>
+</associations>
+</Column>
+<Column name="CODIGO_TIPO_CUENTA" id="348362EC-B021-3E90-BDE5-F3D6C94DB801">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 02:17:33 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D8F5AE0-AF21-E4F6-A7C3-D7C3820B0914" referredColumn="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20"/>
+</associations>
+</Column>
+<Column name="CODIGO_FORMA_PAGO" id="6CA5485F-B518-1062-CBA2-55FFD484AA17">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:50:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B01FE10-2F60-9342-F118-B70D95433824" referredColumn="0F426CF0-E169-482A-0A0D-F4003ED96A25"/>
+</associations>
+</Column>
+<Column name="TOTAL_PAGAR_SUSCRIPCION" id="E6E2AC94-3B20-694E-EAB1-66A6C6962A24">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 02:19:11 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_HORA_PAGO" id="1668411B-B1A2-B750-2DCC-C7638FA917B0">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:47:55 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION_SUSCRIPCION" id="30B116A9-8FDD-57FA-E69A-085DD9B2DB4E">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:49:52 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES_SUSCRIPCION" id="22E60D09-D552-4B7F-F704-A30EA478011C">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 02:19:11 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E815FBA9-9B87-D5A5-F398-10DEE7A4B11A" name="TBL_PAGOS_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:47:55 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4F98CC4-F714-6B4F-A858-092AFA97C2F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4486498A-5B40-9F75-F277-B77A5653BC88" name="TBL_PAG_TBL_USU_REG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:48:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23A33D45-FCAF-9D30-878B-FAA6A6A27D0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5ECB1B4-519E-BD2A-B630-F83A0280D474" name="TBL_PAG_TBL_FOR_PAG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 01:50:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CA5485F-B518-1062-CBA2-55FFD484AA17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BAA55F4-E334-08F4-7FED-947000158A05" name="TBL_PAG_TBL_TIPO_CUE_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 02:17:33 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="348362EC-B021-3E90-BDE5-F3D6C94DB801"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B1F6C6D1-B3AE-9969-A72B-8B883C2DFFA0" name="TBL_CANCELACION_SUSCRIPCIONES">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 02:40:46 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CANCELACION" id="64BC11DD-84F5-8562-4C15-8AD5C453296F">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:01:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_USUARIO" id="F6407B2F-5D22-7F6B-B7A3-C6662E301AF9">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:01:08 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C696F47-AA4C-7C1B-E8A3-9CF2BBD0A1B1" referredColumn="CBE6AB3F-0695-F183-197B-4E9FD1EC783C"/>
+</associations>
+</Column>
+<Column name="CODIGO_TIPO_CUENTA" id="79CAA971-3C82-D8C3-7433-8B503A46328B">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:03:40 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF04526F-153C-CA23-70F9-5325B8A5E8C5" referredColumn="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20"/>
+</associations>
+</Column>
+<Column name="USUARIO_CUENTA" id="3AFCF3D9-7DE2-40FF-C9B1-6833B13D0BCE">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:01:55 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD_USUARIO_CUENTA" id="F1EDEA0E-6B17-FBA0-4720-106194DE8D0F">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:02:51 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CANCELACION_SUSCRIPCION" id="3F684F65-8329-F469-B585-D0559E41377D">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:01:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOTIVO_CANCELACION_SUSCRIPCION" id="CC1BA630-E5C1-37DE-5D6B-DC2073E53898">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:01:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34B229CD-33D8-B7E4-B0AF-B0D3780F95F8" name="TBL_CANCELACION_SUSCRIPCIONES_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:01:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64BC11DD-84F5-8562-4C15-8AD5C453296F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFAC9F21-8B2D-EF35-FF72-2947D349DE92" name="TBL_CANCELACION_SUSCRIPCIONES__UN">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:03:03 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AFCF3D9-7DE2-40FF-C9B1-6833B13D0BCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A81379E-2E10-B9E5-AC7A-DEB7A8459061" name="TBL_CAN_SUS_TBL_USU_REG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:01:08 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6407B2F-5D22-7F6B-B7A3-C6662E301AF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F78B418-2A10-4788-6765-A2EE0A9E413B" name="TBL_CAN_SUS_TBL_TIP_CUE_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:03:40 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79CAA971-3C82-D8C3-7433-8B503A46328B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

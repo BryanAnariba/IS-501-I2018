@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modeloRelacionalSpotify" id="A1062F1C-4EBB-670D-7333-AD07CF316C29" version="3.5">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:07:42 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A1062F1C-4EBB-670D-7333-AD07CF316C29</designId>
+</OSDM_Design>

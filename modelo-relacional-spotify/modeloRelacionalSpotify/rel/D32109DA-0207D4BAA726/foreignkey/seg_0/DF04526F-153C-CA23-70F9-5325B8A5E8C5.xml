@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DF04526F-153C-CA23-70F9-5325B8A5E8C5" containerWithKeyObject="B1F6C6D1-B3AE-9969-A72B-8B883C2DFFA0" localFKIndex="2F78B418-2A10-4788-6765-A2EE0A9E413B" name="TBL_CAN_SUS_TBL_TIP_CUE_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-25 03:03:40 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_TIPO_CUENTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>77D5F183-8C07-BB70-4FEC-458E9DB6C202</referredTableID>
+<keyObject>3BEDAC35-F9A8-27EA-0994-57DF596DAF3E</keyObject>
+<referredKeyID>3BEDAC35-F9A8-27EA-0994-57DF596DAF3E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_TIPO_CUENTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

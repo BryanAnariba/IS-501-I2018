@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="768F8A45-94E0-4D80-A37B-C9F387E43EC3">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-02-24 22:07:42 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>
