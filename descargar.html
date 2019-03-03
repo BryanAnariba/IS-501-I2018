@@ -48,7 +48,7 @@
     </style>
 </head>
 <body>
-        <div class="container-fluid" > 
+    <div class="container-fluid" style="width: 100%; z-index: 2;" > 
         <div class="row">
             <div class="col-lg-12" id="estilizar" >
                 <!--BARRA DE NAVEGACION-->
@@ -74,12 +74,12 @@
             </div>
         </div>
     </div>
-    <div id="content-main" class="content-main" role="main" style="z-index: -1;">
+    <div id="content-main" class="content-main" role="main" style="z-index: -1; height: 430px;">
         <div class="download-cta" >
             <div class="download-part-two-auto">
                 <div class="jumbotron jumbotron-hero jumbotron-install" style="background: #19E68C;">
                     <div class="container" >
-                        <div class="row flexbox-container">
+                        <div class="row flexbox-container" style="background: #19E68C;">
                             <div class="col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-0 col-lg-push-8">
                                 <div class="img-responsive-container variant-two-img">
                                     <img class="img-responsive" src="img/laptop.svg">
@@ -87,7 +87,7 @@
                                     <img class="green-success-check fade-in-up animated-delay-1" src="img/green-success-check.svg">
                                 </div>
                             </div>
-                            <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-0 col-lg-pull-4">
+                            <div style="background: #19E68C;" class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-0 col-lg-pull-4">
                                 <h1 class="part-two text-white fade-in">
                                 Para terminar, haz clic en el archivo de instalación.
                                 </h1>
@@ -104,6 +104,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <div class="mobile-upsell">
         <div class="mobile-upsell-container text-center">
             <div class="row">
@@ -119,7 +120,7 @@
                     <div class="center app-buttons-container">
                         <span class="mac-app-store">
                             <a href="https://itunes.apple.com/us/app/spotify-music/id324684580" title="Apple Download" class="button-apple" target="_blank">
-                            <img src="img/es_419.png" alt="Apple Download">
+                            <img  style="z-index: 0;" src="img/es_419.png" alt="Apple Download">
                             </a>
                         </span>
                         <a href="https://play.google.com/store/apps/details?id=com.spotify.music" title="Google Download" class="button-google-play" target="_blank">
@@ -133,37 +134,70 @@
             </div>
         </div>
     </div>
-<div class="all-platforms">
-    <div class="jumbotron jumbotron-all-devices" style="background: #222326;">
-    <div class="container">
-    <img class="center-block devices-img" src="https://www.scdn.co/i/download/all-devices.svg">
-    <div class="row">
-        <div class="col-xs-12">
-        <h3 class="text-white h3-devices">
-            <span class="visible-xs">
-            Una cuenta.<br>
-            Escucha tu música en todas partes</span>
-            <span class="hidden-xs">Una cuenta. Música en todas partes.</span>
-        </h3>
+
+    <div class="all-platforms" style="background: #222326;">
+        <div class="jumbotron jumbotron-all-devices" style="background: #222326;">
+            <div class="container">
+                <img class="center-block devices-img" src="https://www.scdn.co/i/download/all-devices.svg">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="text-white h3-devices">
+                            <span class="visible-xs">
+                            Una cuenta.<br>
+                            Escucha tu música en todas partes</span>
+                            <span class="hidden-xs">Una cuenta. Música en todas partes.</span>
+                            </h3>
+                        </div>
+                    </div>
+                <ul class=" text-white "><i class="fas fa-circle" style="color:#1E8F47;"></i>
+                Móvil  <i class="fas fa-circle" style="color:#1E8F47;"></i>
+                Computadora  <i class="fas fa-circle" style="color:#1E8F47;"></i>
+                Tablet  <i class="fas fa-circle" style="color:#1E8F47;"></i>
+                Auto
+            </ul>
+            <ul class="text-white">
+                <i class="fas fa-circle" style="color:#1E8F47; font-size: 10px;"></i><a href="/hn/playstation/" style="font-size: 20px;">PlayStation<sup>®</sup></a>
+                <i class="fas fa-circle" style="color:#1E8F47; font-size: 10px;"></i><a href="/hn/xbox/" style="font-size: 20px;">Xbox</a>
+                <i class="fas fa-circle" style="color:#1E8F47; font-size: 10px;"></i><a href="/hn/tv/" style="font-size: 20px;">Tv</a>
+                <i class="fas fa-circle" style="color:#1E8F47; font-size: 10px;"></i><a href="/hn/speakers/" style="font-size: 20px;">Altavoz</a>
+                <i class="fas fa-circle" style="color:#1E8F47; font-size: 10px;"></i><a class="hidden-xs" href="/hn/redirect/webplayerlink/?utm_medium=www_deviceslink" style="font-size: 20px;">Reproductor web</a><span class="visible-xs">Reproductor web</span>
+            </ul>
+            </div>
         </div>
-    </div>
-    <ul class="devices-list text-white top-row"><i class="fas fa-circle" style="color:#1E8F47;"></i>
-        <li>Móvil</li><i class="fas fa-circle" style="color:#1E8F47;"></i>
-        <li>Computadora</li><i class="fas fa-circle" style="color:#1E8F47;"></i>
-        <li>Tablet</li><i class="fas fa-circle" style="color:#1E8F47;"></i>
-        <li>Auto</li>
-    </ul>
-    <ul class="devices-list text-white">
-        <li><a href="/hn/playstation/">PlayStation<sup>®</sup></a></li>
-        <li><a href="/hn/xbox/">Xbox</a></li>
-        <li><a href="/hn/tv/">Tv</a></li>
-        <li><a href="/hn/speakers/">Altavoz</a></li>
-        <li><a class="hidden-xs" href="/hn/redirect/webplayerlink/?utm_medium=www_deviceslink">Reproductor web</a><span class="visible-xs">Reproductor web</span></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    </div>
+        </div>
+    
+    <footer class="footer footer-default footer-simple footer-highlight-bubblegum" role="contentinfo"  style="height: 126px;">
+            <div class="container" >
+              <nav class="row row-small">
+                <div class="col-lg-7 col-xs-7">
+                  <ul class="nav nav-small" >
+                    <li style="margin-top: 20px;">
+                      <a id="foot-mod" href="/hn/legal/" style="padding-left:20px; ">Legal</a>
+                    </li>
+                    <li style="margin-top: 20px;">
+                      <a id="foot-mod" href="/hn/legal/cookies-policy/" style="padding-left:20px;">Cookies</a>
+                    </li>
+                    <li style="margin-top: 20px;">
+                      <a id="foot-mod" href="/hn/legal/privacy-policy/#s13" style="padding-left:20px;">Sobre los anuncios</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-5 col-xs-5 text-right">
+                          <a class="market" id="foot-mod" href="/hn/select-your-country/" title="Click para cambiar de idioma">
+                    <div class="media">
+                        <div class="media-body media-middle" id="foot-mod2" style="margin-top: -7px;">
+                            <a style="font-size: 12px;">Honduras</a>
+                      </div>
+                      <div class="media-right media-middle" style="margin-top: -7px;">
+                        <span class="media-object flag-icon flag-icon-hn"><img src="img/hn.svg" style="width: 15px;"></span>
+                      </div>
+                    </div>
+                  </a>
+                    <small class="copyright">© 2019 Spotify AB</small>
+                </div>
+              </nav>
+        </div>
+    </footer>
     <script src="Librerias-Frameworks/jquery.min.js"></script>
     <script src="Librerias-Frameworks/main.js"></script>
     <script src="Librerias-Frameworks/bootstrap.min.js"></script>
