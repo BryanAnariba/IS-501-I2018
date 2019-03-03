@@ -9,254 +9,54 @@
     <link rel="stylesheet" href="Librerias-Frameworks/font-awesome.min.css">
     <link rel="stylesheet" href="Librerias-Frameworks/bootstrap.min.css">
     <link rel="stylesheet" href="Librerias-Frameworks/custom.css">
+    <link rel="stylesheet" href="Librerias-Frameworks/descargar.css">
     <script src="Librerias-Frameworks/all.js"></script>
     <style>
-        #modificar{
-            color:white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            padding-left:15px;
-            margin-left:15px;
-            font-size:15px;
-            margin-top:8px;
-        }
-        #modificar:hover{
-            color:#32C236;
-        }
-        #modificar3{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            padding-left:15px;
-            margin-left:15px;
-            font-size:15px;
-            margin-top:8px;
-        }
-        #modificar3:hover{
-            color:#32C236;
-        }
-        #modificar2{
-            padding-top:2px;
-            font-size: 18px;
-            margin-left:16px;
-            margin-right: -2px;
-            margin-top: 8px;
-            font-weight: -20;
-            color:white;
-        }
-        .nav-item{
-            position: relative;
-            right:75px;
-        }
-        header .wrap{
-            position:absolute;
-            top:-2px;
-            right:10px;
-            display: flex;
-            justify-content: space-between;
-        }
-        header .btn-menu{
-            margin-top:20px;
-            cursor: pointer;
-            visibility: hidden;
-            z-index: 5;
-            font-size: 30px;
-        }
-        header #btn-menu2{
-            position: fixed;
-            top: 10px;
-            margin-left:-5px;
-            margin-top:-12px;
-            cursor: pointer;
-            z-index: 2;
-            font-size: 30px;
-        }
-        /*Menu pantalla completa*/
-        .full-menu {
-            z-index: 5;
-            position:fixed;
-            top:0;
-            right:-100%;
-            width: 100%;
-            height: 100vh;
-            background: rgba(0,0,0,0.9);
-            -webkit-transition: .2s;
-            -o-transition: .2s;
-            transition: .2s;
-        }
-        .full-menu .wrap{
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .full-menu .wrap .parte-oscura {
-            flex-basis: 0;
-            flex-grow: 1;
-            background: black;
-            
-        }
-        .full-menu .wrap .navegacion {
-            z-index:5;
-            flex-basis: 0;
-            flex-grow: 1.3;
-            background: black;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        /*Quitar los puntos de los enlaces de lista*/
-        .full-menu .navegacion ul {
-            list-style: none;
-        }
-        /*Dar formato a los elementos de la lista en la parte de responsive*/
-        .full-menu .navegacion ul li a{
-            font-family : Arial, Helvetica, sans-serif;
-            text-decoration: none;
-            font-size: 35px;
-            color:white;
-            font-weight: 600;
-        }
-        #quitar-grosor {
-            font-weight: 500;
-            font-size: 25px;
-            color:#CECECE;
-        }
-        #quitar-grosor:hover{
-            color:#32C236;
-        }
-        .full-menu .navegacion ul li a:hover{
-            color:#32C236;
-        }
-        #iconos:hover{
-            background:#32C236;
-            color:#222326;
-            
-        }
-        #iconos{
-            display: inline-block;
-            border-radius: 120px;
-            box-shadow: 0px 0px 2px #888;
-
-        }
-        .container-fluid #nabvar-modificar{
-            opacity: 1;
-        }
-        #estilizar{
-                background-color: black; height:80px; opacity: 2; position:fixed; width:100%;
-        }
-        @media only screen and (max-width: 1000px) {
-            #modificar {
-                display: none;
-            }
-            #modificar3{
-                display: none;
-            }
-            #modificar2 {
-                display:none;
-            }
-            #navbar-modificar{
-                background: black;
-                height:60px;
-            }
-            header .btn-menu{ 
-                visibility: visible;
-                
-            }
-            .fas .fa-times-circle{
-                font-size: 50px;
-                color:white;
-
-            }
-            .nabvar-modificar{
-                display: none;
-            }
-            #estilizar {
-                background-color:black; height:60px; opacity: 1; position:fixed; width:100%;
-            }
-            #estilizar2{
-                background: black;
-                height:60px;
-            }
-            header .btn-menu{
-            margin-top:10px;
-            }
-            #logo{
-                position:relative;
-                bottom:8px;
-            }
-            #footer {
-                display:none;
-            }
-        }
-        #enlaces {
-            font-family:Circular, Helvetica, Arial, sans-serif;
-            font-size: 13px;
-            font-weight: 800;
-            color:#919496;
-        }
-        #enlaces-cosas{
-            text-decoration: none;
-            font-family:Circular, Helvetica, Arial, sans-serif;
-            font-size:15px;
-            font-weight: 550;
-            color:white;
-        }
-        #enlaces-cosas:hover{
-            color:#32C236;
-        }
-        div.ejemplo {
-            position: relative;
-            width: 60px;
-            height:60px;
-            text-align: center;
-            background-color: #222326;
-            border: 18px solid #222326;
-            border-radius: 50%;
-            
-        }
-        div.ejemplo{
-            size: 10px;
-            color: white;
-        }
-        div.ejemplo:hover {
-            background-color: #222326;
-            border: 18px solid #222326;
-        }
-        div.ejemplo:hover {
-            color: #32C236;
-        }
-        #enlaces-finales:hover{
-            color:#32C236;
-            font-size: 20px;
-        }
-        /*@media only screen and (min-width: 1500px) {
-            #modificar {
-                display: none;
-            }
-            #modificar3{
-                display: none;
-            }
-            #modificar2 {
-                display:none;
-            }
-            header .btn-menu{ 
-                visibility: visible;
-            }
-        }*/
-
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    img {
+        vertical-align: middle;
+    }
+    img {
+        border: 0;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .jumbotron {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .jumbotron {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        color: #222326;
+        background-color: #F8F8F8;
+    }
     </style>
 </head>
-<body >
-    <div class="container-fluid" style="height:490px;"> 
+<body>
+        <div class="container-fluid" > 
         <div class="row">
             <div class="col-lg-12" id="estilizar" >
                 <!--BARRA DE NAVEGACION-->
-                <nav class="navbar navbar-expand-lg navbar-dark " style="">
+                <nav class="navbar navbar-expand-lg navbar-dark">
                     
                     <div class="container-fluid" id="nabvar-modificar" >
                         <a class="navbar-brand" href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;spotify-logo&quot;}">
-                            <span id="logo" class="navbar-logo" style="margin-left:65px;"><img src="img/Spotify_Logo_RGB_White.png"  style="width:130px; height:40px; margin-top:5px;"></span>
+                            <span id="logo" class="navbar-logo" style="margin-left:65px;"><img src="img/Spotify_Logo_RGB_White.png"  style="width:130px; height:40px; "></span>
                         </a>
                         <header>
                             <div class="wrap">
@@ -265,26 +65,7 @@
                                 </div>
                             </div>
                         </header>
-                        <div id="modificacion" class="navbar-collapse" id="navbarCollapse"><!--Para cuando se adapte a movil al dar click al boton de arriba se despliegle un menu-->
-                            <ul class="navbar-nav ml-auto" id="posicions" >
-                                <li class="nav-item">
-                                    <a href="premium.html" class="nav-link" id="modificar">Premium</a>
-                                </li><!--Se estiliza aplicando todo lo que esta en class-->
-                                <li class="nav-item">
-                                    <a href="ayuda.html" class="nav-link" id="modificar">Ayuda</a>
-                                </li><!--Se estiliza aplicando todo lo que esta en class-->
-                                <li class="nav-item">
-                                    <a href="#create-section" class="nav-link" id="modificar">Descargar</a>
-                                </li><!--Se estiliza aplicando todo lo que esta en class-->
-                                <li class="nav-item">
-                                    <a  class="nav-link" id="modificar2">|</a>
-                                </li><!--Se estiliza aplicando todo lo que esta en class-->
-                                <li class="nav-item">
-                                    <a href="register.html" class="nav-link" id="modificar3">Registrarse</a>
-                                </li><!--Se estiliza aplicando todo lo que esta en class-->
-                                <li class="nav-item">
-                                    <a href="login.html" class="nav-link" id="modificar3">Iniciar Sesión</a>
-                                </li><!--Se estiliza aplicando todo lo que esta en class-->
+                        <div id="modificacion" class="navbar-collapse" id="navbarCollapse">
 
                             </ul>
                         </div>
@@ -292,14 +73,99 @@
                 </nav>
             </div>
         </div>
-        <div class="row" style="background-image: url('img/verde.png'); background-repeat: no-repeat; height: 519px;width: 1349px; ">
+    </div>
+    <div id="content-main" class="content-main" role="main" style="z-index: -1;">
+        <div class="download-cta" >
+            <div class="download-part-two-auto">
+                <div class="jumbotron jumbotron-hero jumbotron-install" style="background: #19E68C;">
+                    <div class="container" >
+                        <div class="row flexbox-container">
+                            <div class="col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-0 col-lg-push-8">
+                                <div class="img-responsive-container variant-two-img">
+                                    <img class="img-responsive" src="img/laptop.svg">
+                                    <img class="green-circle fade-in" src="img/green-circle.svg">
+                                    <img class="green-success-check fade-in-up animated-delay-1" src="img/green-success-check.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-0 col-lg-pull-4">
+                                <h1 class="part-two text-white fade-in">
+                                Para terminar, haz clic en el archivo de instalación.
+                                </h1>
+                                <div class="download-cta-container">
+                                    <p class="p-download fade-in">
+                                        Si no se inició la descarga, <a class="p-download" href="#">vuelve a intentarlo</a>.
+                                        <br>
+                                         ¿Tienes problemas para descargar Spotify? Descarga la aplicación desde <a class="p-download" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download-open-store&quot;}" href="ms-windows-store://pdp/?ProductId=9ncbcszsjrsb&amp;cid=spotifyweb-windows10-store-feb18">Microsoft Store</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row" style="background-image: url('img/centro.png'); background-repeat: no-repeat; height: 312px;width: 1349px; ">
+    <div class="mobile-upsell">
+        <div class="mobile-upsell-container text-center">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <h3 class="h3-mobile">Escucha tu música en tu celular y en tu tablet.</h3>
+                    <p class="p-mobile">
+                        Escuchar desde tu teléfono o tu tablet es fácil, gratis y divertido.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="center app-buttons-container">
+                        <span class="mac-app-store">
+                            <a href="https://itunes.apple.com/us/app/spotify-music/id324684580" title="Apple Download" class="button-apple" target="_blank">
+                            <img src="img/es_419.png" alt="Apple Download">
+                            </a>
+                        </span>
+                        <a href="https://play.google.com/store/apps/details?id=com.spotify.music" title="Google Download" class="button-google-play" target="_blank">
+                        <img src="img/es (1).png" alt="Google Download">
+                        </a>
+                        <a href="https://www.microsoft.com/en-us/store/p/spotify-music/9ncbcszsjrsb?cid=spotifyweb-windows10-store-direct" title="Windows Download" class="button-microsoft" target="_blank">
+                        <img src="img/es.png" alt="Windows Download">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row" style="background-image: url('img/gris-final.png'); background-repeat: no-repeat; height: 402px;width: 1349px; ">
+    </div>
+<div class="all-platforms">
+    <div class="jumbotron jumbotron-all-devices" style="background: #222326;">
+    <div class="container">
+    <img class="center-block devices-img" src="https://www.scdn.co/i/download/all-devices.svg">
+    <div class="row">
+        <div class="col-xs-12">
+        <h3 class="text-white h3-devices">
+            <span class="visible-xs">
+            Una cuenta.<br>
+            Escucha tu música en todas partes</span>
+            <span class="hidden-xs">Una cuenta. Música en todas partes.</span>
+        </h3>
         </div>
-        <div class="row" style="background-image: url('img/ultimo.png'); background-repeat: no-repeat; height: 112px;width: 1349px; ">
-        </div>
-</div>
-
+    </div>
+    <ul class="devices-list text-white top-row"><i class="fas fa-circle" style="color:#1E8F47;"></i>
+        <li>Móvil</li><i class="fas fa-circle" style="color:#1E8F47;"></i>
+        <li>Computadora</li><i class="fas fa-circle" style="color:#1E8F47;"></i>
+        <li>Tablet</li><i class="fas fa-circle" style="color:#1E8F47;"></i>
+        <li>Auto</li>
+    </ul>
+    <ul class="devices-list text-white">
+        <li><a href="/hn/playstation/">PlayStation<sup>®</sup></a></li>
+        <li><a href="/hn/xbox/">Xbox</a></li>
+        <li><a href="/hn/tv/">Tv</a></li>
+        <li><a href="/hn/speakers/">Altavoz</a></li>
+        <li><a class="hidden-xs" href="/hn/redirect/webplayerlink/?utm_medium=www_deviceslink">Reproductor web</a><span class="visible-xs">Reproductor web</span></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="Librerias-Frameworks/jquery.min.js"></script>
+    <script src="Librerias-Frameworks/main.js"></script>
+    <script src="Librerias-Frameworks/bootstrap.min.js"></script>
 </body>
+</html>
