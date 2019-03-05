@@ -175,7 +175,7 @@
             #boton-complicado2 {
                 position: relative;
                 padding-top: 90px;
-                margin-left: -50px;
+                /*margin-left: -50px;*/
             }
         }
         @media only screen and (max-width: 1100px) {
@@ -187,7 +187,7 @@
                 position: relative;
                 font-size: 30px;
                 padding-top:150px;
-                margin-left: -90;
+                /*margin-left: -90;*/
             }
         }
         @media only screen and (max-width: 1000px) {
@@ -265,6 +265,10 @@
                 font-size: 50px;
                 padding-top: 150px;
             }
+            #sonrie-2 {
+                font-size: 40px;
+                padding-top: 150px;
+            }
             #texto-1{
                 font-size: 28px;
                 padding-top:150px;
@@ -277,6 +281,7 @@
             #boton-complicado {
                 position:absolute;
                 margin-top: 100px;
+                margin-left:auto; margin-right:auto;
             }
         }
         #enlaces {
@@ -339,6 +344,7 @@
             z-index: 0;
             padding-top: 37px;
             position: relative;
+            background-position: right 3px top -55px;
         }
         .row2 {
             margin-left: -15px;
@@ -413,7 +419,7 @@
             scrollbar-darkshadow-color:#000000;
         }
         #boton-3 {
- 
+            letter-spacing: 2px;
             padding: 13px; 
             margin-top:390px; 
             color:white; 
@@ -452,10 +458,22 @@
             text-decoration:none;
             border: 2px solid #1DB954;
             border-radius: 25px;
-            width: 300px;
+            width: 100px;
             height: 50px;
             padding-top: 10px;
             color:#1DB954;
+            font-size: 15px;
+            font-weight: 600;
+            margin:auto;
+        }
+        #btn-1 {
+            text-decoration:none;
+            
+            border-radius: 25px;
+            width: 300px;
+            height: 50px;
+            padding-top: 10px;
+            color:#616467;
             font-size: 15px;
             font-weight: 600;
             margin:auto;
@@ -477,6 +495,10 @@
             background: #1ED760;
             color:white;
         }
+        #btn-1:hover {
+            background: #616467;
+            color:white;
+        }
         #btn-2:hover {
             background: #1ED760;
             border: 2px solid #1ED760;
@@ -491,7 +513,8 @@
 
 @media only screen and (max-width: 900px){
     #texto-1{
-        padding-left: 10px;
+        padding-left: auto;
+        padding-right: auto;
     }
     #wrap-contenedor {
         height: 1000px;
@@ -503,4 +526,10 @@
         padding-top: -30px;
     }
 
+}
+
+#la-imagen {
+    height: 504px;
+    width: 374px;
+    
 }
