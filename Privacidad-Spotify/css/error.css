@@ -1,0 +1,24 @@
+div#negro{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+div#dialogo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -200px;
+	width: 400px;
+	height: 100px;
+	background-color: white;
+	border-radius: 3px;
+	border: 1px solid #c3c3c3;
+}
+div#dialogo p{
+	padding: 10px;
+	padding-top: 10px;
+	font-size: 1.2em;
+	text-align: center;
+}
