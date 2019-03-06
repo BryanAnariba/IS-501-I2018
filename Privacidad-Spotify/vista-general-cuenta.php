@@ -137,7 +137,7 @@
                           </svg>
                         </div>
                     </a>
-                    <a class="navbar-brand" href="index.html" >
+                    <a class="navbar-brand" href="../index.html" >
                       <span class="navbar-logo">Spotify</span>
                     </a>
                 </div>
@@ -145,17 +145,17 @@
                 <nav class="collapse navbar-collapse" id="navbar-nav" role="navigation" style="width: auto;">
                     <ul class="nav navbar-nav navbar-right nav-main">
                         <li>
-                          <a href="#" id="nav-link-premium" data-ga-category="menu" data-ga-action="premium" style="animation-delay: 0ms;">
+                          <a href="../premium.html" id="nav-link-premium" data-ga-category="menu" data-ga-action="premium" style="animation-delay: 0ms;">
                             Premium
                           </a>
                         </li>
                         <li>
-                          <a href="#" id="nav-link-help" data-ga-category="menu" data-ga-action="help" style="animation-delay: 17ms;">
+                          <a href="../ayuda.html" id="nav-link-help" data-ga-category="menu" data-ga-action="help" style="animation-delay: 17ms;">
                             Ayuda
                           </a>
                         </li>
                         <li>
-                          <a href="#" id="nav-link-download" class="js-get-spotify js-gtm-event" data-ga-category="menu" data-ga-action="download"  style="animation-delay: 34ms;">Descargar
+                          <a href="../descargar.html" id="nav-link-download" class="js-get-spotify js-gtm-event" data-ga-category="menu" data-ga-action="download"  style="animation-delay: 34ms;">Descargar
                           </a>
                         </li>
                         <li role="separator" class="divider" style="animation-delay: 51ms;">
@@ -279,14 +279,14 @@
                                   </a>
                                 </li> 
                                 <li id="submenu-item-edit-profile">
-                                  <a href="editar_perfil.php">
+                                  <a href="editar-perfil.php">
                                     <svg>
                                       <use xlink:href="#icon-edit"></use>
                                     </svg> Editar perfil
                                   </a>
                                 </li> 
                                 <li id="submenu-item-change-password">
-                                  <a href="cambiar_contrasena.php">
+                                  <a href="cambiar-contraseña.php">
                                     <svg>
                                       <use xlink:href="#icon-locked"></use>
                                     </svg> Cambiar contraseña
@@ -378,21 +378,21 @@
                                 </div> 
                                 <ul class="nav-inverse nav-tabs nav-stacked">  
                                     <li class="active" id="submenu-item-account-overview">
-                                        <a href="#">
+                                        <a href="vista-general-cuenta.php">
                                             <svg>
                                                 <use xlink:href="#icon-home"></use>
                                             </svg> Vista general de la cuenta
                                         </a>
                                     </li> 
                                     <li id="submenu-item-edit-profile">
-                                        <a href="editar_perfil.php">
+                                        <a href="editar-perfil.php">
                                           <svg>
                                             <use xlink:href="#icon-edit"></use>
                                           </svg> Editar perfil
                                         </a>
                                     </li> 
                                     <li id="submenu-item-change-password">
-                                        <a href="cambiar_contrasena.php">
+                                        <a href="cambiar-contraseña.php">
                                           <svg>
                                             <use xlink:href="#icon-locked"></use>
                                           </svg> Cambiar contraseña

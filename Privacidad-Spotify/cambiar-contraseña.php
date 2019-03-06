@@ -23,7 +23,7 @@
       <meta name="twitter:image" content="img/twitter_card-default.jpg">
       <meta name="twitter:description" content="Spotify es toda la música que necesitarás.">
                 
-      <title>Configuración de privacidad - Spotify</title>
+      <title>Cambiar la contraseña - Spotify</title>
 
       <link rel="icon" href="img/logo_obscuro.png">
       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo.png">
@@ -34,12 +34,21 @@
       <link rel="canonical" href="#">
       <link rel="stylesheet" href="css/spotify.css">
       <link rel="stylesheet" href="css/account.css">
-      <link rel="icon" href="../img/favicon.png">
+      <link rel="stylesheet" href="css/mensaje_error.css">
+ 
       <script src="extra/tracking.download.0a5d990a048e858d07ff.js.download"></script>
            
       <script async="" src="extra/hotjar-444446.js(1).download"></script>
       <script async="" src="extra/modules-9cac31d617713ef2768f017542280bf6.js.download"></script>
       <style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+
+      <script>
+        function quitar(){
+          document.getElementById("negro").style.display="none";
+          document.getElementById("dialogo").style.display="none";
+          window.location="cambiar_contrasena.php";
+        }
+      </script>
 
   </head>
 
@@ -112,14 +121,6 @@
                                     </use></svg>
                                   </div>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li>
-                                        <a href="vista_general_cuenta.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;account&quot;}">Cuenta</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;log-out&quot;}">Cerrar Sesión</a>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                         <a href="#" class="user-link hidden">      
@@ -156,16 +157,6 @@
                                 Mejora tu cuenta
                               </a>
                             </li>
-                            <li class="alternate sidepanel-item-small hidden-md hidden-lg ">
-                              <a href="vista_general_cuenta.html" id="nav-link-account" data-ga-category="menu" data-ga-action="account">
-                                Cuenta
-                              </a>
-                            </li>
-                            <li class="alternate sidepanel-item-small hidden-md hidden-lg ">
-                              <a href="index.html" id="nav-link-log-out" data-ga-category="menu" data-ga-action="log-out">
-                                Cerrar Sesión
-                              </a>
-                            </li>
                             <li class="dropdown alternate hidden-sidepanel">
                                 <a href="#" class="user-link dropdown-toggle" data-toggle="dropdown">    
                                   <div class="user-icon-container img-circle navbar-user-img">
@@ -184,12 +175,6 @@
                                       <a href="#" id="nav-link-upgrade" data-ga-category="menu" data-ga-action="upgrade">
                                         Mejora tu cuenta
                                       </a>
-                                    </li>
-                                    <li>
-                                      <a href="vista_general_cuenta.html" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;account&quot;}">Cuenta</a>
-                                    </li>
-                                    <li>
-                                      <a href="index.html" class="logout-link" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;log-out&quot;}">Cerrar Sesión</a>
                                     </li>
                                 </ul>
                             </li>
@@ -274,44 +259,44 @@
                                     <svg>
                                       <use xlink:href="#icon-locked"></use>
                                     </svg>
-                                    <span class="icon-chevron-down"></span> Configuración de privacidad
+                                    <span class="icon-chevron-down"></span> Cambiar contraseña
                                 </button>
                                 <ul class="dropdown-menu" role="menu"> 
                                     <li id="submenu-item-account-overview">
                                       <a href="vista-general-cuenta.php">
                                         <svg>
-                                          <use xlink:href="vista-general-cuenta.php"></use>
+                                          <use xlink:href="#icon-home"></use>
                                         </svg> Vista general de la cuenta
                                       </a>
                                     </li> 
                                     <li id="submenu-item-edit-profile">
                                       <a href="editar-perfil.php">
                                         <svg>
-                                          <use xlink:href="editar_perfil.php"></use>
+                                          <use xlink:href="#icon-edit"></use>
                                         </svg> Editar perfil
                                       </a>
                                     </li> 
-                                    <li id="submenu-item-change-password">
+                                    <li class="active" id="submenu-item-change-password">
                                       <a href="cambiar-contraseña.php">
                                         <svg>
                                           <use xlink:href="#icon-locked"></use>
                                         </svg> Cambiar contraseña
                                       </a>
                                     </li> 
-                                    <li class="active" id="submenu-item-privacy-settings">
-                                      <a href="#"> 
+                                    <li id="submenu-item-privacy-settings">
+                                      <a href="configuracion_privacidad.php"> 
                                         <svg>
                                           <use xlink:href="#icon-locked"></use>
                                         </svg> Configuración de privacidad
                                       </a>
                                     </li>
                                     <li id="submenu-item-offline-devices">
-                                      <a href="dispositivo_offline.php">
-                                        <svg>
-                                          <use xlink:href="#icon-offline"></use>
-                                        </svg> Dispositivos offline
-                                      </a>
-                                    </li>  
+                                          <a href="dispositivo_offline.php">
+                                            <svg>
+                                              <use xlink:href="#icon-offline"></use>
+                                            </svg> Dispositivos offline
+                                          </a>
+                                        </li> 
                                     <li id="submenu-item-subscription">
                                       <a href="suscripcion.php">
                                         <svg>
@@ -361,26 +346,26 @@
                                         <li id="submenu-item-account-overview">
                                           <a href="vista-general-cuenta.php">
                                             <svg>
-                                              <use xlink:href="vista-general-cuenta.php"></use>
+                                              <use xlink:href="#icon-home"></use>
                                             </svg> Vista general de la cuenta
                                           </a>
                                         </li> 
                                         <li id="submenu-item-edit-profile">
                                           <a href="editar-perfil.php">
                                             <svg>
-                                              <use xlink:href="editar-perfil.php"></use>
+                                              <use xlink:href="#icon-edit"></use>
                                             </svg> Editar perfil
                                           </a>
                                         </li> 
-                                        <li id="submenu-item-change-password">
-                                          <a href="cambiar-contrasena.php">
+                                        <li class="active" id="submenu-item-change-password">
+                                          <a href="cambiar-contraseña.php">
                                             <svg>
                                               <use xlink:href="#icon-locked"></use>
                                             </svg> Cambiar contraseña
                                           </a>
                                         </li> 
-                                        <li class="active" id="submenu-item-privacy-settings">
-                                          <a href="#"> 
+                                        <li id="submenu-item-privacy-settings">
+                                          <a href="configuracion_privacidad.php"> 
                                             <svg>
                                               <use xlink:href="#icon-locked"></use>
                                             </svg> Configuración de privacidad
@@ -427,154 +412,24 @@
                             <div class="col-sm-9">
                                 <div class="content">
                                     <div class="content-top">
-                                        <div id="privacy-content-container">
-                                              <div id="privacy-category-management" data-url="#">
-                                                    <div class="page-header">
-                                                        <h1>Configuración de privacidad</h1>
-                                                    </div>
-                                                    <p>Queremos que sea fácil administrar y entender tu Configuración de privacidad, para que puedas usar el servicio de Spotify como desees.</p>
-                                                    <p>Los controles en esta página te permiten:</p>
-                                                    <ul>
-                                                        <li>Controlar los datos de Facebook que Spotify procesa acerca de ti.</li>
-                                                        <li>Controlar la publicidad personalizada que ves y oyes en Spotify.</li>
-                                                        <li>Descargar una copia de tus datos personales de Spotify.</li>
-                                                    </ul>
-                                                    <div class="page-header privacy-section-header">
-                                                        <h2>Administrar tus datos</h2>
-                                                    </div>
-                                                    <p>Puedes acceder a controles adicionales de datos desde tu dispositivo o directamente desde el servicio de Spotify. Para ver más información acerca de tus derechos sobre los datos, incluidos el modo en que Spotify recopila datos personales y el motivo por el cual lo hace, además de información adicional acerca de cómo puedes administrar esto, consulta nuestro 
-                                                        <a href="#">Centro de privacidad</a> o descubre más acerca de tus 
-                                                        <a href="#">derechos sobre los datos y configuración de privacidad</a>
-                                                    </p>        
-                                                    <div class="well">
-                                                        <h3 class="privacy-category-title">Datos de Facebook</h3>
-                                                        <p class="text-grey-55">Cuando solicites a Spotify que deje de procesar tus datos de Facebook, ya no procesaremos ninguno de los datos que Facebook comparte con Spotify, excepto los datos personales que te permiten iniciar sesión en Spotify mediante tu cuenta de Facebook. Para obtener más información, consulta tus 
-                                                          <a href="#">derechos sobre los datos y configuración de privacidad</a>.
-                                                        </p>
-                                                        <div class="privacy-category-state-section">
-                                                          <div class="privacy-checkbox">
-                                                              <label class="privacy-toggle" id="category-toggle-label-facebook" for="category-toggle-input-facebook">
-                                                                  <input class="category-toggle" type="checkbox" name="FACEBOOK" value="true" checked="checked" id="category-toggle-input-facebook">
-                                                                  <span class="slider"></span>
-                                                              </label>
-                                                          </div>
-                                                          <p><b>Procesar mis datos de Facebook</b></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="well">
-                                                        <h3 class="privacy-category-title">Publicidad personalizada</h3>
-                                                        <p class="text-grey-55">Si utilizas el servicio gratuito de Spotify con soporte publicitario y solicitas dejar de recibir publicidad personalizada, no vincularemos tu cuenta a la información que comparten con Spotify socios terceros de publicidad. Eso significa que seguirás recibiendo publicidad basada en la información básica de tu cuenta Spotify, pero es posible que no esté tan personalizada. Para obtener más información, consulta tus 
-                                                          <a href="#">derechos sobre los datos y configuración de privacidad</a>.
-                                                        </p>
-                                                        <div class="privacy-category-state-section">
-                                                          <div class="privacy-checkbox">
-                                                              <label class="privacy-toggle" id="category-toggle-label-ad-targeting" for="category-toggle-input-ad-targeting">
-                                                                  <input class="category-toggle" type="checkbox" name="AD_TARGETING" value="true" checked="checked" id="category-toggle-input-ad-targeting">
-                                                                  <span class="slider"></span>
-                                                              </label>
-                                                          </div>
-                                                          <p><b>Procesar mis datos personales para recibir publicidad personalizada</b></p>
-                                                        </div>
-                                                    </div>
-                                              </div>
-                                              <div class="privacy-section-header">
-                                                    <div class="page-header">
-                                                        <a name="privacy-download">
-                                                            <h2>Descargar tus datos</h2>
-                                                        </a>
-                                                    </div>
-                                                    <div class="privacy-download-subtext">
-                                                        <p>A través de la aplicación Spotify, puedes acceder a la mayoría de los datos personales que Spotify conserva de ti (por ejemplo, playlists, consultas de búsqueda, seguidores e historial de streaming). Si deseas obtener una copia consolidada de estos datos, puedes descargarla siguiendo los pasos a continuación.</p>
-                                                        <p>La descarga incluirá una copia de tus playlists, historial de streaming y búsquedas de los últimos 90 días, una lista de los elementos guardados en tu biblioteca, la cantidad de seguidores que tienes, los nombres y la cantidad de otros usuarios y artistas que sigues, y tus datos de pago y suscripción. Para obtener más información, consulta tus 
-                                                          <a href="#">derechos sobre los datos y configuración de privacidad</a>.
-                                                        </p>
-                                                        <p>Como el archivo descargable que recibirás contiene la información de tu perfil, debes mantenerlo seguro y tener cuidado cuando lo almacenes, lo envíes o lo cargues en otros servicios.</p>
-                                                        <p>Si tienes alguna pregunta o consulta acerca de los datos personales que contiene tu archivo descargable, 
-                                                          <a href="#">comunícate con nosotros</a>.
-                                                        </p>
-                                                    </div>
-                                                    <div class="privacy-download-steps row">
-                                                        <div class="col-md-4 col-xs-12 privacy-download-step-1 " aria-hidden="false">
-                                                            <div class="well">
-                                                                <h4>Paso 1</h4>
-                                                                <p>Haz clic en el botón para comenzar el proceso de recopilación de tus datos.</p>
-                                                                <p class="privacy-date font-weight-bold" id="privacy-request-date"></p>
-                                                                <div class="privacy-button-wrapper">
-                                                                    <button data-url="#" type="button" class="btn btn-black btn-sm" id="privacy-open-request-download-modal-button">
-                                                                        Solicitud
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-12 privacy-download-step-2 privacy-grayed-step" aria-hidden="true">
-                                                            <div class="well">
-                                                                <h4>Paso 2</h4>
-                                                                <p>Estamos preparando tu archivo de datos. Esto puede demorar hasta 30 días en completarse.</p>
-                                                                <p>Recibirás un correo electrónico cuando esté listo para descargarse.</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-12 privacy-download-step-3 privacy-grayed-step" aria-hidden="true">
-                                                            <div class="well">
-                                                                <h4>Paso 3</h4>
-                                                                <p>Haz clic en el botón a continuación para descargar tu archivo de datos. Estará disponible para su descarga durante un plazo de 14 días.</p>
-                                                                <div class="privacy-button-wrapper">
-                                                                    <button type="button" class="btn btn-black btn-sm" id="privacy-download-button" disabled="">
-                                                                        Descargar
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                              </div>
+                                        <div class="page-header">
+                                          <h1>Cambiar la contraseña</h1>
+                                        </div> 
+                                        <div id="change-password" class="article-account">
+                                            <div class="well">
+                                            <form name="change_password" method="post" class="form-account form-change-password" id="form-change-password" novalidate="novalidate"><div id="change_password" class="form-change-password">            <div class="row"><div class="col-md-12"><div class="form-group"><label class="control-label control-label required" for="change_password_validatePassword">Contraseña actual</label><input type="password" id="change_password_validatePassword" name="change_password[validatePassword]" required="required" data-rule-required="data-rule-required" data-msg-required="Este campo es obligatorio" class="form-control"></div></div></div>    <div class="row"><div class="col-md-12"><div class="form-group"><label class="control-label control-label required" for="change_password_new_password">Nueva contraseña</label><input type="password" id="change_password_new_password" name="change_password[new_password]" required="required" data-rule-required="data-rule-required" data-msg-required="Este campo es obligatorio" class="form-control" aria-autocomplete="list"></div></div></div>    <div class="row"><div class="col-md-12"><div class="form-group"><label class="control-label control-label required" for="change_password_check_password">Repetir nueva contraseña</label><input type="password" id="change_password_check_password" name="change_password[check_password]" required="required" data-passwordconfirm="1" data-rule-required="data-rule-required" data-msg-required="Este campo es obligatorio" data-rule-equalto="#change_password_new_password" data-msg-equalto="Comprueba tu contraseña." data-requirepassword="data-requirepassword" class="form-control"><div id="password-ok" class="control-label-validation hidden">
+                                            correcta
+                                            </div><div id="password-wrong" class="control-label-validation hidden">
+                                            Comprueba tu contraseña.
+                                            </div></div></div></div>    <div class="row-buttons-bordered"><button type="submit" id="change_password_submit" name="change_password[submit]" class="btn btn-green btn-sm js-gtm-event" data-ga-category="Account Pages" data-ga-action="set new password" data-ga-label="set-new-password-account" data-gtm-event-name="set_new_password_button_clicked">Establecer nueva contraseña</button><a href="/hn/account/overview/" class="btn btn-sm btn-cancel">Cancelar</a></div>    <input type="hidden" id="change_password__token" name="change_password[_token]" class="form-control" value="eyJ0aW1lIjoxNTUxOTAzNTI1LCJoYXNoIjoiMmM3NzJkYzAxOWI2Y2RkYzZkYWFkYmZmZDQxZDlkYjA2NWYzYjZiNWEzMDE1M2U1NTExYTI2Zjc0YWM5NmRhMSJ9"></div></form>
+                                            </div>
+                                            </div>
+                                        <div id="change-password" class="article-account">
+                                          <div class="well">
+                                              <form method="POST" action="ajax_procesar_php/acciones_cambiar_contrasena.php" class="form-account form-change-password" id="form-change-password">
+                                              </form>
+                                          </div>
                                         </div>
-
-                                        <div class="privacy-all-modals">
-                                          <!-- Category Toggle Confirmation Modals -->
-                                          <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-FACEBOOK" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-FACEBOOK">
-                                              <div class="modal-dialog" role="document">
-                                                  <div class="modal-content">
-                                                      <div class="modal-body">
-                                                          <h3>Datos de Facebook</h3>
-                                                          <p>¿Estás seguro de que deseas restringir el procesamiento de tus datos de Facebook?</p>
-                                                      </div>
-                                                      <div class="modal-footer">
-                                                          <button type="button" class="btn btn-link privacy-cancel" data-dismiss="modal">Cancelar
-                                                          </button>
-                                                          <button type="button" class="btn btn-primary privacy-confirm" data-dismiss="modal">Sí, apagar
-                                                          </button>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-AD_TARGETING" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-AD_TARGETING">
-                                              <div class="modal-dialog" role="document">
-                                                  <div class="modal-content">
-                                                      <div class="modal-body">
-                                                          <h3>Datos de publicidad personalizada</h3>
-                                                          <p>¿Estás seguro de que deseas dejar de recibir publicidad personalizada basada en datos de terceros?</p>
-                                                      </div>
-                                                      <div class="modal-footer">
-                                                          <button type="button" class="btn btn-link privacy-cancel" data-dismiss="modal">Cancelar
-                                                          </button>
-                                                          <button type="button" class="btn btn-primary privacy-confirm" data-dismiss="modal">Sí, apagar
-                                                          </button>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <!-- Error Modal -->
-                                          <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-error" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-error">
-                                              <div class="modal-dialog" role="document">
-                                                  <div class="modal-content">
-                                                      <div class="modal-body">
-                                                      <span data-dismiss="modal" aria-hidden="true" class="privacy-dismiss-x">×</span>
-                                                          <h3>Lo sentimos. Se produjo un error.</h3>
-                                                          <p>Parece que se produjo un error en el sistema. <a href="#">Comuníquese con nuestros asesores</a> para obtener más detalles.</p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                        </div>  
                                     </div>
                                     <div class="content-bottom">
                                     </div>
@@ -745,7 +600,8 @@
                       </div>
                 </nav>
             </div>
-        </footer>                    
+        </footer>
+                            
         <script src="extra/spweb-site.min.72b2316e28705b8d5374.js.download"></script>                   
         <script src="extra/account.f667211bcca065c9362a.js.download"></script>                  
         <script async="" src="extra/vt-150.js.download"></script>
@@ -756,10 +612,13 @@
         <div id="ttdUniversalPixelTag1dfda5e8d7794c54abf4a4ce7c009256" style="display:none">
               <script type="text/javascript" id="" src="extra/up_loader.1.1.0.js.download"></script>
         </div>
+        
         <iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" src="extra/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe>
         <iframe id="universal_pixel" allowtransparency="true" height="0" width="0" style="display:none;" src="extra/up.html"></iframe>
         <script src="extra/adsct" type="text/javascript"></script>
         <script src="extra/adsct" type="text/javascript"></script>
         <script src="extra/adsct(1)" type="text/javascript"></script>
+
+
   </body>
 </html>
