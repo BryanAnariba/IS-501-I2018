@@ -284,42 +284,42 @@
                                       </a>
                                     </li> 
                                     <li id="submenu-item-privacy-settings">
-                                      <a href="configuracion_privacidad.php"> 
+                                      <a href="#"> 
                                         <svg>
                                           <use xlink:href="#icon-locked"></use>
                                         </svg> Configuración de privacidad
                                       </a>
                                     </li>
                                     <li id="submenu-item-offline-devices">
-                                          <a href="dispositivo_offline.php">
+                                          <a href="#">
                                             <svg>
                                               <use xlink:href="#icon-offline"></use>
                                             </svg> Dispositivos offline
                                           </a>
                                         </li> 
                                     <li id="submenu-item-subscription">
-                                      <a href="suscripcion.php">
+                                      <a href="#">
                                         <svg>
                                           <use xlink:href="#icon-payment"></use>
                                         </svg> Suscripción
                                       </a>
                                     </li>
                                     <li id="submenu-item-receipts">
-                                      <a href="recibos.php">
+                                      <a href="#">
                                         <svg>
                                           <use xlink:href="#icon-payment-history"></use>
                                         </svg> Recibos
                                       </a>
                                     </li>  
                                     <li id="submenu-item-apps">
-                                      <a href="apps.php">
+                                      <a href="#">
                                         <svg>
                                           <use xlink:href="#icon-apps"></use>
                                         </svg> Apps
                                       </a>
                                     </li> 
                                     <li id="submenu-item-redeem">
-                                      <a href="canjear.php">
+                                      <a href="#">
                                         <svg>
                                           <use xlink:href="#icon-redeem"></use>
                                         </svg> Canjear
@@ -365,42 +365,42 @@
                                           </a>
                                         </li> 
                                         <li id="submenu-item-privacy-settings">
-                                          <a href="configuracion_privacidad.php"> 
+                                          <a href="#"> 
                                             <svg>
                                               <use xlink:href="#icon-locked"></use>
                                             </svg> Configuración de privacidad
                                           </a>
                                         </li>
                                         <li id="submenu-item-offline-devices">
-                                          <a href="dispositivo_offline.php">
+                                          <a href="#">
                                             <svg>
                                               <use xlink:href="#icon-offline"></use>
                                             </svg> Dispositivos offline
                                           </a>
                                         </li>  
                                         <li id="submenu-item-subscription">
-                                          <a href="suscripcion.php">
+                                          <a href="#">
                                             <svg>
                                               <use xlink:href="#icon-payment"></use>
                                             </svg> Suscripción
                                           </a>
                                         </li>
                                         <li id="submenu-item-receipts">
-                                          <a href="recibos.php">
+                                          <a href="#">
                                             <svg>
                                               <use xlink:href="#icon-payment-history"></use>
                                             </svg> Recibos
                                           </a>
                                         </li>  
                                         <li id="submenu-item-apps">
-                                          <a href="apps.php">
+                                          <a href="#">
                                             <svg>
                                               <use xlink:href="#icon-apps"></use>
                                             </svg> Apps
                                           </a>
                                         </li> 
                                         <li id="submenu-item-redeem">
-                                          <a href="canjear.php">
+                                          <a href="#">
                                             <svg>
                                               <use xlink:href="#icon-redeem"></use>
                                             </svg> Canjear
