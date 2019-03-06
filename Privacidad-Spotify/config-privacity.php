@@ -359,7 +359,7 @@
                                     </div>
                                     <ul class="nav-inverse nav-tabs nav-stacked"> 
                                         <li id="submenu-item-account-overview">
-                                          <a href="vista_general_cuenta.php">
+                                          <a href="vista-general-cuenta.php">
                                             <svg>
                                               <use xlink:href="#icon-home"></use>
                                             </svg> Vista general de la cuenta
