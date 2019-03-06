@@ -34,8 +34,8 @@
       <link rel="canonical" href="#">
       <link rel="stylesheet" href="css/spotify_cuenta.css">
       <link rel="stylesheet" href="css/spotify_cuenta2.css">
+      <link rel="icon" href="../img/favicon.png">
 
-            
       <script src="extra/tracking.download.a99157633231b46492ce.js.download"></script>  
       <script async="" src="extra/hotjar-444446.js(1).download"></script>
       <script async="" src="extra/modules-3aa183594b28e2f80d9c10fc0f758615.js.download"></script>
