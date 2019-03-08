@@ -283,6 +283,13 @@
                                         </svg> Cambiar contraseña
                                       </a>
                                     </li> 
+                                    <li id="submenu-item-edit-profile">
+                                      <a href="configurar-notificaciones.php">
+                                        <svg>
+                                          <use xlink:href="#icon-edit"></use>
+                                        </svg> Configuracion De Notificaciones
+                                      </a>
+                                    </li>
                                     <li id="submenu-item-privacy-settings">
                                       <a href="#"> 
                                         <svg>
@@ -364,6 +371,13 @@
                                             </svg> Cambiar contraseña
                                           </a>
                                         </li> 
+                                          <li id="submenu-item-edit-profile">
+                                            <a href="configurar-notificaciones.php">
+                                              <svg>
+                                                <use xlink:href="#icon-edit"></use>
+                                              </svg> Configuracion De Notificaciones
+                                            </a>
+                                        </li>
                                         <li id="submenu-item-privacy-settings">
                                           <a href="#"> 
                                             <svg>

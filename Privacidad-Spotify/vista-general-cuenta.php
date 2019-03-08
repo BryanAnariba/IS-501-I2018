@@ -175,7 +175,7 @@
                               </div>
                               <span class="user-text">Perfil</span>
                               <svg class="svg-chevron-down">
-                                <use xmlns:xlink="" xlink:href="#chevron-down"></use>
+                                <use xmlns:xlink="" xlink:href="#chevron-down">Cuenta</use>
                               </svg>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
@@ -292,6 +292,13 @@
                                     </svg> Cambiar contraseña
                                   </a>
                                 </li> 
+                                <li id="submenu-item-edit-profile">
+                                  <a href="configurar-notificaciones.php">
+                                    <svg>
+                                      <use xlink:href="#icon-edit"></use>
+                                    </svg> Configuracion De Notificaciones
+                                  </a>
+                                </li>
                                 <li id="submenu-item-privacy-settings">
                                   <a href="#"> 
                                     <svg>
@@ -398,6 +405,13 @@
                                           </svg> Cambiar contraseña
                                         </a>
                                     </li>  
+                                    <li id="submenu-item-edit-profile">
+                                  <a href="configurar-notificaciones.php">
+                                    <svg>
+                                      <use xlink:href="#icon-edit"></use>
+                                    </svg> Configuracion De Notificaciones
+                                  </a>
+                                  </li>
                                     <li id="submenu-item-privacy-settings">
                                         <a href="#">
                                           <svg>
@@ -455,7 +469,8 @@
                                           <div class="col-md-6">
                                             <div class="well card profile" id="">
                                               <h3 class="text-primary">Perfil</h3>
-                                                <a href="editar_perfil.php" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">Editar perfil</a>
+                                              <form role="form"><div class="form-group"><label class="control-label">Nombre de usuario</label><p class="form-control-static" id="card-profile-username">kjuime6oq74a6w9u15kuk61a6</p></div><div class="form-group"><label class="control-label">Email</label><p class="form-control-static" id="card-profile-email">arielanariba0@gmail.com</p></div><div class="form-group"><label class="control-label">Fecha de nacimiento</label><p class="form-control-static" id="card-profile-dob">20/2/97</p></div><div class="form-group"><label class="control-label">País</label><p class="form-control-static" id="card-profile-country">HN</p></div></form>
+                                                <a href="editar-perfil.php" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">Editar perfil</a>
                                             </div>    
                                           </div>
                                           <div class="col-md-6">
