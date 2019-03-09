@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Configuracion Notificaciones -Spotify</title>
+    <title>Configuracion Privacidad -Spotify</title>
     <link rel="canonical" href="#">
     <link rel="stylesheet" href="css/spotify.css">
     <link rel="stylesheet" href="css/account.css">
     <link rel="stylesheet" href="css/error.css">
     <link rel="icon" href="../img/favicon.png">
 </head>
-<body class=" m-hn l-es page-account-notifications is-loggedin  reboot " cz-shortcut-listen="true">
+<body class=" m-hn l-es page-account-privacy is-loggedin  reboot " cz-shortcut-listen="true">
           <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-7BJJ"
           height="0" width="0" style="display:none;visibility:hidden">
   </iframe>
 </noscript>
     
-        <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<!--NO BORRAR SON LOS ENLACES DE LAS REDES SOCIALES SON ETIQUETAS VECTOR CUIDADO!!!!!!!!!!!-->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
  <symbol id="spotify-logo" viewBox="0 0 827.79999 248.275">
   <g transform="matrix(1.25 0 0 -1.25 0 248.28)">
@@ -62,7 +62,7 @@
     
       <div class="wrap">
 
-            
+                        
 <header id="js-navbar" class="navbar navbar-default navbar-static-top " role="banner">
     <div class="container">
     <div class="navbar-header">
@@ -132,7 +132,7 @@
     <li>
     <a href="../ayuda.html" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
       Ayuda
-    </a>
+                </a>
   </li>
 
 
@@ -180,12 +180,12 @@
     </a>
     <ul class="dropdown-menu dropdown-menu-right">
                 <li class="alternate sidepanel-item-small visible-md-block ">
-    <a href="/hn/premium/" id="nav-link-upgrade" data-ga-category="menu" data-ga-action="upgrade">
+    <a href="../premium.php" id="nav-link-upgrade" data-ga-category="menu" data-ga-action="upgrade">
       Mejora tu cuenta
                 </a>
   </li>
 
-            <li>
+        <li>
         <a href="/hn/account/overview/" data-tracking="{&quot;category&quot;: &quot;menu&quot;, &quot;action&quot;: &quot;account&quot;}">Cuenta</a>
       </li>
       <li>
@@ -199,6 +199,7 @@
 </header>
     
 
+    
           
 
 
@@ -282,8 +283,8 @@
   <div class="submenu-backdrop"></div>
   <div class="btn-group-inverse">
     <button type="button" class="btn btn-submenu dropdown-toggle" data-toggle="dropdown">
-              <svg><use xlink:href="#icon-notifications"></use></svg>
-            <span class="icon-chevron-down"></span> Configurar notificaciones
+              <svg><use xlink:href="#icon-locked"></use></svg>
+            <span class="icon-chevron-down"></span> Configuración de privacidad
     </button>
     <ul class="dropdown-menu" role="menu">
           
@@ -307,13 +308,13 @@
 
                         
     
-  <li class="active" id="submenu-item-notification-settings">
+  <li id="submenu-item-notification-settings">
   <a href="configurar-notificaciones.php"><svg><use xlink:href="#icon-notifications"></use></svg> Configurar notificaciones</a>
   </li>
 
                         
     
-  <li id="submenu-item-privacy-settings">
+  <li class="active" id="submenu-item-privacy-settings">
   <a href="configuracion-privacidad.php"><svg><use xlink:href="#icon-locked"></use></svg> Configuración de privacidad</a>
   </li>
 
@@ -399,13 +400,13 @@
 
                         
     
-  <li class="active" id="submenu-item-notification-settings">
+  <li id="submenu-item-notification-settings">
   <a href="configurar-notificaciones.php"><svg><use xlink:href="#icon-notifications"></use></svg> Configurar notificaciones</a>
   </li>
 
                         
     
-  <li id="submenu-item-privacy-settings">
+  <li class="active" id="submenu-item-privacy-settings">
   <a href="configuracion-privacidad.php"><svg><use xlink:href="#icon-locked"></use></svg> Configuración de privacidad</a>
   </li>
 
@@ -457,41 +458,282 @@
                 
                 
                 
-                  <div class="page-header">
-    <h1>Configurar notificaciones</h1>
-  </div>
-  <div id="profile" class="article-account">
-    <div class="well">
-      
-              
-    
-        <form name="notifications" method="post" class="form-notifications">
+                    <div id="privacy-content-container">
+        <div id="privacy-category-management" data-url="/hn/account/privacy/category/toggle?_csrf=eyJ0aW1lIjoxNTUyMDg0NzE0LCJoYXNoIjoiZjcwMTg2MzI2YTJiNjZkZTYxMmM0ZTY2MzBiZDFkMTY0YWNhMzE4ZjcyYTgwYTAzNjcwNTA0MzUzOWYyM2ZmOCJ9">
 
-    <table class="table table-striped table-recover-playlists"><thead><tr><th class="category">Actualizaciones de Spotify</th><th><svg><use xlink:href="#icon-email"></use></svg><span class="notification-type">Email</span></th><th><svg><use xlink:href="#icon-push"></use></svg><span class="notification-type">Push</span></th></tr></thead><tbody><tr class="form-group"><td>
-                                Noticias sobre productos
-                                <p class="description">Primeros pasos, nuevas características y últimas actualizaciones de productos en Spotify</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-product-news:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-product-news:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Noticias y ofertas de Spotify
-                                <p class="description">Noticias, promociones y eventos para ti</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr></tbody></table><table class="table table-striped table-recover-playlists"><thead><tr><th class="category">Tu Música</th><th><svg><use xlink:href="#icon-email"></use></svg><span class="notification-type">Email</span></th><th><svg><use xlink:href="#icon-push"></use></svg><span class="notification-type">Push</span></th></tr></thead><tbody><tr class="form-group"><td>
-                                Música recomendada
-                                <p class="description">Música que encontramos y pensamos que te va a gustar</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Música nueva
-                                <p class="description">Canciones nuevas de artistas que ya sigues o que podrían gustarte</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Actualizaciones de playlists
-                                <p class="description">Se actualizó una playlist que sigues</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Notificaciones de conciertos
-                                <p class="description">Noticias sobre conciertos en vivo de artistas que te gustan, en lugares cerca de ti</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Actualizaciones de artistas
-                                <p class="description">Noticias sobre artistas que escuchas y sobre artistas que pensamos que te van a gustar</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr></tbody></table>            <div class="row-buttons"><button type="submit" id="notifications_save" name="notifications[save]" class="btn btn-green btn-sm js-gtm-event" data-ga-category="Account Pages" data-ga-action="save notification settings" data-ga-label="save-notifications-account" data-gtm-event-name="save_notifications_button_clicked">Guardar</button><a href="/hn/account/overview/" class="btn btn-sm btn-cancel">Cancelar</a></div><input type="hidden" id="notifications__token" name="notifications[_token]" value="eyJ0aW1lIjoxNTUyMDEyNzAwLCJoYXNoIjoiOWFiNzE4N2M0ZTYyMjMyN2NmYjU1OWIxYmVkZmVlM2IxMzhlN2ZlMjYyMTZjMGQyMTI1NjEwOWI4Y2M5NWE2MiJ9">
-    
-    </form>
+            <div class="page-header">
+                <h1>Configuración de privacidad</h1>
+            </div>
+            <p>Queremos que sea fácil administrar y entender tu Configuración de privacidad, para que puedas usar el servicio de Spotify como desees.</p>
+            <p>Los controles en esta página te permiten:</p>
+            <ul>
+                <li>Controlar los datos de Facebook que Spotify procesa acerca de ti.</li>
+                <li>Controlar la publicidad personalizada que ves y oyes en Spotify.</li>
+                                    <li>Descargar una copia de tus datos personales de Spotify.</li>
+                            </ul>
 
+            <div class="page-header privacy-section-header">
+                <h2>Administrar tus datos</h2>
+            </div>
+            <p>Puedes acceder a controles adicionales de datos desde tu dispositivo o directamente desde el servicio de Spotify. Para ver más información acerca de tus derechos sobre los datos, incluidos el modo en que Spotify recopila datos personales y el motivo por el cual lo hace, además de información adicional acerca de cómo puedes administrar esto, consulta nuestro <a href="/privacy/">Centro de privacidad</a> o descubre más acerca de tus <a href="https://support.spotify.com/article/data-rights-and-privacy-settings/">derechos sobre los datos y configuración de privacidad</a></p>
+
+            
+                                    <div class="well">
+                        <h3 class="privacy-category-title">Datos de Facebook</h3>
+                        <p class="text-grey-55">Cuando solicites a Spotify que deje de procesar tus datos de Facebook, ya no procesaremos ninguno de los datos que Facebook comparte con Spotify, excepto los datos personales que te permiten iniciar sesión en Spotify mediante tu cuenta de Facebook. Para obtener más información, consulta tus <a href="https://support.spotify.com/article/data-rights-and-privacy-settings/">derechos sobre los datos y configuración de privacidad</a>.</p>
+
+                                                    <div class="privacy-category-state-section">
+                                <div class="privacy-checkbox">
+                                    <label class="privacy-toggle" id="category-toggle-label-facebook" for="category-toggle-input-facebook">
+                                        <input class="category-toggle" type="checkbox" name="FACEBOOK" value="true" checked="checked" id="category-toggle-input-facebook">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <p><b>Procesar mis datos de Facebook</b></p>
+                            </div>
+                                            </div>
+                                    <div class="well">
+                        <h3 class="privacy-category-title">Publicidad personalizada</h3>
+                        <p class="text-grey-55">Si utilizas el servicio gratuito de Spotify con soporte publicitario y solicitas dejar de recibir publicidad personalizada, no vincularemos tu cuenta a la información que comparten con Spotify socios terceros de publicidad. Eso significa que seguirás recibiendo publicidad basada en la información básica de tu cuenta Spotify, pero es posible que no esté tan personalizada. Para obtener más información, consulta tus <a href="https://support.spotify.com/article/data-rights-and-privacy-settings/">derechos sobre los datos y configuración de privacidad</a>.</p>
+
+                                                    <div class="privacy-category-state-section">
+                                <div class="privacy-checkbox">
+                                    <label class="privacy-toggle" id="category-toggle-label-ad-targeting" for="category-toggle-input-ad-targeting">
+                                        <input class="category-toggle" type="checkbox" name="AD_TARGETING" value="true" checked="checked" id="category-toggle-input-ad-targeting">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <p><b>Procesar mis datos personales para recibir publicidad personalizada</b></p>
+                            </div>
+                                            </div>
+                                    </div>
+
+                <div class="privacy-section-header">
+            <div class="page-header">
+                <a name="privacy-download">
+                    <h2>Descargar tus datos</h2>
+                </a>
+            </div>
+            <div class="privacy-download-subtext">
+                <p>A través de la aplicación Spotify, puedes acceder a la mayoría de los datos personales que Spotify conserva de ti (por ejemplo, playlists, consultas de búsqueda, seguidores e historial de streaming). Si deseas obtener una copia consolidada de estos datos, puedes descargarla siguiendo los pasos a continuación.</p>
+                <p>La descarga incluirá una copia de tus playlists, historial de streaming y búsquedas de los últimos 90 días, una lista de los elementos guardados en tu biblioteca, la cantidad de seguidores que tienes, los nombres y la cantidad de otros usuarios y artistas que sigues, y tus datos de pago y suscripción. Para obtener más información, consulta tus <a href="https://support.spotify.com/article/data-rights-and-privacy-settings/">derechos sobre los datos y configuración de privacidad</a>.</p>
+                <p>Como el archivo descargable que recibirás contiene la información de tu perfil, debes mantenerlo seguro y tener cuidado cuando lo almacenes, lo envíes o lo cargues en otros servicios.</p>
+                <p>Si tienes alguna pregunta o consulta acerca de los datos personales que contiene tu archivo descargable, <a href="https://support.spotify.com/contact-spotify-privacy/">comunícate con nosotros</a>.</p>
+            </div>
+                            <div class="privacy-download-steps row">
+                    <div class="col-md-4 col-xs-12 privacy-download-step-1 " aria-hidden="false">
+                        <div id="privacy-download-step-1-requesting" class="well">
+                            <h4>Paso 1</h4>
+                            <p>Haz clic en el botón para comenzar el proceso de recopilación de tus datos.</p>
+                            <p class="privacy-date font-weight-bold" id="privacy-request-date"></p>
+                            <div class="privacy-button-wrapper">
+                                <button data-url="/hn/account/privacy/download/?_csrf=eyJ0aW1lIjoxNTUyMDg0NzE0LCJoYXNoIjoiZjcwMTg2MzI2YTJiNjZkZTYxMmM0ZTY2MzBiZDFkMTY0YWNhMzE4ZjcyYTgwYTAzNjcwNTA0MzUzOWYyM2ZmOCJ9" type="button" class="btn btn-black btn-sm" id="privacy-open-request-download-modal-button">
+                                    Solicitud
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="privacy-download-step-1-requested" class="well" style="display:none;">
+                            <h4>Paso 1</h4>
+                            <p>We’ve sent you an email with a link to confirm your request. If you can’t find the email, check your junk/spam folders, or click below to resend.</p>
+
+                            <div class="privacy-button-wrapper">
+                                <button type="button" class="btn btn-black btn-sm resend-email-button" data-url="/hn/account/privacy/resend-email/?_csrf=eyJ0aW1lIjoxNTUyMDg0NzE0LCJoYXNoIjoiZjcwMTg2MzI2YTJiNjZkZTYxMmM0ZTY2MzBiZDFkMTY0YWNhMzE4ZjcyYTgwYTAzNjcwNTA0MzUzOWYyM2ZmOCJ9" data-success-text="Email sent">
+                                    Resend email
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 privacy-download-step-2 privacy-grayed-step" aria-hidden="true">
+                        <div class="well">
+                            <h4>Paso 2</h4>
+                            <p>Estamos preparando tu archivo de datos. Esto puede demorar hasta 30 días en completarse.</p>
+                                                            <p>Recibirás un correo electrónico cuando esté listo para descargarse.</p>
+                                                    </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 privacy-download-step-3 privacy-grayed-step" aria-hidden="true">
+                        <div class="well">
+                            <h4>Paso 3</h4>
+                                                            <p>Haz clic en el botón a continuación para descargar tu archivo de datos. Estará disponible para su descarga durante un plazo de 14 días.</p>
+                                                                <div class="privacy-button-wrapper">
+                                    <button type="button" class="btn btn-black btn-sm" id="privacy-download-button" disabled="">
+                                        Descargar
+                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+                    </div>
+            </div>
+
+
+    <div class="privacy-all-modals">
+        <!-- Category Toggle Confirmation Modals -->
+                    <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-FACEBOOK" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-FACEBOOK">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h3>Datos de Facebook</h3>
+                            <p>¿Estás seguro de que deseas restringir el procesamiento de tus datos de Facebook?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link privacy-cancel" data-dismiss="modal">Cancelar
+                            </button>
+                            <button type="button" class="btn btn-primary privacy-confirm" data-dismiss="modal">Sí, apagar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-AD_TARGETING" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-AD_TARGETING">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h3>Datos de publicidad personalizada</h3>
+                            <p>¿Estás seguro de que deseas dejar de recibir publicidad personalizada basada en datos de terceros?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link privacy-cancel" data-dismiss="modal">Cancelar
+                            </button>
+                            <button type="button" class="btn btn-primary privacy-confirm" data-dismiss="modal">Sí, apagar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <!-- Error Modal -->
+        <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-error" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-error">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    <span data-dismiss="modal" aria-hidden="true" class="privacy-dismiss-x">×</span>
+                        <h3>Lo sentimos. Se produjo un error.</h3>
+                        <p>Parece que se produjo un error en el sistema. <a href="https://support.spotify.com/contact-spotify-privacy/">Comuníquese con nuestros asesores</a> para obtener más detalles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- No Email modal -->
+        <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-no-email" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-no-email">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="privacy-modal-no-email-body">
+                    <span data-dismiss="modal" aria-hidden="true" class="privacy-dismiss-x">×</span>
+                        <h3>Add an email address</h3>
+                        <p>There’s currently no email address associated with your account. We need this to send the link to download your data.</p>
+                                                    <p>To add your email address:</p>
+                            <ol>
+                                <li>Go to <a href="/hn/account/profile/">the edit profile page</a>.</li>
+                                <li>Under <b>Email</b>, enter your new email address.</li>
+                                <li>Confirm your password and click <b>SAVE PROFILE</b>.</li>
+                            </ol>
+                                                <p>Once that’s done, you can request your data download.</p>
+                        <label class="control-label-validation hidden" id="privacy-modal-no-email-error"></label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-green btn-sm" id="privacy-no-email-button" data-dismiss="modal">
+                            Aceptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download request modal -->
+        <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-request-download" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-request-download">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="privacy-modal-request-download-body">
+                    <span data-dismiss="modal" aria-hidden="true" class="privacy-dismiss-x">×</span>
+                        <h3>Solicitar tus datos personales</h3>
+                        <div class="privacy-modal-request-download-step1">
+                            <p>Para asegurarnos de que no seas un robot, marca la siguiente casilla:</p>
+                            <div class="text-center">
+                                                                            <script src="https://www.google.com/recaptcha/api.js?onload=captchaOnloadCallback&amp;render=explicit" async="" defer=""></script><script>
+          window.captchaOnloadCallback = function () {
+            var div = document.getElementById("captcha-div");
+            grecaptcha.render(
+              div,
+              {
+                'sitekey': div.getAttribute("data-sitekey"),
+                'callback': window.captchaSuccessCallback
+              }
+            );
+          };
+        </script><div id="captcha-div" class="g-recaptcha " data-sitekey="6LdaGwcTAAAAAJfb0xQdr3FqU4ZzfAc_QZvIPby5" data-error="Confirma que no eres un robot."><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdaGwcTAAAAAJfb0xQdr3FqU4ZzfAc_QZvIPby5&amp;co=aHR0cHM6Ly93d3cuc3BvdGlmeS5jb206NDQz&amp;hl=es-419&amp;v=v1551681158638&amp;size=normal&amp;cb=a0w8cy2656jh" width="304" height="78" role="presentation" name="a-jb700r6kxj59" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><input type="hidden" id="captcha-hidden" name="captcha_hidden" class="required">
+                                                            </div>
+                            <label class="control-label-validation hidden" id="privacy-modal-request-download-error"></label>
+                        </div>
+                        <div class="privacy-modal-request-download-step2 hidden">
+                                                                                                <p>¡Excelente! Estamos recopilando tus datos personales y te enviaremos un correo electrónico a la dirección arielanariba0@gmail.com cuando esté listo para descargarse.</p>
+                                                                                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-stroked-dark btn-sm" id="privacy-request-download-cancel" data-dismiss="modal">Cancelar
+                        </button>
+                        <button type="button" class="btn btn-green btn-sm" id="privacy-request-download-button" data-url="/hn/account/privacy/download/?_csrf=eyJ0aW1lIjoxNTUyMDg0NzE0LCJoYXNoIjoiZjcwMTg2MzI2YTJiNjZkZTYxMmM0ZTY2MzBiZDFkMTY0YWNhMzE4ZjcyYTgwYTAzNjcwNTA0MzUzOWYyM2ZmOCJ9">
+                            Aceptar
+                        </button>
+                        <button type="button" class="btn btn-green btn-sm hidden" id="privacy-request-download-close-modal-ok">Aceptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Facebook validation Modal -->
+        <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-verify-facebook" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-verify-facebook">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="privacy-modal-verify-facebook-body">
+                    <span data-dismiss="modal" aria-hidden="true" class="privacy-dismiss-x">×</span>
+                        <h3>Contraseña de Facebook</h3>
+                        <p>Por motivos de seguridad, necesitamos que vuelvas a autenticarte con Facebook, de modo que podamos reconocer que eres tú antes de descargar tus datos.</p>
+                        <label class="control-label-validation hidden" id="privacy-modal-verify-facebook-error"></label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-stroked-dark btn-sm" id="privacy-verify-facebook-cancel" data-dismiss="modal">Cerrar
+                        </button>
+                        <button type="button" class="btn btn-green btn-sm" id="privacy-verify-facebook-button" data-verify-access-token-url="/hn/account/privacy/verify-access-token/?_csrf=eyJ0aW1lIjoxNTUyMDg0NzE0LCJoYXNoIjoiZjcwMTg2MzI2YTJiNjZkZTYxMmM0ZTY2MzBiZDFkMTY0YWNhMzE4ZjcyYTgwYTAzNjcwNTA0MzUzOWYyM2ZmOCJ9">
+                            Aceptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password validation Modal -->
+        <div class="modal modal-agreement fade privacy-modal" id="privacy-modal-verify-password" tabindex="-1" role="dialog" aria-labelledby="privacy-modal-verify-password">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="privacy-modal-verify-password-body">
+                    <span data-dismiss="modal" aria-hidden="true" class="privacy-dismiss-x">×</span>
+                        <h3>Revalidar tu contraseña</h3>
+                        <p>Por motivos de seguridad, debemos verificar que eres tú antes de que podamos enviarte tus datos.</p>
+                        <input type="password" name="password" id="password" class="form-control">
+                        <label class="control-label-validation hidden" id="privacy-modal-verify-password-error"></label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-stroked-dark btn-sm" id="privacy-verify-password-cancel" data-dismiss="modal">Cerrar
+                        </button>
+                        <button type="button" data-url="/hn/account/privacy/verify-password/?_csrf=eyJ0aW1lIjoxNTUyMDg0NzE0LCJoYXNoIjoiZjcwMTg2MzI2YTJiNjZkZTYxMmM0ZTY2MzBiZDFkMTY0YWNhMzE4ZjcyYTgwYTAzNjcwNTA0MzUzOWYyM2ZmOCJ9" class="btn btn-green btn-sm" id="privacy-verify-password-button">
+                            Verificar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
               </div>
 
-                            <div class="content-bottom">
+                                        <div class="content-bottom">
                                                                               </div>
-                          </div>
+              
+                </div>
           </div>
           
         </div>
@@ -503,7 +745,7 @@
 
       </div>
 
-            <footer role="contentinfo" class="footer footer-default ">
+                        <footer role="contentinfo" class="footer footer-default ">
   <div class="container">
     <nav class="row">
 
@@ -670,9 +912,18 @@
 </footer>
   
   
-           <script src="//www.scdn.co/webpack/spweb-site.min.ffe1eda3d9b06a99df7d.js"></script>
+    
+             <script type="text/javascript" id="">function gtag(){dataLayer.push(arguments)}gtag("event","optimize.callback",{callback:function(a,b){return window.dataLayer.push({event:"optimizeBucketEvent",isInOptimizeExperiment:!0,experimentId:b,variantId:a})}});</script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="//4721227.fls.doubleclick.net/activityi;src=4721227;type=uidfq0;cat=spoti0;ord=6427133087742;gtm=2wg2q1;auiddc=393468713.1552084064;u2=023bd8d9adefb11861462f91ac0d59fc;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fprivacy%2F?"></iframe><script type="text/javascript" id="cidsyncjs" src="https://pixel-static.spotify.com/sync.min.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1483047915331997");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1483047915331997&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","nvi9b");twq("track","PageView");</script>
+<div id="ttdUniversalPixelTag1dfda5e8d7794c54abf4a4ce7c009256" style="display:none">
+	<script type="text/javascript" id="" src="https://js.adsrvr.org/up_loader.1.1.0.js"></script>
+	<script type="text/javascript" id="">(function(a){"function"===typeof TTDUniversalPixelApi&&(a=new TTDUniversalPixelApi,a.init("7avchlk",["abcf6bj"],"https://insight.adsrvr.org/track/up","ttdUniversalPixelTag1dfda5e8d7794c54abf4a4ce7c009256"))})(this);</script>
+</div><script src="//www.scdn.co/webpack/spweb-site.min.eced33a61180b244c09d.js"></script>
    
-  <script src="//www.scdn.co/webpack/account.21b2681b6199613666c2.js"></script>
+  <script src="//www.scdn.co/webpack/account.912b5a95b6c31f7507c2.js"></script>
   <script>
     </script>
 
@@ -685,30 +936,45 @@
     });
   </script>
 
+    <script src="//www.scdn.co/webpack/signup.e0f7d5732ea3cb366703.js"></script>
+    <script type="text/javascript">
+        spweb.trans = {
+            server_error: "¡Uy! Algo salió mal. Inténtalo de nuevo más tarde.",
+            verify_password_wrong: "La contraseña es incorrecta.",
+            verify_facebook_auth_failure: "Se produjo un error en el proceso de reautenticación de Facebook. Intenta nuevamente.",
+            date_requested: "Solicitado el <span></span>",
+            validity_date: "Disponible hasta el <span></span>"
+        };
 
+        const utcRequest = "";
+        const utcValidity = "";
+
+        const privacyPageOptions = {
+          is_facebook_user: false,
+          facebook_nonce: '',
+          reCaptcha_enabled: true,
+          requested_date_obj: utcRequest ? new Date(parseInt(utcRequest, 10)) : false,
+          validity_date_obj: utcValidity ? new Date(parseInt(utcValidity, 10)) : false
+        };
+
+        spweb.account.privacy.pageLoaded(privacyPageOptions);
+        spweb.account.privacy.jumpToAnchorTag('privacy-download');
+    </script>
 
     <script async="" src="//vt.myvisualiq.net/2/afTxMmlGwCNRJiC5Bd75ug%3D%3D/vt-150.js"></script>        <script defer="" src="https://www.fastly-insights.com/insights.js?k=040e3997-282c-4275-ba9b-a406ce78b133&amp;dnt=1"></script>
 
 
 <!-- This page was rendered using Twig -->
 
-<script type="text/javascript" id="">function gtag(){dataLayer.push(arguments)}gtag("event","optimize.callback",{callback:function(a,b){return window.dataLayer.push({event:"optimizeBucketEvent",isInOptimizeExperiment:!0,experimentId:b,variantId:a})}});</script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="//4721227.fls.doubleclick.net/activityi;src=4721227;type=uidfq0;cat=spoti0;ord=8686832939517;gtm=2wg2q1;auiddc=832812208.1551903500;u2=0e7958b2caa4ebc4ccbdb1db7a12482e;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F?"></iframe><script type="text/javascript" id="cidsyncjs" src="https://pixel-static.spotify.com/sync.min.js"></script>
-<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1483047915331997");fbq("track","PageView");</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1483047915331997&amp;ev=PageView&amp;noscript=1"></noscript>
 
-<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","nvi9b");twq("track","PageView");</script>
-<div id="ttdUniversalPixelTag1dfda5e8d7794c54abf4a4ce7c009256" style="display:none">
-	<script type="text/javascript" id="" src="https://js.adsrvr.org/up_loader.1.1.0.js"></script>
-	<script type="text/javascript" id="">(function(a){"function"===typeof TTDUniversalPixelApi&&(a=new TTDUniversalPixelApi,a.init("7avchlk",["abcf6bj"],"https://insight.adsrvr.org/track/up","ttdUniversalPixelTag1dfda5e8d7794c54abf4a4ce7c009256"))})(this);</script>
-</div><div style="display: none; visibility: hidden;">
+<noscript>
+    <img id="cidmgmt" src="https://pixel.spotify.com/v1/sync?nojs=1" style="display: none;" width="0" height="0">
+</noscript><div style="display: none; visibility: hidden;">
 
 <script async="null" src="https://www.googletagmanager.com/gtag/js?id=DC-8872062"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","DC-8872062");</script>
 </div><div style="display: none; visibility: hidden;">
 <script>gtag("event","conversion",{allow_custom_scripts:!0,send_to:"DC-8872062/invmedia/spoti00+standard"});</script>
 <noscript></noscript>
-</div><iframe height="0" width="0" style="display: none; visibility: hidden;" src="https://8872062.fls.doubleclick.net/activityi;src=8872062;type=invmedia;cat=spoti00;ord=9792575569274;gtm=2od2q1;auiddc=832812208.1551903500;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F?"></iframe><div style="display: none; visibility: hidden;"><script type="text/javascript">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","fff7f198-e6aa-4833-b900-92d3854473b2",{user_email:"__INSERT_USER_EMAIL__"});snaptr("track","PAGE_VIEW");</script></div>
-<noscript>
-    <img id="cidmgmt" src="https://pixel.spotify.com/v1/sync?nojs=1" style="display: none;" width="0" height="0">
-</noscript><div id="ads"></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-d831eecf6f5411af024c3acd759add17.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="universal_pixel" allowtransparency="true" height="0" width="0" style="display:none;" src="https://insight.adsrvr.org/track/up?adv=7avchlk&amp;ref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F&amp;upid=abcf6bj&amp;osi=c490772ec2064787ab71baf9eee2983a&amp;osv=1.1&amp;upv=1.1.3"></iframe><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nvi9b&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F" type="text/javascript"></script></body>
+</div><div style="display: none; visibility: hidden;"><script type="text/javascript">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","fff7f198-e6aa-4833-b900-92d3854473b2",{user_email:"__INSERT_USER_EMAIL__"});snaptr("track","PAGE_VIEW");</script></div><iframe height="0" width="0" style="display: none; visibility: hidden;" src="https://8872062.fls.doubleclick.net/activityi;src=8872062;type=invmedia;cat=spoti00;ord=8684468342433;gtm=2od2q1;auiddc=393468713.1552084064;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fprivacy%2F?"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-d831eecf6f5411af024c3acd759add17.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><div id="ads"></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="Desafío de reCAPTCHA" src="https://www.google.com/recaptcha/api2/bframe?hl=es-419&amp;v=v1551681158638&amp;k=6LdaGwcTAAAAAJfb0xQdr3FqU4ZzfAc_QZvIPby5&amp;cb=ki8mgbbtlcaq" name="c-jb700r6kxj59" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><iframe id="universal_pixel" allowtransparency="true" height="0" width="0" style="display:none;" src="https://insight.adsrvr.org/track/up?adv=7avchlk&amp;ref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fprivacy%2F&amp;upid=abcf6bj&amp;osi=c490772ec2064787ab71baf9eee2983a&amp;osv=1.1&amp;upv=1.1.3"></iframe><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fprivacy%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fprivacy%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nvi9b&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fprivacy%2F" type="text/javascript"></script></body>
 </html>

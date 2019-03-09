@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Configuracion Notificaciones -Spotify</title>
+    <title>Recuperar Playlists -Spotify</title>
     <link rel="canonical" href="#">
     <link rel="stylesheet" href="css/spotify.css">
     <link rel="stylesheet" href="css/account.css">
-    <link rel="stylesheet" href="css/error.css">
-    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="css/mensaje_error.css">
+    <link rel="icon" href="../img/favicon.png"> 
 </head>
-<body class=" m-hn l-es page-account-notifications is-loggedin  reboot " cz-shortcut-listen="true">
+<body class=" m-hn l-es page-account-recover-playlists is-loggedin  reboot " cz-shortcut-listen="true">
           <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-7BJJ"
           height="0" width="0" style="display:none;visibility:hidden">
@@ -132,13 +132,13 @@
     <li>
     <a href="../ayuda.html" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
       Ayuda
-    </a>
+                </a>
   </li>
 
 
       
 <li>
-  <a href="../descargar.html" id="nav-link-download" class="js-get-spotify js-gtm-event" data-ga-category="menu" data-ga-action="download" data-gtm-event-name="download_spotify_button_clicked" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-navbar&quot;}">Descargar
+  <a href="/hn/download/" id="nav-link-download" class="js-get-spotify js-gtm-event" data-ga-category="menu" data-ga-action="download" data-gtm-event-name="download_spotify_button_clicked" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-navbar&quot;}">Descargar
    </a>
 </li>
   
@@ -282,8 +282,8 @@
   <div class="submenu-backdrop"></div>
   <div class="btn-group-inverse">
     <button type="button" class="btn btn-submenu dropdown-toggle" data-toggle="dropdown">
-              <svg><use xlink:href="#icon-notifications"></use></svg>
-            <span class="icon-chevron-down"></span> Configurar notificaciones
+              <svg><use xlink:href="#icon-refresh"></use></svg>
+            <span class="icon-chevron-down"></span> Recuperar playlists
     </button>
     <ul class="dropdown-menu" role="menu">
           
@@ -296,7 +296,7 @@
                         
     
   <li id="submenu-item-edit-profile">
-  <a href="editar-perfil.php"><svg><use xlink:href="#icon-edit"></use></svg> Editar perfil</a>
+  <a href="editar-prefil.php"><svg><use xlink:href="#icon-edit"></use></svg> Editar perfil</a>
   </li>
 
                                         
@@ -307,7 +307,7 @@
 
                         
     
-  <li class="active" id="submenu-item-notification-settings">
+  <li id="submenu-item-notification-settings">
   <a href="configurar-notificaciones.php"><svg><use xlink:href="#icon-notifications"></use></svg> Configurar notificaciones</a>
   </li>
 
@@ -325,7 +325,7 @@
 
                         
     
-  <li id="submenu-item-recover-playlists">
+  <li class="active" id="submenu-item-recover-playlists">
   <a href="recuperar-playlists.php"><svg><use xlink:href="#icon-refresh"></use></svg> Recuperar playlists</a>
   </li>
 
@@ -399,7 +399,7 @@
 
                         
     
-  <li class="active" id="submenu-item-notification-settings">
+  <li id="submenu-item-notification-settings">
   <a href="configurar-notificaciones.php"><svg><use xlink:href="#icon-notifications"></use></svg> Configurar notificaciones</a>
   </li>
 
@@ -417,7 +417,7 @@
 
                         
     
-  <li id="submenu-item-recover-playlists">
+  <li class="active" id="submenu-item-recover-playlists">
   <a href="recuperar-playlists.php"><svg><use xlink:href="#icon-refresh"></use></svg> Recuperar playlists</a>
   </li>
 
@@ -457,37 +457,15 @@
                 
                 
                 
-                  <div class="page-header">
-    <h1>Configurar notificaciones</h1>
+                
+  <div class="page-header">
+    <h1>Recuperar playlists</h1>
   </div>
-  <div id="profile" class="article-account">
-    <div class="well">
-      
-              
-    
-        <form name="notifications" method="post" class="form-notifications">
 
-    <table class="table table-striped table-recover-playlists"><thead><tr><th class="category">Actualizaciones de Spotify</th><th><svg><use xlink:href="#icon-email"></use></svg><span class="notification-type">Email</span></th><th><svg><use xlink:href="#icon-push"></use></svg><span class="notification-type">Push</span></th></tr></thead><tbody><tr class="form-group"><td>
-                                Noticias sobre productos
-                                <p class="description">Primeros pasos, nuevas características y últimas actualizaciones de productos en Spotify</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-product-news:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-product-news:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Noticias y ofertas de Spotify
-                                <p class="description">Noticias, promociones y eventos para ti</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr></tbody></table><table class="table table-striped table-recover-playlists"><thead><tr><th class="category">Tu Música</th><th><svg><use xlink:href="#icon-email"></use></svg><span class="notification-type">Email</span></th><th><svg><use xlink:href="#icon-push"></use></svg><span class="notification-type">Push</span></th></tr></thead><tbody><tr class="form-group"><td>
-                                Música recomendada
-                                <p class="description">Música que encontramos y pensamos que te va a gustar</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Música nueva
-                                <p class="description">Canciones nuevas de artistas que ya sigues o que podrían gustarte</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Actualizaciones de playlists
-                                <p class="description">Se actualizó una playlist que sigues</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Notificaciones de conciertos
-                                <p class="description">Noticias sobre conciertos en vivo de artistas que te gustan, en lugares cerca de ti</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
-                                Actualizaciones de artistas
-                                <p class="description">Noticias sobre artistas que escuchas y sobre artistas que pensamos que te van a gustar</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xlink:href="#icon-push"></use></svg></span></label></div></td></tr></tbody></table>            <div class="row-buttons"><button type="submit" id="notifications_save" name="notifications[save]" class="btn btn-green btn-sm js-gtm-event" data-ga-category="Account Pages" data-ga-action="save notification settings" data-ga-label="save-notifications-account" data-gtm-event-name="save_notifications_button_clicked">Guardar</button><a href="/hn/account/overview/" class="btn btn-sm btn-cancel">Cancelar</a></div><input type="hidden" id="notifications__token" name="notifications[_token]" value="eyJ0aW1lIjoxNTUyMDEyNzAwLCJoYXNoIjoiOWFiNzE4N2M0ZTYyMjMyN2NmYjU1OWIxYmVkZmVlM2IxMzhlN2ZlMjYyMTZjMGQyMTI1NjEwOWI4Y2M5NWE2MiJ9">
-    
-    </form>
-
-    </div>
-  </div>
-              </div>
+      <p class="alert alert-danger">
+      Hubo un error al recuperar tu playlist eliminada. Por favor inténtalo de nuevo más tarde.
+    </p>
+                </div>
 
                             <div class="content-bottom">
                                                                               </div>
@@ -509,7 +487,7 @@
 
             <div class="col-xs-12 col-md-2">
         <div class="footer-logo">
-          <a href="/hn/">Spotify</a>
+          <a href="../index.html">Spotify</a>
         </div>
       </div>
 
@@ -670,9 +648,9 @@
 </footer>
   
   
-           <script src="//www.scdn.co/webpack/spweb-site.min.ffe1eda3d9b06a99df7d.js"></script>
+           <script src="//www.scdn.co/webpack/spweb-site.min.eced33a61180b244c09d.js"></script>
    
-  <script src="//www.scdn.co/webpack/account.21b2681b6199613666c2.js"></script>
+  <script src="//www.scdn.co/webpack/account.912b5a95b6c31f7507c2.js"></script>
   <script>
     </script>
 
@@ -685,14 +663,18 @@
     });
   </script>
 
-
+  <script>
+    $(function() {
+      spweb.recoverPlaylists.init('Recuperada\x28s\x29');
+    });
+  </script>
 
     <script async="" src="//vt.myvisualiq.net/2/afTxMmlGwCNRJiC5Bd75ug%3D%3D/vt-150.js"></script>        <script defer="" src="https://www.fastly-insights.com/insights.js?k=040e3997-282c-4275-ba9b-a406ce78b133&amp;dnt=1"></script>
 
 
 <!-- This page was rendered using Twig -->
 
-<script type="text/javascript" id="">function gtag(){dataLayer.push(arguments)}gtag("event","optimize.callback",{callback:function(a,b){return window.dataLayer.push({event:"optimizeBucketEvent",isInOptimizeExperiment:!0,experimentId:b,variantId:a})}});</script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="//4721227.fls.doubleclick.net/activityi;src=4721227;type=uidfq0;cat=spoti0;ord=8686832939517;gtm=2wg2q1;auiddc=832812208.1551903500;u2=0e7958b2caa4ebc4ccbdb1db7a12482e;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F?"></iframe><script type="text/javascript" id="cidsyncjs" src="https://pixel-static.spotify.com/sync.min.js"></script>
+<script type="text/javascript" id="">function gtag(){dataLayer.push(arguments)}gtag("event","optimize.callback",{callback:function(a,b){return window.dataLayer.push({event:"optimizeBucketEvent",isInOptimizeExperiment:!0,experimentId:b,variantId:a})}});</script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="//4721227.fls.doubleclick.net/activityi;src=4721227;type=uidfq0;cat=spoti0;ord=1858726142790;gtm=2wg2q1;auiddc=393468713.1552084064;u2=023bd8d9adefb11861462f91ac0d59fc;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Frecover-playlists%2F?"></iframe><script type="text/javascript" id="cidsyncjs" src="https://pixel-static.spotify.com/sync.min.js"></script>
 <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1483047915331997");fbq("track","PageView");</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1483047915331997&amp;ev=PageView&amp;noscript=1"></noscript>
 
@@ -707,8 +689,8 @@
 </div><div style="display: none; visibility: hidden;">
 <script>gtag("event","conversion",{allow_custom_scripts:!0,send_to:"DC-8872062/invmedia/spoti00+standard"});</script>
 <noscript></noscript>
-</div><iframe height="0" width="0" style="display: none; visibility: hidden;" src="https://8872062.fls.doubleclick.net/activityi;src=8872062;type=invmedia;cat=spoti00;ord=9792575569274;gtm=2od2q1;auiddc=832812208.1551903500;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F?"></iframe><div style="display: none; visibility: hidden;"><script type="text/javascript">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","fff7f198-e6aa-4833-b900-92d3854473b2",{user_email:"__INSERT_USER_EMAIL__"});snaptr("track","PAGE_VIEW");</script></div>
+</div><iframe height="0" width="0" style="display: none; visibility: hidden;" src="https://8872062.fls.doubleclick.net/activityi;src=8872062;type=invmedia;cat=spoti00;ord=463726530633;gtm=2od2q1;auiddc=393468713.1552084064;~oref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Frecover-playlists%2F?"></iframe><div style="display: none; visibility: hidden;"><script type="text/javascript">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","fff7f198-e6aa-4833-b900-92d3854473b2",{user_email:"__INSERT_USER_EMAIL__"});snaptr("track","PAGE_VIEW");</script></div>
 <noscript>
     <img id="cidmgmt" src="https://pixel.spotify.com/v1/sync?nojs=1" style="display: none;" width="0" height="0">
-</noscript><div id="ads"></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-d831eecf6f5411af024c3acd759add17.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="universal_pixel" allowtransparency="true" height="0" width="0" style="display:none;" src="https://insight.adsrvr.org/track/up?adv=7avchlk&amp;ref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F&amp;upid=abcf6bj&amp;osi=c490772ec2064787ab71baf9eee2983a&amp;osv=1.1&amp;upv=1.1.3"></iframe><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nvi9b&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Fnotifications%2F" type="text/javascript"></script></body>
+</noscript><div id="ads"></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-d831eecf6f5411af024c3acd759add17.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="universal_pixel" allowtransparency="true" height="0" width="0" style="display:none;" src="https://insight.adsrvr.org/track/up?adv=7avchlk&amp;ref=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Frecover-playlists%2F&amp;upid=abcf6bj&amp;osi=c490772ec2064787ab71baf9eee2983a&amp;osv=1.1&amp;upv=1.1.3"></iframe><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Frecover-playlists%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nz9p8&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Frecover-playlists%2F" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nvi9b&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.spotify.com%2Fhn%2Faccount%2Frecover-playlists%2F" type="text/javascript"></script></body>
 </html>
