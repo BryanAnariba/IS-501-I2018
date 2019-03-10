@@ -32,6 +32,34 @@
 <colAssociation fkAssociation="B83B5357-7463-6E4D-2E65-88F844E47B11" referredColumn="CBE6AB3F-0695-F183-197B-4E9FD1EC783C"/>
 </associations>
 </Column>
+<Column name="CODIGO_PAGO" id="A32D1300-63AD-46EA-547C-114CF836D672">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 16:40:21 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34F65E36-4471-0D71-EE0C-B57528A38CE4" referredColumn="B4F98CC4-F714-6B4F-A858-092AFA97C2F4"/>
+</associations>
+</Column>
+<Column name="CODIGO_REGISTRO_SESION" id="6A3A0353-27BD-4492-CA86-454F1367602E">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 16:41:34 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D092EE9-A4CE-30E2-1C78-9CF7223D7AC9" referredColumn="D2976273-B868-4B7B-B5D6-5F60FD9491CE"/>
+</associations>
+</Column>
 <Column name="ESTADO_SUSCRIPCION" id="B6DF4AC4-BD94-CE0F-7313-9A59B4CD1A92">
 <createdBy>Bryan Ariel</createdBy>
 <createdTime>2019-02-25 02:35:13 UTC</createdTime>
@@ -39,9 +67,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="RETRASO_X_PAGOS" id="1D55A74B-D690-E7FA-28DD-360400F35E09">
@@ -54,17 +82,6 @@
 <logicalDatatype>LOGDT006</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="MONTO_A_CANCELAR_SUSCRIPCION" id="C8A52C94-15E2-8D14-DFF7-31B1812BDD23">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:36:16 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT020</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CANCELAR_SUSCRIPCION" id="4EE22C0C-0372-3EBB-F528-61090A436780">
@@ -100,6 +117,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7D5F4514-2B82-AF2E-E51D-7B82122E03DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98FC5940-7E5F-F856-1294-C4D880A570AB" name="TBL_ES_SUS_TBL_PAG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 16:40:21 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A32D1300-63AD-46EA-547C-114CF836D672"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D68BE9C3-2FB4-DBE6-2B83-E034E30CEB7E" name="TBL_ESt_SUS_TBL_IN_SEC_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 16:41:34 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A3A0353-27BD-4492-CA86-454F1367602E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

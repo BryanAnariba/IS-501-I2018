@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="34F65E36-4471-0D71-EE0C-B57528A38CE4" containerWithKeyObject="DCF89BFC-BD65-E85E-D59B-295590335802" localFKIndex="98FC5940-7E5F-F856-1294-C4D880A570AB" name="TBL_ES_SUS_TBL_PAG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 16:40:21 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_PAGOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>312C3983-9E69-B316-49A1-78CBD26C22CB</referredTableID>
+<keyObject>E815FBA9-9B87-D5A5-F398-10DEE7A4B11A</keyObject>
+<referredKeyID>E815FBA9-9B87-D5A5-F398-10DEE7A4B11A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_PAGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

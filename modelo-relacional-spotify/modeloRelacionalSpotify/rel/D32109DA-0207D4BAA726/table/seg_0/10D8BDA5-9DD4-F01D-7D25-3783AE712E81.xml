@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10D8BDA5-9DD4-F01D-7D25-3783AE712E81" name="TBL_RECOMENDACIONES_A_SPOTIFY">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:01:26 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_37</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_RECOMENDACION" id="F70F2EEB-8BF8-A395-E903-7FBA392AD707">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:02:36 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_USUARIO" id="BCEE61C2-1988-4483-2F50-2A259DE029B5">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:02:52 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88586EA6-C80C-7863-9EB0-8250A6905B10" referredColumn="CBE6AB3F-0695-F183-197B-4E9FD1EC783C"/>
+</associations>
+</Column>
+<Column name="FECHA_HORA_RECOMENDACION" id="3ED560F5-D666-1E29-E2AE-7C0C52A80074">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:02:36 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECOMENDACION" id="D2E891E6-569E-F123-EAC0-218E72B79817">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:02:36 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A86429BD-CD51-E375-ED11-42A00CEB2D91" name="TBL_RECOMENDACIONES_A_SPOTIFY_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:02:36 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F70F2EEB-8BF8-A395-E903-7FBA392AD707"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88657570-1E15-9444-4779-D1FCCE865FBF" name="REC_A_SPO_TBL_USU_REG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:02:52 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCEE61C2-1988-4483-2F50-2A259DE029B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

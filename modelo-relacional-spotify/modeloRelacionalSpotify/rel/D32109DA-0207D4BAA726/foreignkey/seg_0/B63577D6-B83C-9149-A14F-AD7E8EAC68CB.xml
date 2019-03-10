@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B63577D6-B83C-9149-A14F-AD7E8EAC68CB" containerWithKeyObject="69E2BF85-3E3C-E4D7-C1DA-1D07DAA860AE" localFKIndex="0757301C-AFAB-2460-CB2A-A9583C6CA92A" name="TBL_FOR_PAG_TBL_TAR_PAR_PAG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 20:11:29 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_TARJETAS_PARA_PAGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>374AB4A7-1680-D4B5-5112-0865B8FA671D</referredTableID>
+<keyObject>659556D3-B036-31B6-80F6-CBFF18A97CF6</keyObject>
+<referredKeyID>659556D3-B036-31B6-80F6-CBFF18A97CF6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TIPO_TARGETA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

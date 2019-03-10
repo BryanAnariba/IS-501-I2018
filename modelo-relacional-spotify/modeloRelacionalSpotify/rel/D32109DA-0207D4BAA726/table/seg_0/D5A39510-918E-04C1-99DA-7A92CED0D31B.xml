@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A00B9EE-52C0-77FE-7090-6F003F0B169B" name="TBL_METODO_DE_PAGO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5A39510-918E-04C1-99DA-7A92CED0D31B" name="TBL_CATEGORIAS_PODCAST">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:19:59 UTC</createdTime>
+<createdTime>2019-03-10 04:18:28 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<ordsAlias>table_12</ordsAlias>
+<ordsAlias>table_42</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_METODO_PAGO" id="26F5394E-7E67-8740-CDA3-80F010C257E0">
+<Column name="CODIGO_CATEGORIA" id="867502ED-CB38-AA3F-4050-D44FAA7E4FBB">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:21:06 UTC</createdTime>
+<createdTime>2019-03-10 04:19:06 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,39 +18,40 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="METODO_PAGO" id="089BEB4B-6E6C-CF54-BFFD-063B3FA17846">
+<Column name="CATEGORIA" id="56ADB85F-B970-6AF8-15A3-8028592220A4">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:21:06 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT020</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="OBSERVACION_SOBRE_METODO" id="3BB2B617-1B54-0F84-4961-BF4C258148BA">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:23:15 UTC</createdTime>
+<createdTime>2019-03-10 04:19:06 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION_CATEGORIA" id="C2C5263F-00D4-D09C-B2FF-B1738E8F28D8">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:19:06 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7B18857B-E2D6-76E3-95B8-C824D1A47B1C" name="TBL_DESC_X_FORMA_PAGO_PK">
+<ind_PK_UK id="55D1EA53-1531-3D5F-279D-0B09F2ABE2E4" name="TBL_CATEGORIAS_PODCAST_PK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:21:06 UTC</createdTime>
+<createdTime>2019-03-10 04:19:06 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="26F5394E-7E67-8740-CDA3-80F010C257E0"/>
+<colUsage columnID="867502ED-CB38-AA3F-4050-D44FAA7E4FBB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

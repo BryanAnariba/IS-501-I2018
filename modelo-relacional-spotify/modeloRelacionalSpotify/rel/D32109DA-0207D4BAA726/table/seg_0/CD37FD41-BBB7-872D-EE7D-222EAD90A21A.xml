@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F614920-FB2E-CBA7-568C-347304DD99F6" name="TBL_LUGARES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD37FD41-BBB7-872D-EE7D-222EAD90A21A" name="TBL_GRUPOS_MUS_O_ARTISTA">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:20:50 UTC</createdTime>
+<createdTime>2019-03-09 17:29:10 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<ordsAlias>table_4</ordsAlias>
+<ordsAlias>table_16</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_LUGAR" id="42859C17-59E8-5F04-7F3D-EC535A0E94E6">
+<Column name="CODIGO_GRUPO_O_ARTISTA" id="47AAFA33-94DE-AF9B-6A34-D19F92CF21DA">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<createdTime>2019-03-09 17:29:57 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,9 +18,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO_LUGAR_PADRE" id="F8BA46B1-8183-5751-E5A4-91BB570F58D9">
+<Column name="NOMBRE_GRUPO_MUS_ARTISTA" id="21D818D0-6C35-E788-71D2-C7A990A20051">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:19 UTC</createdTime>
+<createdTime>2019-03-09 17:29:57 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_LUGAR_NAC_GRUP_O_ART" id="6DECB283-012E-8C1A-FD56-4C86181D43DC">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:38:51 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,12 +41,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="97973D2B-5EDA-E34F-9B76-5F2ACD926220" referredColumn="42859C17-59E8-5F04-7F3D-EC535A0E94E6"/>
+<colAssociation fkAssociation="B53882F8-674B-01B8-B17C-30075DFF275F" referredColumn="42859C17-59E8-5F04-7F3D-EC535A0E94E6"/>
 </associations>
 </Column>
-<Column name="CODIGO_TIPO_LUGAR" id="272B3ECF-0D87-28B7-A684-F027EA1DCBEC">
+<Column name="CODIGO_LUGAR_ACTUAL_ART_O_GRUP" id="A2C76C18-A0EB-5F50-BB05-23105F79712F">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 16:28:20 UTC</createdTime>
+<createdTime>2019-03-09 17:39:49 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,56 +55,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="DCF3EFE5-3B51-640B-9FB3-E5406955755C" referredColumn="2EE4DA9C-AAFE-34CA-D7D0-8128879EE35C"/>
+<colAssociation fkAssociation="33B5290F-32F2-B642-6CFD-16F0F1985B53" referredColumn="42859C17-59E8-5F04-7F3D-EC535A0E94E6"/>
 </associations>
 </Column>
-<Column name="NOMBRE_LUGAR" id="2FE26DF6-212E-9428-DF84-A8853CC09ED0">
+<Column name="CANTIDAD_INTEGRANTES" id="8AC1DC81-D5B2-9419-4B84-FEA26761A874">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:15 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="LATITUD_LUGAR" id="BD3E3ED8-7ECC-F51F-B766-807968BB61AE">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:15 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="LONGITUD_LUGAR" id="FEA9BC52-C6F1-B2A0-45E8-6C3E73CCF143">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:15 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ABREVIATURA_LUGAR" id="67CB735D-589B-C036-CACF-E5871CBF04DF">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:15 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CODIGO_POSTAL" id="E2A7B85B-4B6A-A770-1F08-EA3727B63E64">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 16:19:32 UTC</createdTime>
+<createdTime>2019-03-09 17:30:52 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -101,9 +68,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DESCRIPCION_LUGAR" id="F5D4D435-592F-D009-251C-9F4282C14197">
+<Column name="DESCRIPCION_GRUPO_MUSICAL" id="62C2A5BA-86E5-E723-1E17-024C201ACCFD">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<createdTime>2019-03-09 17:30:52 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -113,37 +80,68 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CARATULA_IMG" id="356BEB08-885A-33DF-D163-B2B57BD8BEF7">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:31:23 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FUNDACION_GRUPO" id="8FAA3C53-E827-21A8-2089-7448F8CF52BC">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:32:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AÑOS_TRAYECTORIA" id="D55F7F29-CD61-3399-1F18-68ED7F3526E8">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:32:02 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="FCF77E28-5935-5328-1201-430B0C7D0CAE" name="TBL_LUGARES_PK">
+<ind_PK_UK id="B724E450-361A-A26E-6A15-D5F0AAD25AE8" name="TBL_GRUPOS_MUSICALES_PK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:15 UTC</createdTime>
+<createdTime>2019-03-09 17:29:57 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="42859C17-59E8-5F04-7F3D-EC535A0E94E6"/>
+<colUsage columnID="47AAFA33-94DE-AF9B-6A34-D19F92CF21DA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A9B52372-8149-DE26-006B-1AC8686D5181" name="TBL_LUG_TBL_LUG_FK">
+<ind_PK_UK id="C8FEC9CF-68D8-D254-F57D-51E00D9E7143" name="TBL_GRU_MUS_O_AR_TBL_LUG_FK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:25:19 UTC</createdTime>
+<createdTime>2019-03-09 17:38:51 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F8BA46B1-8183-5751-E5A4-91BB570F58D9"/>
+<colUsage columnID="6DECB283-012E-8C1A-FD56-4C86181D43DC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E0BD896C-8664-0A97-8FB0-A40B4A311F6B" name="TBL_TIP_LUG_FK">
+<ind_PK_UK id="B7F64DA8-8D5F-E2FC-819F-948F8FF8905E" name="TBL_GRU_MUS_O_AR_TBL_LUG_FKv2">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 16:28:20 UTC</createdTime>
+<createdTime>2019-03-09 17:39:49 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="272B3ECF-0D87-28B7-A684-F027EA1DCBEC"/>
+<colUsage columnID="A2C76C18-A0EB-5F50-BB05-23105F79712F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

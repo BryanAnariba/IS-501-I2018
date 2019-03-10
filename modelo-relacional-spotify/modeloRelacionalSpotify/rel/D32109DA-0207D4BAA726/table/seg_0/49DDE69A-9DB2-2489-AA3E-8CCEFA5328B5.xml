@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77D5F183-8C07-BB70-4FEC-458E9DB6C202" name="TBL_TIPO_CUENTA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49DDE69A-9DB2-2489-AA3E-8CCEFA5328B5" name="TBL_TIPO_EMPLEADO">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:16:02 UTC</createdTime>
+<createdTime>2019-03-10 04:06:30 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_39</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_TIPO_CUENTA" id="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20">
+<Column name="CODIGO_TIPO_EMPLEADO" id="386B104E-B3E1-15C7-0C9A-92F964AB2F46">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:07:18 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,10 +18,11 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TIPO_CUENTA" id="BF44521C-1F1B-BFC7-0B97-02C7284509CA">
+<Column name="TIPO_EMPLEADO" id="81E7A885-8AB8-E5D0-9D93-A5D492B5DA58">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:07:18 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
@@ -29,19 +30,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COSTO_TIPO_CUENTA" id="7401A906-DF5E-FCFB-E24E-1E70C61A97F3">
+<Column name="DESCRIPCION_CARGO" id="11A5D7C6-CD1E-4239-52D7-43B7C6D2EFE2">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:28:49 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT043</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DESCRIPCION_CUENTA" id="2CE5928C-6862-3B32-522A-4B7DAF0155AC">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:07:18 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -51,27 +42,17 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DURACION_CUENTA_MESES" id="83D7C078-1F09-D9C1-B692-8DDE14AF6F06">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:29:36 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3BEDAC35-F9A8-27EA-0994-57DF596DAF3E" name="TBL_TIPO_CUENTA_PK">
+<ind_PK_UK id="7DE5F5D8-059C-6F7D-7482-E88377F075E1" name="TBL_TIPO_EMPLEADO_PK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:07:29 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20"/>
+<colUsage columnID="386B104E-B3E1-15C7-0C9A-92F964AB2F46"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

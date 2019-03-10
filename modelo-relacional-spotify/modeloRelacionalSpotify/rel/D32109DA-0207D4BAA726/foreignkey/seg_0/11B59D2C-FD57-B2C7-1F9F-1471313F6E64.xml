@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="11B59D2C-FD57-B2C7-1F9F-1471313F6E64" containerWithKeyObject="D2962FD8-B5F8-FB31-073F-C176A35844B9" localFKIndex="20835DD6-1966-1DDA-74C8-E86314AB9639" name="TBL_INI_SEC_TBL_USU_REG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 16:04:48 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_USUARIOS_REGISTRADOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5E7D8897-5292-F743-38DB-159C5FA21FF2</referredTableID>
+<keyObject>AFDAC1F0-2C9C-7D04-62AD-1D00BE530E8E</keyObject>
+<referredKeyID>AFDAC1F0-2C9C-7D04-62AD-1D00BE530E8E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_USUARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

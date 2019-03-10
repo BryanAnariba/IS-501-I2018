@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF251304-6CED-0742-0D30-1774D95D3AB0" name="TBL_PISTAS_X_PLAYLISTS">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 21:13:49 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CANCION" id="E70F8ADD-B26A-BA21-3B79-2F79DB7957CD">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 21:19:19 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFF97C03-821C-783E-B438-E28988361BCA" referredColumn="29BB147D-C314-B3AE-6E51-FF61E0F5D694"/>
+</associations>
+</Column>
+<Column name="CODIGO_PLAYLISTS" id="F187376C-A331-C565-13F7-9B5CD88EA9BA">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 21:19:37 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C12541C3-E609-F7C3-7D87-C7D67ACB812B" referredColumn="3BE71678-990F-1FEF-526F-C67CB21138A8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF22A1F8-42E2-6FA0-8457-5638FFF079D6" name="TBL_PISTAS_X_PLAYLISTS_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 21:20:13 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F187376C-A331-C565-13F7-9B5CD88EA9BA"/>
+<colUsage columnID="E70F8ADD-B26A-BA21-3B79-2F79DB7957CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64D65AAE-1F8E-81F1-9B43-721AD8706600" name="TBL_PIS_X_PLAY_TBL_CAN_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 21:19:19 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E70F8ADD-B26A-BA21-3B79-2F79DB7957CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="368CB808-C863-A277-FD1A-B5CC8364D7B1" name="TBL_PIS_X_PLA_TBL_PLA_CRE_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 21:19:37 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F187376C-A331-C565-13F7-9B5CD88EA9BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

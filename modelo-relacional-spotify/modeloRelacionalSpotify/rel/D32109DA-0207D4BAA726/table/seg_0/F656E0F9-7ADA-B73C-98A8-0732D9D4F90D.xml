@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F656E0F9-7ADA-B73C-98A8-0732D9D4F90D" name="TBL_EPISODIOS_PODCAST">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:20:59 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_43</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_EPISODIO" id="A16C22BC-7C49-1C51-22A7-2191D842F7F8">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:06 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PODCAST" id="B8EF296D-E680-4511-A195-659B63C82D86">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:13 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50913CBB-B42A-CD96-9118-B023D8D2E5D3" referredColumn="40D100CB-5947-E311-44F3-47BEAF4D24B1"/>
+</associations>
+</Column>
+<Column name="EPISODIO" id="67D88C9E-A111-F159-D23A-2B86116DBBBD">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:06 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INSERCION" id="1586BFAB-9A23-3B61-A0B7-B81D48D68F6C">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:06 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_EPISODIO" id="0CF49743-839F-52FB-D9E9-F350B9213850">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:06 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67D76AED-973B-B374-AB93-95CF7F235FA0" name="TBL_EPISODIOS_PODCAST_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:06 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A16C22BC-7C49-1C51-22A7-2191D842F7F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F4B8424-08EB-75BA-5AD1-D51FC15D4E0B" name="EPI_POD_TBL_POD_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:13 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8EF296D-E680-4511-A195-659B63C82D86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

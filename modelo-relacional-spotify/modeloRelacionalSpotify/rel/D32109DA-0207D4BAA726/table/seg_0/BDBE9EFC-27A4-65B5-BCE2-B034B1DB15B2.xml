@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77D5F183-8C07-BB70-4FEC-458E9DB6C202" name="TBL_TIPO_CUENTA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDBE9EFC-27A4-65B5-BCE2-B034B1DB15B2" name="TBL_S_O">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:16:02 UTC</createdTime>
+<createdTime>2019-03-10 02:12:37 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_29</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_TIPO_CUENTA" id="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20">
+<Column name="CODIGO_SISTEMA_OPERATIVO" id="9411D53A-FD52-273F-216B-1510B68147B6">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 02:13:34 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,10 +18,11 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TIPO_CUENTA" id="BF44521C-1F1B-BFC7-0B97-02C7284509CA">
+<Column name="SISTEMA_OPERATIVO" id="0F391643-78C5-2576-CB57-8386998E9B8B">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 02:13:34 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
@@ -29,19 +30,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COSTO_TIPO_CUENTA" id="7401A906-DF5E-FCFB-E24E-1E70C61A97F3">
+<Column name="OBS_SISTEMA_OPERATIVO" id="4DECD72E-4A50-95A8-295C-A2ADBA518FCF">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:28:49 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT043</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DESCRIPCION_CUENTA" id="2CE5928C-6862-3B32-522A-4B7DAF0155AC">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 02:13:34 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -51,27 +42,29 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DURACION_CUENTA_MESES" id="83D7C078-1F09-D9C1-B692-8DDE14AF6F06">
+<Column name="CARACTERISTICAS_S_O" id="CF8B8340-3DB3-E907-17CA-05966C0132EE">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:29:36 UTC</createdTime>
+<createdTime>2019-03-10 02:15:23 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3BEDAC35-F9A8-27EA-0994-57DF596DAF3E" name="TBL_TIPO_CUENTA_PK">
+<ind_PK_UK id="477A8C4B-0903-9F35-5B0C-086101B181DF" name="TBL_S_O_PK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 02:14:47 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20"/>
+<colUsage columnID="9411D53A-FD52-273F-216B-1510B68147B6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

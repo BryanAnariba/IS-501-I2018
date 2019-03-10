@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F84448A2-084F-57C4-A7EC-7E2DE31E1B39" name="TBL_GEN_X_ART">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:22:32 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_GRUPO_O_ARTISTA" id="DCDD3F6D-3662-6C92-5140-F784C297C907">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:43:07 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0268C34C-E79F-7030-6533-5FCB9E971F5A" referredColumn="47AAFA33-94DE-AF9B-6A34-D19F92CF21DA"/>
+</associations>
+</Column>
+<Column name="CODIGO_GENERO_MUSICAL" id="5B808BED-DD44-6632-F109-6A5131F85611">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:25:53 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="270AEFA5-1727-C9D9-4EE0-4F9DAD55BAED" referredColumn="F15AF28E-D5FE-80F1-0C95-45EC14CAAB79"/>
+</associations>
+</Column>
+<Column name="FECHA_HORA_REGISTRO_GEN" id="8F54DDE8-B637-2D29-FEC9-07C173745269">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:27:32 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3773E606-6B89-2571-12E1-30AC1B492506" name="TBL_GEN_X_USERS_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:27:32 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B808BED-DD44-6632-F109-6A5131F85611"/>
+<colUsage columnID="DCDD3F6D-3662-6C92-5140-F784C297C907"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8182FF19-A1DF-7412-6C0F-D3D158673EED" name="TBL_GEN_X_USE_TBL_GEN_MUS_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:25:53 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B808BED-DD44-6632-F109-6A5131F85611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C67944EE-B2EC-42AB-DA16-059712A783D0" name="TBL_GEN_X_USE_TBL_GRU_MUS_O_ART_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 17:43:07 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCDD3F6D-3662-6C92-5140-F784C297C907"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

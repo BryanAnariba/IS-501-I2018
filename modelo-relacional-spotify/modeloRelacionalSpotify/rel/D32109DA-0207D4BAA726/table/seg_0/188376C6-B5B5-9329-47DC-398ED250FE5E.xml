@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69E2BF85-3E3C-E4D7-C1DA-1D07DAA860AE" name="TBL_FORMAS_PAGO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="188376C6-B5B5-9329-47DC-398ED250FE5E" name="TBL_NUEVOS_LANZAMIENTOS">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 01:44:33 UTC</createdTime>
+<createdTime>2019-03-10 02:19:54 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<ordsAlias>table_8</ordsAlias>
+<ordsAlias>table_31</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_FORMA_PAGO" id="0F426CF0-E169-482A-0A0D-F4003ED96A25">
+<Column name="CODIGO_NUEVO_LANZAMIENTO" id="DF0F32B5-7EE1-DA47-7DBF-B8CE43FCBACF">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 01:45:18 UTC</createdTime>
+<createdTime>2019-03-10 02:21:17 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,23 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO_METODO_PAGO" id="9B5DB126-623D-5927-DE5C-30670C5A0312">
+<Column name="CODIGO_CANCION" id="179031F5-16CE-407C-3498-87CF5CB862EF">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 20:16:30 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8721D825-7599-72D9-4D58-3D6D658C387D" referredColumn="26F5394E-7E67-8740-CDA3-80F010C257E0"/>
-</associations>
-</Column>
-<Column name="CODIGO_TIPO_TARJETA" id="6CC34DE8-7534-F2ED-36C1-A593463DBE7D">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 20:11:29 UTC</createdTime>
+<createdTime>2019-03-10 02:21:40 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,94 +29,88 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B63577D6-B83C-9149-A14F-AD7E8EAC68CB" referredColumn="89A096DD-7652-DEBB-2D85-12830DD6577E"/>
+<colAssociation fkAssociation="D40774C1-AEF8-6F59-4DFE-F26321D31579" referredColumn="29BB147D-C314-B3AE-6E51-FF61E0F5D694"/>
 </associations>
 </Column>
-<Column name="NUMERO_TARJETA" id="8E7A2037-2A30-43FD-559E-181150C7272F">
+<Column name="CODIGO_ARTISTA_LANZAMIENTO" id="92E35BF9-BB6B-5CD0-7BB7-47B31275763F">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 20:12:30 UTC</createdTime>
+<createdTime>2019-03-10 02:22:53 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CODIGO_SEGURIDAD_TARGETA" id="4605FDB8-CFFA-45F9-EACB-6F4FBBA85239">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 20:14:50 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23E32F35-291D-E597-44F0-A69AAA192C33" referredColumn="47AAFA33-94DE-AF9B-6A34-D19F92CF21DA"/>
+</associations>
 </Column>
-<Column name="FORMA_PAGO" id="DB3C7E20-A61C-6C15-FA6D-7773956A0FBF">
+<Column name="FECHA_LANZAMIENTO" id="6A220446-2245-43F7-74E5-44459A515F7C">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 01:45:18 UTC</createdTime>
+<createdTime>2019-03-10 02:21:17 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DESCRIPCION_FORMA_PAGO" id="F957C033-26A3-5A74-B6D4-37971F410C0D">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 01:46:17 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-<ownDataTypeParameters>200,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FECHA_DE_PAGO" id="387CFF42-0B53-4FDF-453E-8D9019713B78">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 20:14:04 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DURACION_CANCION_LANZAMIENTO" id="E92CDD09-3ED6-2B22-9C7C-A1B9157EDF89">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 02:21:17 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_LANZAMIENTO" id="4207D0FC-DA5D-B4E0-E6EE-EB473BCD7CE8">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 02:25:11 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="467F49F3-5043-DE98-EB70-E367FCCF3170" name="TBL_FORMAS_PAGO_PK">
+<ind_PK_UK id="BC8D1E9A-3C00-D6E2-3929-DBCD3A7084F8" name="TBL_NUEVOS_LANZAMIENTOS_PK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 01:45:18 UTC</createdTime>
+<createdTime>2019-03-10 02:21:17 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0F426CF0-E169-482A-0A0D-F4003ED96A25"/>
+<colUsage columnID="DF0F32B5-7EE1-DA47-7DBF-B8CE43FCBACF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0757301C-AFAB-2460-CB2A-A9583C6CA92A" name="TBL_FOR_PAG_TBL_TAR_PAR_PAG_FK">
+<ind_PK_UK id="3E7ED52C-AE83-60D7-166A-DC3D7BF2A64E" name="TBL_NUE_LAN_TBL_CAN_FK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 20:11:29 UTC</createdTime>
+<createdTime>2019-03-10 02:21:40 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6CC34DE8-7534-F2ED-36C1-A593463DBE7D"/>
+<colUsage columnID="179031F5-16CE-407C-3498-87CF5CB862EF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DE7834F5-9386-219F-5ED0-2E69E35D3E18" name="TBL_FOR_PAG_TBL_MET_DE_PAG_FK">
+<ind_PK_UK id="24A2C07A-DBEB-344A-2FDE-113002E8998A" name="NUE_LAN_TBL_GRU_MUS_O_ART_FK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-03-09 20:16:30 UTC</createdTime>
+<createdTime>2019-03-10 02:22:53 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9B5DB126-623D-5927-DE5C-30670C5A0312"/>
+<colUsage columnID="92E35BF9-BB6B-5CD0-7BB7-47B31275763F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

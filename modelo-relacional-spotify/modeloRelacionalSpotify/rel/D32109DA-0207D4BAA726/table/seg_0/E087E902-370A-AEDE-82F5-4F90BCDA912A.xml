@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77D5F183-8C07-BB70-4FEC-458E9DB6C202" name="TBL_TIPO_CUENTA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E087E902-370A-AEDE-82F5-4F90BCDA912A" name="TBL_PODCAST">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:16:02 UTC</createdTime>
+<createdTime>2019-03-10 04:11:42 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_40</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_TIPO_CUENTA" id="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20">
+<Column name="CODIGO_PODCAST" id="40D100CB-5947-E311-44F3-47BEAF4D24B1">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:13:33 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,60 +18,64 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TIPO_CUENTA" id="BF44521C-1F1B-BFC7-0B97-02C7284509CA">
+<Column name="CODIGO_CATEGORIA_PODCAST" id="0FA2246A-386B-8B53-44E1-8699BD26F1CD">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:19:20 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="COSTO_TIPO_CUENTA" id="7401A906-DF5E-FCFB-E24E-1E70C61A97F3">
-<createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:28:49 UTC</createdTime>
-<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT043</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="764AC256-6291-8895-030A-6B80D5B4392E" referredColumn="867502ED-CB38-AA3F-4050-D44FAA7E4FBB"/>
+</associations>
 </Column>
-<Column name="DESCRIPCION_CUENTA" id="2CE5928C-6862-3B32-522A-4B7DAF0155AC">
+<Column name="NOMBRE_PODCAST" id="C1A60150-BDD5-910F-1010-7328177A61EE">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:13:33 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DURACION_CUENTA_MESES" id="83D7C078-1F09-D9C1-B692-8DDE14AF6F06">
+<Column name="FECHA_INSERSION" id="167207AA-5ACC-A8CF-937E-332CBD14B98A">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:29:36 UTC</createdTime>
+<createdTime>2019-03-10 04:13:33 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3BEDAC35-F9A8-27EA-0994-57DF596DAF3E" name="TBL_TIPO_CUENTA_PK">
+<ind_PK_UK id="7495FD55-68BB-6892-BAAD-70BA269C2880" name="TBL_PODCAST_PK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-24 22:17:15 UTC</createdTime>
+<createdTime>2019-03-10 04:13:33 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F1FF8DC0-D0EA-6D54-11B3-3D6B2B96CD20"/>
+<colUsage columnID="40D100CB-5947-E311-44F3-47BEAF4D24B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="239ACE58-3CFB-1048-1894-079373AF2EF2" name="POD_TBL_CAT_POD_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:19:20 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FA2246A-386B-8B53-44E1-8699BD26F1CD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

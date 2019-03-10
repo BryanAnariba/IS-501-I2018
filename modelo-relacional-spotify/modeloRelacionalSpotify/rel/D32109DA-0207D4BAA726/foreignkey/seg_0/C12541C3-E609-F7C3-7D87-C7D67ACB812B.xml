@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C12541C3-E609-F7C3-7D87-C7D67ACB812B" containerWithKeyObject="CF251304-6CED-0742-0D30-1774D95D3AB0" localFKIndex="368CB808-C863-A277-FD1A-B5CC8364D7B1" name="TBL_PIS_X_PLA_TBL_PLA_CRE_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 21:19:37 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_PLAYLISTS_CREADAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>03622D55-76A6-0794-0042-3E6C5594A4CC</referredTableID>
+<keyObject>FD7E9F1E-CD81-52DE-D323-5A865ECC4EC1</keyObject>
+<referredKeyID>FD7E9F1E-CD81-52DE-D323-5A865ECC4EC1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_PLAYLISTS</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

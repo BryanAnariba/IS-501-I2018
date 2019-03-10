@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="50913CBB-B42A-CD96-9118-B023D8D2E5D3" containerWithKeyObject="F656E0F9-7ADA-B73C-98A8-0732D9D4F90D" localFKIndex="7F4B8424-08EB-75BA-5AD1-D51FC15D4E0B" name="EPI_POD_TBL_POD_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:22:13 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_PODCAST</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E087E902-370A-AEDE-82F5-4F90BCDA912A</referredTableID>
+<keyObject>7495FD55-68BB-6892-BAAD-70BA269C2880</keyObject>
+<referredKeyID>7495FD55-68BB-6892-BAAD-70BA269C2880</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_PODCAST</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

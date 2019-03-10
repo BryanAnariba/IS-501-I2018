@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C156B120-3B84-AA7F-8C4D-FA205F14B024" containerWithKeyObject="06E8397B-BF89-7516-C6A1-F331AAA81275" localFKIndex="E145539C-F263-8BFF-F640-AB739C8CBDFF" name="EMP_TBL_TIP_EMP_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 04:07:39 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_TIPO_EMPLEADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>49DDE69A-9DB2-2489-AA3E-8CCEFA5328B5</referredTableID>
+<keyObject>7DE5F5D8-059C-6F7D-7482-E88377F075E1</keyObject>
+<referredKeyID>7DE5F5D8-059C-6F7D-7482-E88377F075E1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_TIPO_EMPLEADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

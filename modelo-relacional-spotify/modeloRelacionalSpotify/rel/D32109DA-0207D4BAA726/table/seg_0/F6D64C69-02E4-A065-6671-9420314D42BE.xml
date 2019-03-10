@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6D64C69-02E4-A065-6671-9420314D42BE" name="TBL_CANCIONES_FAVORITAS">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:52:57 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CANCION_FAV" id="28238809-65FB-FF29-C9B1-AC27F8765996">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:54:26 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_USUARIO" id="C4C6064C-5BCF-76B5-8B00-0336CD1F084B">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:54:32 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B42E3163-DD6C-01DC-AE82-491E8C38362A" referredColumn="CBE6AB3F-0695-F183-197B-4E9FD1EC783C"/>
+</associations>
+</Column>
+<Column name="CODIGO_CANCION" id="16AB98C1-CF4A-FD75-8A4B-3B6E9DF4C968">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:55:54 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0EBFDAEE-A797-080B-D848-53917636D055" referredColumn="29BB147D-C314-B3AE-6E51-FF61E0F5D694"/>
+</associations>
+</Column>
+<Column name="FECHA_HORA_PUNTUACION" id="D2162471-2D5F-716B-583F-70D83EFB178A">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:53:54 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PUNTUACION" id="BAD1999E-381F-6252-6FDD-8D4D5471A12B">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:53:54 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATOS_SOBRE_CANCION_FAV" id="CD7ADCF7-C7E5-C83E-8843-5FEC1EF55614">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:53:54 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42A0043B-95CE-0854-3688-A9D753424A01" name="TBL_CANCIONES_FAVORITAS_PK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:54:26 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28238809-65FB-FF29-C9B1-AC27F8765996"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F652DE4-134D-BCD7-2DD0-F677FA1470C4" name="TBL_CANC_FAV_TBL_USU_REG_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:54:32 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4C6064C-5BCF-76B5-8B00-0336CD1F084B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81E42014-D508-665A-2AFA-58183276DDC3" name="TBL_CAN_FAV_TBL_CAN_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-09 18:55:54 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16AB98C1-CF4A-FD75-8A4B-3B6E9DF4C968"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

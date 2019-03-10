@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EBFAEA68-907E-8415-0122-FB0FF3DC258E" containerWithKeyObject="4367ABE4-FF5B-5E83-629E-BC08C4938765" localFKIndex="C64CC321-69B3-C7ED-46E7-5D50F7D9CE44" name="TBL_REP_REC_TBL_DIS_USE_REPRODUCCION_FK">
+<createdBy>Bryan Ariel</createdBy>
+<createdTime>2019-03-10 02:11:17 UTC</createdTime>
+<ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<referredTableLongName>TBL_DISP_USERS_REPRODUCCION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0F634054-FE34-D545-8D95-EC983CE87393</referredTableID>
+<keyObject>F6C247CB-C245-18C6-1EF9-BBD8C9DAB665</keyObject>
+<referredKeyID>F6C247CB-C245-18C6-1EF9-BBD8C9DAB665</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_TIPO_DISPOSITIVO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

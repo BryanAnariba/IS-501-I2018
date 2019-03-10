@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A00B9EE-52C0-77FE-7090-6F003F0B169B" name="TBL_METODO_DE_PAGO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6DBDD28-5275-C764-115D-A005D291DE59" name="TBL_TIPO_LUGAR">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:19:59 UTC</createdTime>
+<createdTime>2019-03-09 16:25:56 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
-<ordsAlias>table_12</ordsAlias>
+<ordsAlias>table_13</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_METODO_PAGO" id="26F5394E-7E67-8740-CDA3-80F010C257E0">
+<Column name="CODIGO_TIPO_LUGAR" id="2EE4DA9C-AAFE-34CA-D7D0-8128879EE35C">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:21:06 UTC</createdTime>
+<createdTime>2019-03-09 16:26:37 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,19 +18,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="METODO_PAGO" id="089BEB4B-6E6C-CF54-BFFD-063B3FA17846">
+<Column name="LUGAR_P_E" id="DF6C9ECA-9613-9436-6518-278F8C6B80C9">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:21:06 UTC</createdTime>
+<createdTime>2019-03-09 16:26:37 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT020</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="OBSERVACION_SOBRE_METODO" id="3BB2B617-1B54-0F84-4961-BF4C258148BA">
+<Column name="DESCRIPCION_P_E" id="FCB4EFE4-4E3C-1CAA-28A7-80DAE65EE417">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:23:15 UTC</createdTime>
+<createdTime>2019-03-09 16:27:38 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,15 +44,15 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7B18857B-E2D6-76E3-95B8-C824D1A47B1C" name="TBL_DESC_X_FORMA_PAGO_PK">
+<ind_PK_UK id="C9148847-F492-9F52-E205-1533A8468CFF" name="TABLE_13_PK">
 <createdBy>Bryan Ariel</createdBy>
-<createdTime>2019-02-25 02:21:06 UTC</createdTime>
+<createdTime>2019-03-09 16:28:09 UTC</createdTime>
 <ownerDesignName>modeloRelacionalSpotify</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="26F5394E-7E67-8740-CDA3-80F010C257E0"/>
+<colUsage columnID="2EE4DA9C-AAFE-34CA-D7D0-8128879EE35C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
